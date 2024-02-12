@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'activated'        => true, // active/inactive all logging
+    'activated'        => env('USER_ACTIVITY_ACTIVE', true), // active/inactive all logging
     'middleware'       => ['web', 'auth'],
-    'route_path'       => 'admin/user-activity',
+    'route_path'       => env('USER_ACTIVITY_ROUTE', 'admin/user-activity'),
     'admin_panel_path' => 'admin/dashboard',
-    'delete_limit'     => 7, // default 7 days
+    'delete_limit'     => env('USER_ACTIVITY_LIMIT', 7), // default 7 days
 
     'model' => [
         'user' => "App\Models\User"

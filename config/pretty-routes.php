@@ -5,7 +5,7 @@ return [
     /**
      * The endpoint to access the routes.
      */
-    'url' => 'routes',
+    'url' => env('PRETTY_ROUTES_URL', 'routes'),
 
     /**
      * The middleware(s) to apply before attempting to access routes page.
@@ -15,7 +15,7 @@ return [
     /**
      * Indicates whether to enable pretty routes only when debug is enabled (APP_DEBUG).
      */
-    'debug_only' => true,
+    'debug_only' => env('PRETTY_ROUTES_DEBUG_ONLY', true),
 
     /**
      * The methods to hide.
