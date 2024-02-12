@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: atqiyacode-laravel-app
+        container_name: atqiyacode-laravel-app
+        restart: always
+        volumes:
+            - .:/var/www/html
+        networks:
+            - laravel-network
+        depends_on:
+            - mysql
+            - redis
+
+    mysql:
+        image: mysql:8.2
+        container_name: atqiyacode-mysql
+        restart: always
+        environment:
+            MYSQL_DATABASE: atqiyacode_laravel
+            MYSQL_USER: atqiyacode
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
+        volumes:
+            - mysql-data:/var/lib/mysql
+        networks:
+            - laravel-network
+
+    redis:
+        image: redis:latest
+        container_name: atqiyacode-redis
+        restart: always
+        ports:
+            - "6379:6379"
+        networks:
+            - laravel-network
+
+
+networks:
+    laravel-network:
+        driver: bridge
+
+volumes:
+    mysql-data:
