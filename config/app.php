@@ -159,13 +159,17 @@ return [
         /*
          * Package Service Providers...
          */
+        // role-permission
+        Spatie\Permission\PermissionServiceProvider::class,
+        // laravel excel
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
@@ -183,6 +187,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        // 'Indonesia' => Laravolt\Indonesia\Facade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Redis' => Illuminate\Support\Facades\Redis::class,
     ])->toArray(),
 
 ];
