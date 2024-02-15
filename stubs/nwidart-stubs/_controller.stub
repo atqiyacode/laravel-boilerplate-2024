@@ -1,0 +1,115 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\$STUDLY_NAME$\Create$STUDLY_NAME$Request;
+use App\Http\Requests\$STUDLY_NAME$\Update$STUDLY_NAME$Request;
+use App\Services\$STUDLY_NAME$\$STUDLY_NAME$Service;
+use Illuminate\Http\Request;
+
+class $STUDLY_NAME$Controller extends Controller
+{
+    protected $service;
+
+    public function __construct($STUDLY_NAME$Service $service)
+    {
+        $this->service = $service;
+    }
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(Request $request)
+    {
+        $response = $request->has('all') ? $this->service->getAll() : $this->service->getPaginate();
+        return $response->getResult();
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Create$STUDLY_NAME$Request $request)
+    {
+        $query = $this->service->create($request->all());
+        return $query->toJson();
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show($id)
+    {
+        return $this->service->findById($id)->toJson();
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Update$STUDLY_NAME$Request $request, $id)
+    {
+        $query = $this->service->update($id, $request->all());
+        return $query->toJson();
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy($id)
+    {
+        $query = $this->service->delete($id);
+        return $query->toJson();
+    }
+
+    /**
+     * restore the specified resource from storage.
+     */
+    public function restore($id)
+    {
+        $query = $this->service->restore($id);
+        return $query->toJson();
+    }
+
+    /**
+     * force delete the specified resource from storage.
+     */
+    public function forceDelete($id)
+    {
+        $query = $this->service->forceDelete($id);
+        return $query->toJson();
+    }
+
+    /**
+     * destroy multiple resource from storage.
+     */
+    public function destroyMultiple(Request $request)
+    {
+        $query = $this->service->destroyMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    /**
+     * restore multiple resource from storage.
+     */
+    public function restoreMultiple(Request $request)
+    {
+        $query = $this->service->restoreMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    /**
+     * force delete multiple resource from storage.
+     */
+    public function forceDeleteMultiple(Request $request)
+    {
+        $query = $this->service->forceDeleteMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    /**
+     * export resource from storage.
+     */
+    public function export($format)
+    {
+        return $this->service->export($format);
+    }
+}
