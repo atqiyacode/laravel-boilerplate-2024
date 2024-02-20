@@ -1,0 +1,43 @@
+<?php
+//This file updated in 2024-02-20T18:18:10+00:00
+return [
+    "welcome" => "welcome to Laravel Setting Pro",
+    "version" => "2.0.0",
+    "users" => [
+        "1" => [
+            "name" => "test user 1",
+            "profile" => [
+                "address" => "address test 1",
+                "pic" => "test1.png"
+            ]
+        ],
+        "2" => [
+            "name" => "test user 2",
+            "profile" => [
+                "address" => "address test 2",
+                "pic" => "test2.png"
+            ]
+        ],
+        "3" => [
+            "name" => "test user 3",
+            "profile" => [
+                "address" => "address test 3",
+                "pic" => "test3.png"
+            ]
+        ],
+        "4" => [
+            "name" => "test user 4",
+            "profile" => [
+                "address" => "address test 4",
+                "pic" => "test4.png"
+            ]
+        ],
+        "5" => [
+            "name" => "test user 5",
+            "profile" => [
+                "pic" => "test5.png",
+                "address" => "test value set!"
+            ]
+        ]
+    ]
+];

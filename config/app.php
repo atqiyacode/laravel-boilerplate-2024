@@ -165,6 +165,8 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         // laravel excel
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        // custom response
+        App\Providers\ResponseMacroServiceProvider::class,
 
         /*
          * Application Service Providers...

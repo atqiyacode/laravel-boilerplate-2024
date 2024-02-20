@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b28e34465fe6a3d4e2f84d462a2930d9",
+    "content-hash": "1a9a0f5c5801bfa70ae0e7f6ec825c18",
     "packages": [
         {
             "name": "archtechx/enums",
@@ -7718,6 +7718,109 @@
                 "source": "https://github.com/ringcentral/psr7/tree/master"
             },
             "time": "2018-05-29T20:21:04+00:00"
+        },
+        {
+            "name": "sajadsdi/array-dot-notation",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sajadsdi/array-dot-notation.git",
+                "reference": "002a501c8be0dbe5dd074bbce5a630ae16b04cc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sajadsdi/array-dot-notation/zipball/002a501c8be0dbe5dd074bbce5a630ae16b04cc9",
+                "reference": "002a501c8be0dbe5dd074bbce5a630ae16b04cc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0|^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sajadsdi\\ArrayDotNotation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SajaD SaeeDi",
+                    "email": "thunder11like@gmail.com",
+                    "homepage": "https://github.com/sajadsdi"
+                }
+            ],
+            "description": "set and get with dot notation in arrays",
+            "support": {
+                "issues": "https://github.com/sajadsdi/array-dot-notation/issues",
+                "source": "https://github.com/sajadsdi/array-dot-notation/tree/1.0.5"
+            },
+            "time": "2023-12-12T02:38:12+00:00"
+        },
+        {
+            "name": "sajadsdi/laravel-setting-pro",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sajadsdi/laravel-setting-pro.git",
+                "reference": "1c1ce70e67d1c38e0fe1def2141c8640939ae5ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sajadsdi/laravel-setting-pro/zipball/1c1ce70e67d1c38e0fe1def2141c8640939ae5ec",
+                "reference": "1c1ce70e67d1c38e0fe1def2141c8640939ae5ec",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "laravel/framework": "^9.0|^10.0",
+                "php": "^8.1",
+                "sajadsdi/array-dot-notation": "^1.0"
+            },
+            "type": "laravel-package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sajadsdi\\LaravelSettingPro\\Providers\\LaravelSettingProServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Sajadsdi\\LaravelSettingPro\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SajaD SaeeDi",
+                    "email": "thunder11like@gmail.com"
+                }
+            ],
+            "description": "Easy settings management for laravel framework",
+            "keywords": [
+                "Settings",
+                "configs",
+                "laravel",
+                "package"
+            ],
+            "support": {
+                "issues": "https://github.com/sajadsdi/laravel-setting-pro/issues",
+                "source": "https://github.com/sajadsdi/laravel-setting-pro/tree/2.0.1"
+            },
+            "time": "2023-12-29T01:14:34+00:00"
         },
         {
             "name": "spatie/db-dumper",
