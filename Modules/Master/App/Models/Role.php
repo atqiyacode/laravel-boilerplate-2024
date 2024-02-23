@@ -34,7 +34,6 @@ class Role extends SpatieRole
     ];
 }
 
-// use App\Http\Controllers\API\HR\EmployeeController;
 // use App\Http\Controllers\API\HR\JobApplicationController;
 // use App\Http\Controllers\API\HR\JobApplicationStatusController;
 // use App\Http\Controllers\API\HR\JobVacancyController;
