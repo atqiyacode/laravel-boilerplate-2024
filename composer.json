@@ -11,6 +11,8 @@
         "php": "^8.1",
         "beyondcode/laravel-websockets": "^1.14",
         "cviebrock/eloquent-sluggable": "^10.0",
+        "dedoc/scramble": "^0.8.5",
+        "doctrine/dbal": "^3.8",
         "essa/api-tool-kit": "^2.1",
         "f9webltd/laravel-api-response-helpers": "^1.5",
         "garygreen/pretty-routes": "^1.0",
