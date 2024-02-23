@@ -1,0 +1,11 @@
+{
+    "name": "AuthMobileApp",
+    "alias": "authmobileapp",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AuthMobileApp\\App\\Providers\\AuthMobileAppServiceProvider"
+    ],
+    "files": []
+}

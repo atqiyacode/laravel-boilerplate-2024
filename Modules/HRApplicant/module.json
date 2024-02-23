@@ -1,0 +1,11 @@
+{
+    "name": "HRApplicant",
+    "alias": "hrapplicant",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HRApplicant\\App\\Providers\\HRApplicantServiceProvider"
+    ],
+    "files": []
+}

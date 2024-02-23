@@ -1,0 +1,11 @@
+{
+    "name": "HRMaster",
+    "alias": "hrmaster",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HRMaster\\App\\Providers\\HRMasterServiceProvider"
+    ],
+    "files": []
+}

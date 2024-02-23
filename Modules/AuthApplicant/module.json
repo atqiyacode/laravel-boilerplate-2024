@@ -1,0 +1,11 @@
+{
+    "name": "AuthApplicant",
+    "alias": "authapplicant",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AuthApplicant\\App\\Providers\\AuthApplicantServiceProvider"
+    ],
+    "files": []
+}

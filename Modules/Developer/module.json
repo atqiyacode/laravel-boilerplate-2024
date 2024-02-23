@@ -1,0 +1,11 @@
+{
+    "name": "Developer",
+    "alias": "developer",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Developer\\App\\Providers\\DeveloperServiceProvider"
+    ],
+    "files": []
+}

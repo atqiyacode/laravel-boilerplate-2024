@@ -1,0 +1,11 @@
+{
+    "name": "Indonesia",
+    "alias": "indonesia",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Indonesia\\App\\Providers\\IndonesiaServiceProvider"
+    ],
+    "files": []
+}

@@ -110,7 +110,7 @@ return [
             GeneratorFilesType::FILTER => [
                 'folder_path' => app_path('Filters'),
                 'file_name' => '{ModelName}Filters.php',
-                'namespace' => 'App\Filters',
+                'namespace' => 'Modules\Master\Filters',
             ],
             GeneratorFilesType::MIGRATION => [
                 'folder_path' => database_path('migrations'),

@@ -1,0 +1,11 @@
+{
+    "name": "KeyPerformanceIndicator",
+    "alias": "keyperformanceindicator",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\KeyPerformanceIndicator\\App\\Providers\\KeyPerformanceIndicatorServiceProvider"
+    ],
+    "files": []
+}

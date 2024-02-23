@@ -1,0 +1,11 @@
+{
+    "name": "AuthBackOffice",
+    "alias": "authbackoffice",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AuthBackOffice\\App\\Providers\\AuthBackOfficeServiceProvider"
+    ],
+    "files": []
+}

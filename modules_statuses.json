@@ -1,0 +1,23 @@
+{
+    "Master": true,
+    "Indonesia": true,
+    "University": true,
+    "Applicant": true,
+    "MobileApp": true,
+    "Analytic": true,
+    "Activity": true,
+    "Developer": true,
+    "HRApplicant": true,
+    "HREmployee": true,
+    "Finance": true,
+    "HRMaster": true,
+    "KeyPerformanceIndicator": true,
+    "Notification": true,
+    "Others": true,
+    "User": true,
+    "AuthApplicant": true,
+    "AuthMobileApp": true,
+    "AuthBackOffice": true,
+    "Public": true,
+    "Employee": true
+}
