@@ -1,9 +1,7 @@
 <?php
 
-namespace Modules\MobileApp\App\Http\Controllers\API\MasterMobile;
+namespace Modules\MobileApp\App\Http\Controllers;
 
-use Modules\MobileApp\App\Events\MobileVersionEvent;
-use Modules\MobileApp\App\Exports\MobileVersionExport;
 use App\Http\Controllers\Controller;
 use Modules\MobileApp\App\Http\Requests\MobileVersion\CreateMobileVersionRequest;
 use Modules\MobileApp\App\Http\Requests\MobileVersion\UpdateMobileVersionRequest;

@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\KeyPerformanceIndicator\Models\PerformanceAssessment;
+use Modules\KeyPerformanceIndicator\App\Models\PerformanceAssessment;
 use Illuminate\Database\Seeder;
 
 class PerformanceAssessmentSeeder extends Seeder

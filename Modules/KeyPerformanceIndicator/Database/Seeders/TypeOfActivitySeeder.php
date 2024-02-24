@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\KeyPerformanceIndicator\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Illuminate\Database\Seeder;
 
 class TypeOfActivitySeeder extends Seeder

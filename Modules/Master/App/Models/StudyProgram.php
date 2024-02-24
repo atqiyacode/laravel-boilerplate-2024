@@ -5,12 +5,12 @@ namespace Modules\Master\App\Models;
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
 use Modules\Master\Filters\StudyProgramFilters;
-use Modules\Master\App\Scopes\CanDeleteScope;
+use App\Scopes\CanDeleteScope;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Master\App\Scopes\DeveloperScope;
+use App\Scopes\DeveloperScope;
 
 class StudyProgram extends Model
 {

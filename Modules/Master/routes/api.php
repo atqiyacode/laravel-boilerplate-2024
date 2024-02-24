@@ -1,18 +1,18 @@
 <?php
 
-use Modules\Master\App\Http\Controllers\API\Master\CompanyInformationController;
-use Modules\Master\App\Http\Controllers\API\Master\EmployeeTypeController;
-use Modules\Master\App\Http\Controllers\API\Master\GenderController;
-use Modules\Master\App\Http\Controllers\API\Master\LevelOfEducationController;
-use Modules\Master\App\Http\Controllers\API\Master\PermissionController;
-use Modules\Master\App\Http\Controllers\API\Master\PermitStatusController;
-use Modules\Master\App\Http\Controllers\API\Master\ReligionController;
-use Modules\Master\App\Http\Controllers\API\Master\RoleController;
-use Modules\Master\App\Http\Controllers\API\Master\UniversityController;
-use Modules\Master\App\Http\Controllers\API\Master\VerificationCodeTypeController;
-use Modules\Master\App\Http\Controllers\API\Master\StudyProgramController;
-use Modules\Master\App\Http\Controllers\API\Master\UploadController;
-use Modules\Master\App\Http\Controllers\API\Master\RecruitmentStepController;
+use Modules\Master\App\Http\Controllers\CompanyInformationController;
+use Modules\Master\App\Http\Controllers\EmployeeTypeController;
+use Modules\Master\App\Http\Controllers\GenderController;
+use Modules\Master\App\Http\Controllers\LevelOfEducationController;
+use Modules\Master\App\Http\Controllers\PermissionController;
+use Modules\Master\App\Http\Controllers\PermitStatusController;
+use Modules\Master\App\Http\Controllers\ReligionController;
+use Modules\Master\App\Http\Controllers\RoleController;
+use Modules\Master\App\Http\Controllers\UniversityController;
+use Modules\Master\App\Http\Controllers\VerificationCodeTypeController;
+use Modules\Master\App\Http\Controllers\StudyProgramController;
+use Modules\Master\App\Http\Controllers\UploadController;
+use Modules\Master\App\Http\Controllers\RecruitmentStepController;
 use Illuminate\Support\Facades\Route;
 
 

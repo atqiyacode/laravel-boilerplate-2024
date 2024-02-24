@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\HRMaster\App\Http\Controllers\API\HR;
+namespace Modules\HRMaster\App\Http\Controllers;
 
 use Modules\HRMaster\App\Events\PositionEvent;
 use Modules\HRMaster\App\Exports\PositionExport;

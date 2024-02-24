@@ -2,10 +2,10 @@
 
 namespace Modules\JobVacancy\App\Http\Resources\JobVacancy;
 
-use Modules\JobVacancy\App\Http\Resources\DateFormat\DateFormatResource;
-use Modules\JobVacancy\App\Http\Resources\Position\PositionResource;
-use Modules\JobVacancy\App\Http\Resources\Project\SimpleProjectResource;
+use App\Http\Resources\DateFormat\DateFormatResource;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\HRMaster\App\Http\Resources\Position\PositionResource;
+use Modules\Project\App\Http\Resources\Project\SimpleProjectResource;
 
 class JobVacancyResource extends JsonResource
 {

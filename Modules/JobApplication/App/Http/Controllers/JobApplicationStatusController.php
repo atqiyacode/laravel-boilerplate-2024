@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JobApplication\App\Http\Controllers\API\HR;
+namespace Modules\JobApplication\App\Http\Controllers;
 
 use Modules\JobApplication\App\Events\JobApplicationStatusEvent;
 use Modules\JobApplication\App\Exports\JobApplicationStatusExport;

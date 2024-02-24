@@ -2,7 +2,7 @@
 
 namespace Modules\JobVacancy\App\Http\Resources\JobVacancy;
 
-use Modules\JobVacancy\App\Http\Resources\DateFormat\DateFormatResource;
+use App\Http\Resources\DateFormat\DateFormatResource;
 use Modules\JobVacancy\App\Http\Resources\Position\PositionResource;
 use Modules\JobVacancy\App\Http\Resources\Project\SimpleProjectResource;
 use Illuminate\Http\Resources\Json\JsonResource;

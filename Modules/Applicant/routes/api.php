@@ -1,17 +1,17 @@
 <?php
 
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantAchievementController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantAttachmentController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantCertificateOfExpertiseController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantContactController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantEducationController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantEmergencyContactController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantExperienceController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantLanguageSkillController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantMediaSocialController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantOrganizationExperienceController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantRelationReferenceController;
-use Modules\Applicant\App\Http\Controllers\API\Applicant\ApplicantResumeController;
+use Modules\Applicant\App\Http\Controllers\ApplicantAchievementController;
+use Modules\Applicant\App\Http\Controllers\ApplicantAttachmentController;
+use Modules\Applicant\App\Http\Controllers\ApplicantCertificateOfExpertiseController;
+use Modules\Applicant\App\Http\Controllers\ApplicantContactController;
+use Modules\Applicant\App\Http\Controllers\ApplicantEducationController;
+use Modules\Applicant\App\Http\Controllers\ApplicantEmergencyContactController;
+use Modules\Applicant\App\Http\Controllers\ApplicantExperienceController;
+use Modules\Applicant\App\Http\Controllers\ApplicantLanguageSkillController;
+use Modules\Applicant\App\Http\Controllers\ApplicantMediaSocialController;
+use Modules\Applicant\App\Http\Controllers\ApplicantOrganizationExperienceController;
+use Modules\Applicant\App\Http\Controllers\ApplicantRelationReferenceController;
+use Modules\Applicant\App\Http\Controllers\ApplicantResumeController;
 use Illuminate\Support\Facades\Route;
 
 

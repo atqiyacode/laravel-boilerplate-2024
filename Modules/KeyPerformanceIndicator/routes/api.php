@@ -1,9 +1,7 @@
 <?php
 
-use Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI\EmployeeActivityController;
-use Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI\EmployeePerformanceAssessmentController;
-use Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI\PerformanceAssessmentController;
-use Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI\TypeOfActivityController;
+use Modules\KeyPerformanceIndicator\Http\Controllers\PerformanceAssessmentController;
+use Modules\KeyPerformanceIndicator\Http\Controllers\TypeOfActivityController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -48,6 +46,4 @@ Route::middleware(['auth:sanctum'])->prefix('kpi')->group(function () {
         Route::get('export/{format}', [PerformanceAssessmentController::class, 'export']);
     });
     /*=====  End of performanceAssessments   ======*/
-
-    
 });

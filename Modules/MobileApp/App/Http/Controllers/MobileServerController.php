@@ -1,13 +1,12 @@
 <?php
 
-namespace Modules\MobileApp\App\Http\Controllers\API\MasterMobile;
+namespace Modules\MobileApp\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\MobileApp\App\Http\Requests\MobileServer\UpdateMobileServerRequest;
 use Modules\MobileApp\App\Http\Resources\MobileServer\MobileServerResource;
 use Modules\MobileApp\App\Models\MobileServer;
 use Modules\MobileApp\App\Services\MobileServer\MobileServerService;
-use Illuminate\Http\Request;
 
 class MobileServerController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Services\TypeOfActivity;
+namespace Modules\KeyPerformanceIndicator\App\Services\TypeOfActivity;
 
 use LaravelEasyRepository\BaseService;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Project\App\Http\Controllers\API\HR;
+namespace Modules\Project\App\Http\Controllers;
 
 use Modules\Project\App\Events\ProjectEvent;
 use Modules\Project\App\Exports\ProjectExport;

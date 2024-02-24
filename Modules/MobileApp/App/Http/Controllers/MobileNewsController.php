@@ -1,9 +1,7 @@
 <?php
 
-namespace Modules\MobileApp\App\Http\Controllers\API\MasterMobile;
+namespace Modules\MobileApp\App\Http\Controllers;
 
-use Modules\MobileApp\App\Events\MobileNewsEvent;
-use Modules\MobileApp\App\Exports\MobileNewsExport;
 use App\Http\Controllers\Controller;
 use Modules\MobileApp\App\Http\Requests\MobileNews\CreateMobileNewsRequest;
 use Modules\MobileApp\App\Http\Requests\MobileNews\UpdateMobileNewsRequest;

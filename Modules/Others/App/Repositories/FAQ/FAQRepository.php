@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Others\App\Repositories\FAQ;
+namespace App\Repositories\FAQ;
 
 use LaravelEasyRepository\Repository;
 

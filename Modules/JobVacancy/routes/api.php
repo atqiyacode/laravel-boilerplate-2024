@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Modules\JobVacancy\App\Http\Controllers\JobVacancyController;
 
 /*
     |--------------------------------------------------------------------------
@@ -15,5 +16,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
-    Route::get('jobvacancy', fn (Request $request) => $request->user())->name('jobvacancy');
+    /*===========================
+    =           jobVacancies           =
+    =============================*/
+
+    Route::apiResource('/jobVacancies', JobVacancyController::class)->parameters([
+        'jobVacancies' => 'id'
+    ]);
+
+    Route::group([
+        'prefix' => 'jobVacancies',
+    ], function () {
+        Route::get('{id}/restore', [JobVacancyController::class, 'restore']);
+        Route::delete('{id}/force-delete', [JobVacancyController::class, 'forceDelete']);
+        Route::post('destroy-multiple', [JobVacancyController::class, 'destroyMultiple']);
+        Route::post('restore-multiple', [JobVacancyController::class, 'restoreMultiple']);
+        Route::post('force-delete-multiple', [JobVacancyController::class, 'forceDeleteMultiple']);
+        Route::get('export/{format}', [JobVacancyController::class, 'export']);
+    });
+
+    /*=====  End of jobVacancies   ======*/
 });

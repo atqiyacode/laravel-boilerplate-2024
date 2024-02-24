@@ -1,27 +1,47 @@
 <?php
 
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeAchievementController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeAttachmentController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeAttendanceController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeCertificateOfExpertiseController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeContactController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeContractController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeDetailController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeEducationController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeExperienceController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeEmergencyContactController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeLanguageSkillController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeMediaSocialController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeOrganizationExperienceController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeePermitController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeePermitRemainingController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeePermitStructureController;
-use Modules\Employee\App\Http\Controllers\API\HR\EmployeeRelationReferenceController;
+use Modules\Employee\App\Http\Controllers\EmployeeAchievementController;
+use Modules\Employee\App\Http\Controllers\EmployeeAttachmentController;
+use Modules\Employee\App\Http\Controllers\EmployeeAttendanceController;
+use Modules\Employee\App\Http\Controllers\EmployeeCertificateOfExpertiseController;
+use Modules\Employee\App\Http\Controllers\EmployeeContactController;
+use Modules\Employee\App\Http\Controllers\EmployeeContractController;
+use Modules\Employee\App\Http\Controllers\EmployeeDetailController;
+use Modules\Employee\App\Http\Controllers\EmployeeEducationController;
+use Modules\Employee\App\Http\Controllers\EmployeeExperienceController;
+use Modules\Employee\App\Http\Controllers\EmployeeEmergencyContactController;
+use Modules\Employee\App\Http\Controllers\EmployeeLanguageSkillController;
+use Modules\Employee\App\Http\Controllers\EmployeeMediaSocialController;
+use Modules\Employee\App\Http\Controllers\EmployeeOrganizationExperienceController;
+use Modules\Employee\App\Http\Controllers\EmployeePermitController;
+use Modules\Employee\App\Http\Controllers\EmployeePermitRemainingController;
+use Modules\Employee\App\Http\Controllers\EmployeePermitStructureController;
+use Modules\Employee\App\Http\Controllers\EmployeeRelationReferenceController;
+use Modules\Employee\App\Http\Controllers\EmployeeController;
+use Modules\Employee\App\Http\Controllers\EmployeeActivityController;
+use Modules\Employee\App\Http\Controllers\EmployeePerformanceAssessmentController;
 use Illuminate\Support\Facades\Route;
 
-
 Route::middleware(['auth:sanctum'])->prefix('employee')->group(function () {
+    /*===========================
+    =           employees           =
+    =============================*/
 
+    Route::apiResource('/employees', EmployeeController::class)->parameters([
+        'employees' => 'id'
+    ]);
+
+    Route::group([
+        'prefix' => 'employees',
+    ], function () {
+        Route::get('{id}/restore', [EmployeeController::class, 'restore']);
+        Route::delete('{id}/force-delete', [EmployeeController::class, 'forceDelete']);
+        Route::post('destroy-multiple', [EmployeeController::class, 'destroyMultiple']);
+        Route::post('restore-multiple', [EmployeeController::class, 'restoreMultiple']);
+        Route::post('force-delete-multiple', [EmployeeController::class, 'forceDeleteMultiple']);
+        Route::get('export/{format}', [EmployeeController::class, 'export']);
+    });
+    /*=====  End of employees   ======*/
     /*===========================
     =           employeeDetails           =
     =============================*/

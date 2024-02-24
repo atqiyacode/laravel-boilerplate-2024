@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Developer\App\Http\Controllers\API\Developer;
+namespace Modules\Developer\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\Developer\App\Http\Requests\UserLogActivity\CreateUserLogActivityRequest;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Http\Resources\PerformanceAssessment;
+namespace Modules\KeyPerformanceIndicator\App\Http\Resources\PerformanceAssessment;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

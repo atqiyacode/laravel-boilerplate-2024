@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Modules\Finance\App\Http\Controllers\PaymentPlanController;
 
 /*
     |--------------------------------------------------------------------------
@@ -15,5 +16,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
-    Route::get('finance', fn (Request $request) => $request->user())->name('finance');
+    Route::apiResource('/paymentPlans', PaymentPlanController::class)->parameters([
+        'paymentPlans' => 'id'
+    ]);
+
+    Route::group([
+        'prefix' => 'paymentPlans',
+    ], function () {
+        Route::get('{id}/restore', [PaymentPlanController::class, 'restore']);
+        Route::delete('{id}/force-delete', [PaymentPlanController::class, 'forceDelete']);
+        Route::post('destroy-multiple', [PaymentPlanController::class, 'destroyMultiple']);
+        Route::post('restore-multiple', [PaymentPlanController::class, 'restoreMultiple']);
+        Route::post('force-delete-multiple', [PaymentPlanController::class, 'forceDeleteMultiple']);
+        Route::get('export/{format}', [PaymentPlanController::class, 'export']);
+    });
 });

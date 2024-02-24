@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Master\App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers;
 
 use Modules\Master\App\Events\LevelOfEducationEvent;
 use Modules\Master\App\Exports\LevelOfEducationExport;

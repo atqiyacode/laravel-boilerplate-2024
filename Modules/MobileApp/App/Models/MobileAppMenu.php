@@ -5,7 +5,7 @@ namespace Modules\MobileApp\App\Models;
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
 use Modules\MobileApp\App\Filters\MobileAppMenuFilters;
-use Modules\MobileApp\App\Scopes\CanDeleteScope;
+use App\Scopes\CanDeleteScope;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

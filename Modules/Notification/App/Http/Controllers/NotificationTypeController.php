@@ -1,9 +1,7 @@
 <?php
 
-namespace Modules\Notification\App\Http\Controllers\API\Notification;
+namespace Modules\Notification\App\Http\Controllers;
 
-use Modules\Notification\App\Events\NotificationTypeEvent;
-use Modules\Notification\App\Exports\NotificationTypeExport;
 use App\Http\Controllers\Controller;
 use Modules\Notification\App\Http\Requests\NotificationType\CreateNotificationTypeRequest;
 use Modules\Notification\App\Http\Requests\NotificationType\UpdateNotificationTypeRequest;

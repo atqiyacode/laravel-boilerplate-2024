@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\HRMaster\App\Http\Controllers\API\HR;
+namespace Modules\HRMaster\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\HRMaster\App\Http\Requests\MainClass\CreateMainClassRequest;

@@ -29,6 +29,8 @@ class $CLASS$ extends ServiceProvider
      */
     public function register(): void
     {
+        $this->autoBindRepositories();
+        $this->autoBindServices();
         $this->app->register(RouteServiceProvider::class);
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Others\App\Services\FAQ;
+namespace App\Services\FAQ;
 
 use LaravelEasyRepository\BaseService;
 

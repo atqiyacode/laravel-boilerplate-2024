@@ -3,7 +3,7 @@
 namespace Modules\Notification\App\Http\Resources\TemplateNotification;
 
 use Modules\Notification\App\Http\Resources\NotificationType\NotificationTypeResource;
-use Modules\Notification\App\Http\Resources\User\SimpleUserResource;
+use Modules\User\App\Http\Resources\User\SimpleUserResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class TemplateNotificationResource extends JsonResource

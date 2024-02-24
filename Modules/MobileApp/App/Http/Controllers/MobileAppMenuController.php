@@ -1,9 +1,7 @@
 <?php
 
-namespace Modules\MobileApp\App\Http\Controllers\API\MasterMobile;
+namespace Modules\MobileApp\App\Http\Controllers;
 
-use Modules\MobileApp\App\Events\MobileAppMenuEvent;
-use Modules\MobileApp\App\Exports\MobileAppMenuExport;
 use App\Http\Controllers\Controller;
 use Modules\MobileApp\App\Http\Requests\MobileAppMenu\CreateMobileAppMenuRequest;
 use Modules\MobileApp\App\Http\Requests\MobileAppMenu\UpdateMobileAppMenuRequest;

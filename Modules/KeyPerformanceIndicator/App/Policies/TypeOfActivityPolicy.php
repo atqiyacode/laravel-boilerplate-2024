@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Policies;
+namespace Modules\KeyPerformanceIndicator\App\Policies;
 
-use Modules\KeyPerformanceIndicator\Models\TypeOfActivity;
-use Modules\KeyPerformanceIndicator\Models\User;
+use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class TypeOfActivityPolicy

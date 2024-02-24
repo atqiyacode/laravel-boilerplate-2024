@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Database\Seeders;
+namespace Modules\KeyPerformanceIndicator\App\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 

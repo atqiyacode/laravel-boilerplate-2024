@@ -9,8 +9,8 @@ use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Notification\App\Scopes\CanDeleteScope;
-use Modules\Notification\App\Scopes\DeveloperScope;
+use App\Scopes\CanDeleteScope;
+use App\Scopes\DeveloperScope;
 
 class NotificationType extends Model
 {

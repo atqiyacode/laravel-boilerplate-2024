@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Policies;
+namespace Modules\KeyPerformanceIndicator\App\Policies;
 
-use Modules\KeyPerformanceIndicator\Models\PerformanceAssessment;
-use Modules\KeyPerformanceIndicator\Models\User;
+use Modules\KeyPerformanceIndicator\App\Models\PerformanceAssessment;
+use Modules\KeyPerformanceIndicator\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class PerformanceAssessmentPolicy

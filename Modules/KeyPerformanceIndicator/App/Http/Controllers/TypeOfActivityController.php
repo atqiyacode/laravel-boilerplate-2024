@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI;
+namespace Modules\KeyPerformanceIndicator\App\Http\Controllers;
 
-use Modules\KeyPerformanceIndicator\Http\Controllers\Controller;
-use Modules\KeyPerformanceIndicator\Http\Requests\TypeOfActivity\CreateTypeOfActivityRequest;
-use Modules\KeyPerformanceIndicator\Http\Requests\TypeOfActivity\UpdateTypeOfActivityRequest;
-use Modules\KeyPerformanceIndicator\Services\TypeOfActivity\TypeOfActivityService;
+use App\Http\Controllers\Controller;
+use Modules\KeyPerformanceIndicator\App\Http\Requests\TypeOfActivity\CreateTypeOfActivityRequest;
+use Modules\KeyPerformanceIndicator\App\Http\Requests\TypeOfActivity\UpdateTypeOfActivityRequest;
+use Modules\KeyPerformanceIndicator\App\Services\TypeOfActivity\TypeOfActivityService;
 use Illuminate\Http\Request;
 
 class TypeOfActivityController extends Controller

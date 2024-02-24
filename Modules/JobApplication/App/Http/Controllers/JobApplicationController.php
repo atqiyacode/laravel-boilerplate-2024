@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JobApplication\App\Http\Controllers\API\HR;
+namespace Modules\JobApplication\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\JobApplication\App\Http\Requests\JobApplication\CreateJobApplicationRequest;

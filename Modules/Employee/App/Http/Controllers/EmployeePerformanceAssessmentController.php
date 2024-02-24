@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\App\Http\Controllers\API\KPI;
+namespace Modules\Employee\App\Http\Controllers;
 
 use Modules\Employee\App\Events\EmployeePerformanceAssessmentEvent;
 use Modules\Employee\App\Exports\EmployeePerformanceAssessmentExport;

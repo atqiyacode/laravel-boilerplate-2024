@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Http\Requests\TypeOfActivity;
+namespace Modules\KeyPerformanceIndicator\App\Http\Requests\TypeOfActivity;
 
 use Illuminate\Foundation\Http\FormRequest;
 

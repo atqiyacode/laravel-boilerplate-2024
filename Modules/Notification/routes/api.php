@@ -1,7 +1,7 @@
 <?php
 
-use Modules\Notification\App\Http\Controllers\API\Notification\NotificationTypeController;
-use Modules\Notification\App\Http\Controllers\API\Notification\TemplateNotificationController;
+use Modules\Notification\App\Http\Controllers\NotificationTypeController;
+use Modules\Notification\App\Http\Controllers\TemplateNotificationController;
 use Illuminate\Support\Facades\Route;
 
 

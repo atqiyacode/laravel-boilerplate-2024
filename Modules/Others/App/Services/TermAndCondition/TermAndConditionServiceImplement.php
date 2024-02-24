@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Others\App\Services\TermAndCondition;
+namespace App\Services\TermAndCondition;
 
 use Modules\Others\App\Http\Resources\TermAndCondition\TermAndConditionResource;
 use LaravelEasyRepository\ServiceApi;

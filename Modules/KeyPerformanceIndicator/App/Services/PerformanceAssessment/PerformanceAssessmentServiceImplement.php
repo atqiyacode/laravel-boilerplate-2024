@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Services\PerformanceAssessment;
+namespace Modules\KeyPerformanceIndicator\App\Services\PerformanceAssessment;
 
 use Modules\KeyPerformanceIndicator\Http\Resources\PerformanceAssessment\PerformanceAssessmentResource;
 use LaravelEasyRepository\ServiceApi;

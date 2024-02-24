@@ -1,7 +1,7 @@
 <?php
 
-use Modules\Developer\App\Http\Controllers\API\Developer\FailedJobController;
-use Modules\Developer\App\Http\Controllers\API\Developer\UserLogActivityController;
+use Modules\Developer\App\Http\Controllers\FailedJobController;
+use Modules\Developer\App\Http\Controllers\UserLogActivityController;
 use Illuminate\Support\Facades\Route;
 
 

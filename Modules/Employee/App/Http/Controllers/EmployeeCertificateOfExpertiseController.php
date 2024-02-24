@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers;
 
 use Modules\Employee\App\Events\EmployeeCertificateOfExpertiseEvent;
 use Modules\Employee\App\Exports\EmployeeCertificateOfExpertiseExport;

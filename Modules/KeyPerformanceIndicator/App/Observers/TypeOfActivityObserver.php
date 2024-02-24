@@ -1,17 +1,17 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Observers;
+namespace Modules\KeyPerformanceIndicator\App\Observers;
 
-use Modules\KeyPerformanceIndicator\Events\TypeOfActivityEvent;
+use Modules\KeyPerformanceIndicator\App\Events\TypeOfActivityEvent;
 use Modules\Developer\App\Events\UserLogActivityEvent;
-use Modules\KeyPerformanceIndicator\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 
 class TypeOfActivityObserver
 {
     /**
      * Dispatch events and log activities when the TypeOfActivity is created, updated, deleted, restored, or force deleted.
      *
-     * @param \App\Models\TypeOfActivity $data
+     * @param TypeOfActivity $data
      */
     protected function handleEventAndLogActivity(TypeOfActivity $data): void
     {

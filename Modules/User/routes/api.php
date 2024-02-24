@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\API\User\UserController;
-use App\Http\Controllers\API\User\UserFirebaseTokenController;
-use App\Http\Controllers\API\User\UserNotificationController;
-use App\Http\Controllers\API\User\UserVerificationCodeController;
+use Modules\User\App\Http\Controllers\API\User\UserController;
+use Modules\User\App\Http\Controllers\API\User\UserFirebaseTokenController;
+use Modules\User\App\Http\Controllers\API\User\UserNotificationController;
+use Modules\User\App\Http\Controllers\API\User\UserVerificationCodeController;
 use Illuminate\Support\Facades\Route;
 
 

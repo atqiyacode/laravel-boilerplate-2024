@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\JobVacancy\App\Scopes\CanDeleteScope;
-use Modules\JobVacancy\App\Scopes\DeveloperScope;
+use App\Scopes\CanDeleteScope;
+use App\Scopes\DeveloperScope;
 
 class JobVacancy extends Model
 {

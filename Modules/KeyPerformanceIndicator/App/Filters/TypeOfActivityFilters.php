@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Filters;
+namespace Modules\KeyPerformanceIndicator\App\Filters;
 
 use Essa\APIToolKit\Filters\QueryFilters;
 

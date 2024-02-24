@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\DynamicForm\App\Http\Controllers\API\DynamicForm;
+namespace Modules\DynamicForm\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\DynamicForm\App\Http\Requests\ResponseData\CreateResponseDataRequest;

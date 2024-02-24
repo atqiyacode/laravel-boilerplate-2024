@@ -1,8 +1,8 @@
 <?php
 
-use Modules\Others\App\Http\Controllers\API\Others\FAQController;
-use Modules\Others\App\Http\Controllers\API\Others\PrivacyPolicyController;
-use Modules\Others\App\Http\Controllers\API\Others\TermAndConditionController;
+use Modules\Others\App\Http\Controllers\FAQController;
+use Modules\Others\App\Http\Controllers\PrivacyPolicyController;
+use Modules\Others\App\Http\Controllers\TermAndConditionController;
 use Illuminate\Support\Facades\Route;
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Finance\App\Http\Controllers\API;
+namespace Modules\Finance\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\Finance\App\Http\Requests\PaymentPlan\CreatePaymentPlanRequest;

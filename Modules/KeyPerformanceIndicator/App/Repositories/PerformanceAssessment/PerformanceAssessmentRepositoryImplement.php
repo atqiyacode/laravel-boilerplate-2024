@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Repositories\PerformanceAssessment;
+namespace Modules\KeyPerformanceIndicator\App\Repositories\PerformanceAssessment;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use Modules\KeyPerformanceIndicator\Models\PerformanceAssessment;
+use Modules\KeyPerformanceIndicator\App\Models\PerformanceAssessment;
 
 class PerformanceAssessmentRepositoryImplement extends Eloquent implements PerformanceAssessmentRepository
 {

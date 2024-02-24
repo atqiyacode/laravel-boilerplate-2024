@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Master\App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\Master\App\Http\Requests\University\CreateUniversityRequest;

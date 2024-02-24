@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\App\Http\Controllers\API\KPI;
+namespace Modules\Employee\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\Employee\App\Http\Requests\EmployeeActivity\CreateEmployeeActivityRequest;

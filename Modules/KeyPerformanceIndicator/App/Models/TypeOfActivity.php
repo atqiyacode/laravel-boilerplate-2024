@@ -1,16 +1,16 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Models;
+namespace Modules\KeyPerformanceIndicator\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
-use Modules\KeyPerformanceIndicator\Filters\TypeOfActivityFilters;
+use Modules\KeyPerformanceIndicator\App\Filters\TypeOfActivityFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\KeyPerformanceIndicator\Scopes\CanDeleteScope;
-use Modules\KeyPerformanceIndicator\Scopes\DeveloperScope;
+use App\Scopes\CanDeleteScope;
+use App\Scopes\DeveloperScope;
 
 class TypeOfActivity extends Model
 {
@@ -42,6 +42,6 @@ class TypeOfActivity extends Model
 
     public function fieldOfWork(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\FieldOfWork::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\FieldOfWork::class);
     }
 }

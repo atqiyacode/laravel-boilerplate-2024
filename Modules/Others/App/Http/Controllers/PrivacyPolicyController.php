@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Others\App\Http\Controllers\API\Others;
+namespace Modules\Others\App\Http\Controllers;
 
 use Modules\Others\App\Events\PrivacyPolicyEvent;
 use Modules\Others\App\Exports\PrivacyPolicyExport;

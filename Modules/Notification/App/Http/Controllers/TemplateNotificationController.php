@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Notification\App\Http\Controllers\API\Notification;
+namespace Modules\Notification\App\Http\Controllers;
 
 use Modules\Notification\App\Events\TemplateNotificationEvent;
 use Modules\Notification\App\Exports\TemplateNotificationExport;

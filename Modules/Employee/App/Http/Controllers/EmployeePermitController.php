@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Modules\Employee\App\Http\Requests\EmployeePermit\CreateEmployeePermitRequest;

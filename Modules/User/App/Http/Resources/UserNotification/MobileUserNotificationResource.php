@@ -2,10 +2,10 @@
 
 namespace Modules\User\App\Http\Resources\UserNotification;
 
-use Modules\User\App\Http\Resources\TemplateNotification\MobileTemplateNotificationResource;
 use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Str;
+use Modules\Notification\App\Http\Resources\TemplateNotification\MobileTemplateNotificationResource;
 
 class MobileUserNotificationResource extends JsonResource
 {

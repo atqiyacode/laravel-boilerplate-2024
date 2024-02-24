@@ -1,13 +1,11 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Http\Controllers\API\KPI;
+namespace Modules\KeyPerformanceIndicator\App\Http\Controllers;
 
-use Modules\KeyPerformanceIndicator\Events\PerformanceAssessmentEvent;
-use Modules\KeyPerformanceIndicator\Exports\PerformanceAssessmentExport;
-use Modules\KeyPerformanceIndicator\Http\Controllers\Controller;
-use Modules\KeyPerformanceIndicator\Http\Requests\PerformanceAssessment\CreatePerformanceAssessmentRequest;
-use Modules\KeyPerformanceIndicator\Http\Requests\PerformanceAssessment\UpdatePerformanceAssessmentRequest;
-use Modules\KeyPerformanceIndicator\Services\PerformanceAssessment\PerformanceAssessmentService;
+use App\Http\Controllers\Controller;
+use Modules\KeyPerformanceIndicator\App\Http\Requests\PerformanceAssessment\CreatePerformanceAssessmentRequest;
+use Modules\KeyPerformanceIndicator\App\Http\Requests\PerformanceAssessment\UpdatePerformanceAssessmentRequest;
+use Modules\KeyPerformanceIndicator\App\Services\PerformanceAssessment\PerformanceAssessmentService;
 use Illuminate\Http\Request;
 
 class PerformanceAssessmentController extends Controller

@@ -7,8 +7,8 @@ use Haruncpi\LaravelUserActivity\Traits\Loggable;
 use Modules\Master\Filters\RoleFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Master\App\Scopes\CanDeleteScope;
-use Modules\Master\App\Scopes\DeveloperScope;
+use App\Scopes\CanDeleteScope;
+use App\Scopes\DeveloperScope;
 use Spatie\Permission\Models\Role as SpatieRole;
 
 class Role extends SpatieRole

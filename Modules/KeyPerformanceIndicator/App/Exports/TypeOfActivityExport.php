@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Exports;
+namespace Modules\KeyPerformanceIndicator\App\Exports;
 
-use Modules\KeyPerformanceIndicator\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

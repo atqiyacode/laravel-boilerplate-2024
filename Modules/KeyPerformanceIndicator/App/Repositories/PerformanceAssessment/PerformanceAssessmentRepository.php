@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Repositories\PerformanceAssessment;
+namespace Modules\KeyPerformanceIndicator\App\Repositories\PerformanceAssessment;
 
 use LaravelEasyRepository\Repository;
 

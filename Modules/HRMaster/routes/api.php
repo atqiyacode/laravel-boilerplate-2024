@@ -1,16 +1,11 @@
 <?php
 
-use Modules\HRMaster\App\Http\Controllers\API\HR\EmployeeController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\FieldOfWorkController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\JobApplicationController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\JobApplicationStatusController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\PositionController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\TypeOfPermitController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\WorkingAreaController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\JobVacancyController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\MainClassController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\ProjectController;
-use Modules\HRMaster\App\Http\Controllers\API\HR\UnitController;
+use Modules\HRMaster\App\Http\Controllers\FieldOfWorkController;
+use Modules\HRMaster\App\Http\Controllers\PositionController;
+use Modules\HRMaster\App\Http\Controllers\TypeOfPermitController;
+use Modules\HRMaster\App\Http\Controllers\WorkingAreaController;
+use Modules\HRMaster\App\Http\Controllers\MainClassController;
+use Modules\HRMaster\App\Http\Controllers\UnitController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -134,107 +129,4 @@ Route::middleware(['auth:sanctum'])->prefix('hr')->group(function () {
         Route::get('export/{format}', [TypeOfPermitController::class, 'export']);
     });
     /*=====  End of typeOfPermits   ======*/
-
-    /*===========================
-=           jobApplicationStatuses           =
-=============================*/
-
-    Route::apiResource('/jobApplicationStatuses', JobApplicationStatusController::class)->parameters([
-        'jobApplicationStatuses' => 'id'
-    ]);
-
-    Route::group([
-        'prefix' => 'jobApplicationStatuses',
-    ], function () {
-        Route::get('{id}/restore', [JobApplicationStatusController::class, 'restore']);
-        Route::delete('{id}/force-delete', [JobApplicationStatusController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [JobApplicationStatusController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [JobApplicationStatusController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [JobApplicationStatusController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [JobApplicationStatusController::class, 'export']);
-    });
-    /*=====  End of jobApplicationStatuses   ======*/
-
-    /*===========================
-=           jobApplications           =
-=============================*/
-
-    Route::apiResource('/jobApplications', JobApplicationController::class)->parameters([
-        'jobApplications' => 'id'
-    ]);
-
-    Route::group([
-        'prefix' => 'jobApplications',
-    ], function () {
-        Route::get('{id}/restore', [JobApplicationController::class, 'restore']);
-        Route::delete('{id}/force-delete', [JobApplicationController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [JobApplicationController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [JobApplicationController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [JobApplicationController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [JobApplicationController::class, 'export']);
-    });
-
-    /*=====  End of jobApplications   ======*/
-
-    /*===========================
-    =           employees           =
-    =============================*/
-
-    Route::apiResource('/employees', EmployeeController::class)->parameters([
-        'employees' => 'id'
-    ]);
-
-    Route::group([
-        'prefix' => 'employees',
-    ], function () {
-        Route::get('{id}/restore', [EmployeeController::class, 'restore']);
-        Route::delete('{id}/force-delete', [EmployeeController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [EmployeeController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [EmployeeController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [EmployeeController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [EmployeeController::class, 'export']);
-    });
-    /*=====  End of employees   ======*/
-
-
-    /*===========================
-=           projects           =
-=============================*/
-
-    Route::apiResource('/projects', ProjectController::class)->parameters([
-        'projects' => 'id'
-    ]);
-
-    Route::group([
-        'prefix' => 'projects',
-    ], function () {
-        Route::get('{id}/restore', [ProjectController::class, 'restore']);
-        Route::delete('{id}/force-delete', [ProjectController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [ProjectController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [ProjectController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [ProjectController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [ProjectController::class, 'export']);
-    });
-    /*=====  End of projects   ======*/
-
-    /*===========================
-    =           jobVacancies           =
-    =============================*/
-
-    Route::apiResource('/jobVacancies', JobVacancyController::class)->parameters([
-        'jobVacancies' => 'id'
-    ]);
-
-    Route::group([
-        'prefix' => 'jobVacancies',
-    ], function () {
-        Route::get('{id}/restore', [JobVacancyController::class, 'restore']);
-        Route::delete('{id}/force-delete', [JobVacancyController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [JobVacancyController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [JobVacancyController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [JobVacancyController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [JobVacancyController::class, 'export']);
-    });
-
-    /*=====  End of jobVacancies   ======*/
 });

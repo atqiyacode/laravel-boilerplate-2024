@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Others\App\Services\TermAndCondition;
+namespace App\Services\TermAndCondition;
 
 use LaravelEasyRepository\BaseService;
 

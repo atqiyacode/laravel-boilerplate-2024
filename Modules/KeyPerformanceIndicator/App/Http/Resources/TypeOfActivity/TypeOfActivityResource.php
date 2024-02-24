@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\Http\Resources\TypeOfActivity;
+namespace Modules\KeyPerformanceIndicator\App\Http\Resources\TypeOfActivity;
 
 use Modules\KeyPerformanceIndicator\Http\Resources\FieldOfWork\FieldOfWorkResource;
 use Illuminate\Http\Resources\Json\JsonResource;

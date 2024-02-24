@@ -1,9 +1,9 @@
 <?php
 
-use Modules\MobileApp\App\Http\Controllers\API\MasterMobile\MobileAppMenuController;
-use Modules\MobileApp\App\Http\Controllers\API\MasterMobile\MobileNewsController;
-use Modules\MobileApp\App\Http\Controllers\API\MasterMobile\MobileServerController;
-use Modules\MobileApp\App\Http\Controllers\API\MasterMobile\MobileVersionController;
+use Modules\MobileApp\App\Http\Controllers\MobileAppMenuController;
+use Modules\MobileApp\App\Http\Controllers\MobileNewsController;
+use Modules\MobileApp\App\Http\Controllers\MobileServerController;
+use Modules\MobileApp\App\Http\Controllers\MobileVersionController;
 use Illuminate\Support\Facades\Route;
 
 

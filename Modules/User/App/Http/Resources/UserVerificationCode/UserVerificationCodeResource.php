@@ -3,8 +3,8 @@
 namespace Modules\User\App\Http\Resources\UserVerificationCode;
 
 use Modules\User\App\Http\Resources\User\SimpleUserResource;
-use Modules\User\App\Http\Resources\VerificationCodeType\VerificationCodeTypeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Modules\Master\App\Http\Resources\VerificationCodeType\VerificationCodeTypeResource;
 
 class UserVerificationCodeResource extends JsonResource
 {
