@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeCertificateOfExpertise;
+namespace Modules\Employee\App\Repositories\EmployeeCertificateOfExpertise;
 
 use LaravelEasyRepository\Repository;
 

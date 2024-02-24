@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\FailedJob;
+namespace Modules\Developer\App\Services\FailedJob;
 
 use LaravelEasyRepository\BaseService;
 

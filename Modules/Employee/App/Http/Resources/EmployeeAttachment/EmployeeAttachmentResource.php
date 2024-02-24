@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeAttachment;
+namespace Modules\Employee\App\Http\Resources\EmployeeAttachment;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeAttachmentResource extends JsonResource

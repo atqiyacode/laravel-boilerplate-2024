@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Developer\App\Policies;
 
-use App\Models\User;
-use App\Models\UserLogActivity;
+use Modules\Developer\App\Models\User;
+use Modules\Developer\App\Models\UserLogActivity;
 use Illuminate\Auth\Access\Response;
 
 class UserLogActivityPolicy

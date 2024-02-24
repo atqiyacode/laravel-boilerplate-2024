@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeCertificateOfExpertise;
+namespace Modules\Employee\App\Http\Resources\EmployeeCertificateOfExpertise;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeCertificateOfExpertiseResource extends JsonResource

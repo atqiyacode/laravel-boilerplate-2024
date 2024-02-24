@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\VerificationCodeType;
+namespace Modules\Master\App\Http\Requests\VerificationCodeType;
 
 use Illuminate\Foundation\Http\FormRequest;
 

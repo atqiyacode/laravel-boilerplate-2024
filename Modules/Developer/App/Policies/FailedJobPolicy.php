@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Developer\App\Policies;
 
-use App\Models\FailedJob;
-use App\Models\User;
+use Modules\Developer\App\Models\FailedJob;
+use Modules\Developer\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class FailedJobPolicy

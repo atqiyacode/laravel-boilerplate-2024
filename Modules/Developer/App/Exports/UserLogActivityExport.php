@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Developer\App\Exports;
 
-use App\Models\UserLogActivity;
+use Modules\Developer\App\Models\UserLogActivity;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

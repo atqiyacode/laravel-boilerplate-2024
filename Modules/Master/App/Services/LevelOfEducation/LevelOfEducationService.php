@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\LevelOfEducation;
+namespace Modules\Master\App\Services\LevelOfEducation;
 
 use LaravelEasyRepository\BaseService;
 

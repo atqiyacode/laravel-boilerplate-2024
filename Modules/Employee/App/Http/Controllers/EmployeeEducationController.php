@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeEducation\CreateEmployeeEducationRequest;
-use App\Http\Requests\EmployeeEducation\UpdateEmployeeEducationRequest;
-use App\Services\EmployeeEducation\EmployeeEducationService;
+use Modules\Employee\App\Http\Requests\EmployeeEducation\CreateEmployeeEducationRequest;
+use Modules\Employee\App\Http\Requests\EmployeeEducation\UpdateEmployeeEducationRequest;
+use Modules\Employee\App\Services\EmployeeEducation\EmployeeEducationService;
 use Illuminate\Http\Request;
 
 class EmployeeEducationController extends Controller

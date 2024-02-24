@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\Permission;
+namespace Modules\Master\App\Services\Permission;
 
-use App\Http\Resources\Permission\PermissionResource;
+use Modules\Master\App\Http\Resources\Permission\PermissionResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\Permission\PermissionRepository;
+use Modules\Master\App\Repositories\Permission\PermissionRepository;
 
 class PermissionServiceImplement extends ServiceApi implements PermissionService
 {

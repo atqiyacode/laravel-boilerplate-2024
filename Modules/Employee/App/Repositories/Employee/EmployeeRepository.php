@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Employee;
+namespace Modules\Employee\App\Repositories\Employee;
 
 use LaravelEasyRepository\Repository;
 

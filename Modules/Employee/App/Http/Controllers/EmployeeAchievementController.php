@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeAchievement\CreateEmployeeAchievementRequest;
-use App\Http\Requests\EmployeeAchievement\UpdateEmployeeAchievementRequest;
-use App\Services\EmployeeAchievement\EmployeeAchievementService;
+use Modules\Employee\App\Http\Requests\EmployeeAchievement\CreateEmployeeAchievementRequest;
+use Modules\Employee\App\Http\Requests\EmployeeAchievement\UpdateEmployeeAchievementRequest;
+use Modules\Employee\App\Services\EmployeeAchievement\EmployeeAchievementService;
 use Illuminate\Http\Request;
 
 class EmployeeAchievementController extends Controller

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\PermitStatusEvent;
-use App\Exports\PermitStatusExport;
+use Modules\Master\App\Events\PermitStatusEvent;
+use Modules\Master\App\Exports\PermitStatusExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\PermitStatus\CreatePermitStatusRequest;
-use App\Http\Requests\PermitStatus\UpdatePermitStatusRequest;
-use App\Services\PermitStatus\PermitStatusService;
+use Modules\Master\App\Http\Requests\PermitStatus\CreatePermitStatusRequest;
+use Modules\Master\App\Http\Requests\PermitStatus\UpdatePermitStatusRequest;
+use Modules\Master\App\Services\PermitStatus\PermitStatusService;
 use Illuminate\Http\Request;
 
 class PermitStatusController extends Controller

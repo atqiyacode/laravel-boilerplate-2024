@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\VerificationCodeTypeEvent;
-use App\Exports\VerificationCodeTypeExport;
+use Modules\Master\App\Events\VerificationCodeTypeEvent;
+use Modules\Master\App\Exports\VerificationCodeTypeExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\VerificationCodeType\CreateVerificationCodeTypeRequest;
-use App\Http\Requests\VerificationCodeType\UpdateVerificationCodeTypeRequest;
-use App\Services\VerificationCodeType\VerificationCodeTypeService;
+use Modules\Master\App\Http\Requests\VerificationCodeType\CreateVerificationCodeTypeRequest;
+use Modules\Master\App\Http\Requests\VerificationCodeType\UpdateVerificationCodeTypeRequest;
+use Modules\Master\App\Services\VerificationCodeType\VerificationCodeTypeService;
 use Illuminate\Http\Request;
 
 class VerificationCodeTypeController extends Controller

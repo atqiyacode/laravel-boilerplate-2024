@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\StudyProgram;
+namespace Modules\Master\App\Repositories\StudyProgram;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\StudyProgram;
+use Modules\Master\App\Models\StudyProgram;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
@@ -15,7 +15,7 @@ class StudyProgramRepositoryImplement extends Eloquent implements StudyProgramRe
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

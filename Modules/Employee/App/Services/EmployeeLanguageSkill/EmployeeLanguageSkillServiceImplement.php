@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeLanguageSkill;
+namespace Modules\Employee\App\Services\EmployeeLanguageSkill;
 
-use App\Http\Resources\EmployeeLanguageSkill\EmployeeLanguageSkillResource;
+use Modules\Employee\App\Http\Resources\EmployeeLanguageSkill\EmployeeLanguageSkillResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeLanguageSkill\EmployeeLanguageSkillRepository;
+use Modules\Employee\App\Repositories\EmployeeLanguageSkill\EmployeeLanguageSkillRepository;
 
 class EmployeeLanguageSkillServiceImplement extends ServiceApi implements EmployeeLanguageSkillService
 {

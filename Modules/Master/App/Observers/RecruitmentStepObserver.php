@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\RecruitmentStepEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\RecruitmentStep;
+use Modules\Master\App\Events\RecruitmentStepEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\RecruitmentStep;
 
 class RecruitmentStepObserver
 {

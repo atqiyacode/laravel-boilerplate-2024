@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\VerificationCodeType;
+namespace Modules\Master\App\Http\Resources\VerificationCodeType;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeRelationReference\CreateEmployeeRelationReferenceRequest;
-use App\Http\Requests\EmployeeRelationReference\UpdateEmployeeRelationReferenceRequest;
-use App\Services\EmployeeRelationReference\EmployeeRelationReferenceService;
+use Modules\Employee\App\Http\Requests\EmployeeRelationReference\CreateEmployeeRelationReferenceRequest;
+use Modules\Employee\App\Http\Requests\EmployeeRelationReference\UpdateEmployeeRelationReferenceRequest;
+use Modules\Employee\App\Services\EmployeeRelationReference\EmployeeRelationReferenceService;
 use Illuminate\Http\Request;
 
 class EmployeeRelationReferenceController extends Controller

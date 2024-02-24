@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\UserLogActivity;
+namespace Modules\Developer\App\Http\Resources\UserLogActivity;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;

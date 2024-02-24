@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeEducation;
+namespace Modules\Employee\App\Services\EmployeeEducation;
 
-use App\Http\Resources\EmployeeEducation\EmployeeEducationResource;
+use Modules\Employee\App\Http\Resources\EmployeeEducation\EmployeeEducationResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeEducation\EmployeeEducationRepository;
+use Modules\Employee\App\Repositories\EmployeeEducation\EmployeeEducationRepository;
 
 class EmployeeEducationServiceImplement extends ServiceApi implements EmployeeEducationService
 {

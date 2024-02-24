@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\Role;
+namespace Modules\Master\App\Repositories\Role;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\Role;
+use Modules\Master\App\Models\Role;
 
 class RoleRepositoryImplement extends Eloquent implements RoleRepository
 {
@@ -13,7 +13,7 @@ class RoleRepositoryImplement extends Eloquent implements RoleRepository
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

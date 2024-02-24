@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\RecruitmentStepEvent;
-use App\Exports\RecruitmentStepExport;
+use Modules\Master\App\Events\RecruitmentStepEvent;
+use Modules\Master\App\Exports\RecruitmentStepExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\RecruitmentStep\CreateRecruitmentStepRequest;
-use App\Http\Requests\RecruitmentStep\UpdateRecruitmentStepRequest;
-use App\Services\RecruitmentStep\RecruitmentStepService;
+use Modules\Master\App\Http\Requests\RecruitmentStep\CreateRecruitmentStepRequest;
+use Modules\Master\App\Http\Requests\RecruitmentStep\UpdateRecruitmentStepRequest;
+use Modules\Master\App\Services\RecruitmentStep\RecruitmentStepService;
 use Illuminate\Http\Request;
 
 class RecruitmentStepController extends Controller

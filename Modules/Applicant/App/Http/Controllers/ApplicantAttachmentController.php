@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantAttachment\CreateApplicantAttachmentRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantAttachment\UpdateApplicantAttachmentRequest;
 use Modules\Applicant\App\Services\ApplicantAttachment\ApplicantAttachmentService;

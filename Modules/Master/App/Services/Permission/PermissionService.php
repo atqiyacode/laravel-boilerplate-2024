@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Permission;
+namespace Modules\Master\App\Services\Permission;
 
 use LaravelEasyRepository\BaseService;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\RecruitmentStep;
+namespace Modules\Master\App\Services\RecruitmentStep;
 
 use LaravelEasyRepository\BaseService;
 

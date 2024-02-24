@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\EmployeeType;
+namespace Modules\Master\App\Http\Resources\EmployeeType;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

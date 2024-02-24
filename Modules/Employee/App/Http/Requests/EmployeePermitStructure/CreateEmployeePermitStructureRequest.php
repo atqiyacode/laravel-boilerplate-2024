@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeePermitStructure;
+namespace Modules\Employee\App\Http\Requests\EmployeePermitStructure;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

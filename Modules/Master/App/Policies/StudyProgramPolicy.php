@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\StudyProgram;
-use App\Models\User;
+use Modules\Master\App\Models\StudyProgram;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class StudyProgramPolicy

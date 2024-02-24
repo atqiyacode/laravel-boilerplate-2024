@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\CompanyInformation;
+use Modules\Master\App\Models\CompanyInformation;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class CompanyInformationImport implements ToModel

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeAttachment;
+use Modules\Employee\App\Models\EmployeeAttachment;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeAttachmentImport implements ToModel

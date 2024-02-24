@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantResume\CreateApplicantResumeRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantResume\UpdateApplicantResumeRequest;
 use Modules\Applicant\App\Services\ApplicantResume\ApplicantResumeService;

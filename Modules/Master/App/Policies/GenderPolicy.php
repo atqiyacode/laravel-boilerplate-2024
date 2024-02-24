@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\Gender;
-use App\Models\User;
+use Modules\Master\App\Models\Gender;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class GenderPolicy

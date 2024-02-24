@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeActivity;
+namespace Modules\Employee\App\Http\Requests\EmployeeActivity;
 
 use Illuminate\Foundation\Http\FormRequest;
 

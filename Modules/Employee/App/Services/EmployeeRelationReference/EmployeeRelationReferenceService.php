@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeRelationReference;
+namespace Modules\Employee\App\Services\EmployeeRelationReference;
 
 use LaravelEasyRepository\BaseService;
 

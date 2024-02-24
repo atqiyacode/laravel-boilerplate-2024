@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Repositories\EmployeeActivity;
+namespace Modules\Employee\App\Repositories\EmployeeActivity;
 
-use App\Http\Resources\EmployeeActivity\EmployeeActivityResource;
+use Modules\Employee\App\Http\Resources\EmployeeActivity\EmployeeActivityResource;
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\EmployeeActivity;
+use Modules\Employee\App\Models\EmployeeActivity;
 
 class EmployeeActivityRepositoryImplement extends Eloquent implements EmployeeActivityRepository
 {
@@ -14,7 +14,7 @@ class EmployeeActivityRepositoryImplement extends Eloquent implements EmployeeAc
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

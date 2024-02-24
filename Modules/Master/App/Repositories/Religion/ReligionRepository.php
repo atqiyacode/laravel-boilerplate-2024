@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Religion;
+namespace Modules\Master\App\Repositories\Religion;
 
 use LaravelEasyRepository\Repository;
 

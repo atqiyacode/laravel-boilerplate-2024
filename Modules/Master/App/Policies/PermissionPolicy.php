@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\Permission;
-use App\Models\User;
+use Modules\Master\App\Models\Permission;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class PermissionPolicy

@@ -7,8 +7,8 @@ use Haruncpi\LaravelUserActivity\Traits\Loggable;
 use Modules\Master\Filters\RoleFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Scopes\CanDeleteScope;
-use App\Scopes\DeveloperScope;
+use Modules\Master\App\Scopes\CanDeleteScope;
+use Modules\Master\App\Scopes\DeveloperScope;
 use Spatie\Permission\Models\Role as SpatieRole;
 
 class Role extends SpatieRole
@@ -34,7 +34,7 @@ class Role extends SpatieRole
     ];
 }
 
-// use App\Http\Controllers\API\HR\JobApplicationController;
-// use App\Http\Controllers\API\HR\JobApplicationStatusController;
-// use App\Http\Controllers\API\HR\JobVacancyController;
-// use App\Http\Controllers\API\HR\ProjectController;
+// use Modules\Master\App\Http\Controllers\API\HR\JobApplicationController;
+// use Modules\Master\App\Http\Controllers\API\HR\JobApplicationStatusController;
+// use Modules\Master\App\Http\Controllers\API\HR\JobVacancyController;
+// use Modules\Master\App\Http\Controllers\API\HR\ProjectController;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeEmergencyContact;
+use Modules\Employee\App\Models\EmployeeEmergencyContact;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeEmergencyContactImport implements ToModel

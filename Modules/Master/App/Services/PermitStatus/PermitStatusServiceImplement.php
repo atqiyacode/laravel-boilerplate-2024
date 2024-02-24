@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\PermitStatus;
+namespace Modules\Master\App\Services\PermitStatus;
 
-use App\Http\Resources\PermitStatus\PermitStatusResource;
+use Modules\Master\App\Http\Resources\PermitStatus\PermitStatusResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\PermitStatus\PermitStatusRepository;
+use Modules\Master\App\Repositories\PermitStatus\PermitStatusRepository;
 
 class PermitStatusServiceImplement extends ServiceApi implements PermitStatusService
 {

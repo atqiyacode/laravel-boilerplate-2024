@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\Religion;
+namespace Modules\Master\App\Http\Resources\Religion;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

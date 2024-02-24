@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\Role;
+use Modules\Master\App\Models\Role;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class RoleImport implements ToModel

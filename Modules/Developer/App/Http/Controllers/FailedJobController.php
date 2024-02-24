@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\Developer;
+namespace Modules\Developer\App\Http\Controllers\API\Developer;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\FailedJob\CreateFailedJobRequest;
-use App\Http\Requests\FailedJob\UpdateFailedJobRequest;
-use App\Services\FailedJob\FailedJobService;
+use Modules\Developer\App\Http\Requests\FailedJob\CreateFailedJobRequest;
+use Modules\Developer\App\Http\Requests\FailedJob\UpdateFailedJobRequest;
+use Modules\Developer\App\Services\FailedJob\FailedJobService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 

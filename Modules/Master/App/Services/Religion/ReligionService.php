@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Religion;
+namespace Modules\Master\App\Services\Religion;
 
 use LaravelEasyRepository\BaseService;
 

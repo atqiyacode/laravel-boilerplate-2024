@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\EmployeeOrganizationExperience;
+namespace Modules\Employee\App\Repositories\EmployeeOrganizationExperience;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\EmployeeOrganizationExperience;
+use Modules\Employee\App\Models\EmployeeOrganizationExperience;
 
 class EmployeeOrganizationExperienceRepositoryImplement extends Eloquent implements EmployeeOrganizationExperienceRepository
 {
@@ -13,7 +13,7 @@ class EmployeeOrganizationExperienceRepositoryImplement extends Eloquent impleme
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeAttendance;
+namespace Modules\Employee\App\Services\EmployeeAttendance;
 
 use LaravelEasyRepository\BaseService;
 

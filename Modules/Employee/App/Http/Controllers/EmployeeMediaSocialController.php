@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeMediaSocial\CreateEmployeeMediaSocialRequest;
-use App\Http\Requests\EmployeeMediaSocial\UpdateEmployeeMediaSocialRequest;
-use App\Services\EmployeeMediaSocial\EmployeeMediaSocialService;
+use Modules\Employee\App\Http\Requests\EmployeeMediaSocial\CreateEmployeeMediaSocialRequest;
+use Modules\Employee\App\Http\Requests\EmployeeMediaSocial\UpdateEmployeeMediaSocialRequest;
+use Modules\Employee\App\Services\EmployeeMediaSocial\EmployeeMediaSocialService;
 use Illuminate\Http\Request;
 
 class EmployeeMediaSocialController extends Controller

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\CompanyInformation;
-use App\Models\User;
+use Modules\Master\App\Models\CompanyInformation;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class CompanyInformationPolicy

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\CompanyInformationEvent;
-use App\Exports\CompanyInformationExport;
+use Modules\Master\App\Events\CompanyInformationEvent;
+use Modules\Master\App\Exports\CompanyInformationExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CompanyInformation\CreateCompanyInformationRequest;
-use App\Http\Requests\CompanyInformation\UpdateCompanyInformationRequest;
-use App\Services\CompanyInformation\CompanyInformationService;
+use Modules\Master\App\Http\Requests\CompanyInformation\CreateCompanyInformationRequest;
+use Modules\Master\App\Http\Requests\CompanyInformation\UpdateCompanyInformationRequest;
+use Modules\Master\App\Services\CompanyInformation\CompanyInformationService;
 use Illuminate\Http\Request;
 
 class CompanyInformationController extends Controller

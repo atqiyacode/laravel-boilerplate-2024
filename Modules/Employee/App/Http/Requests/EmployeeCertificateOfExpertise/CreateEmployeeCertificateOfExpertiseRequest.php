@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeCertificateOfExpertise;
+namespace Modules\Employee\App\Http\Requests\EmployeeCertificateOfExpertise;
 
 use Illuminate\Foundation\Http\FormRequest;
 

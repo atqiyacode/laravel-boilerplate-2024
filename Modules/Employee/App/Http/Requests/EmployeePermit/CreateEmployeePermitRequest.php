@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeePermit;
+namespace Modules\Employee\App\Http\Requests\EmployeePermit;
 
 use Illuminate\Foundation\Http\FormRequest;
 

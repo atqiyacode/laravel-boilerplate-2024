@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Employee\App\Exports;
 
-use App\Models\EmployeeAchievement;
+use Modules\Employee\App\Models\EmployeeAchievement;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

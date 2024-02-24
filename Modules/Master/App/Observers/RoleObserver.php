@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\RoleEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\Role;
+use Modules\Master\App\Events\RoleEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\Role;
 
 class RoleObserver
 {

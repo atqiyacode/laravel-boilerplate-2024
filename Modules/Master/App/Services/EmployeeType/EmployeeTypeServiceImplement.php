@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeType;
+namespace Modules\Master\App\Services\EmployeeType;
 
-use App\Http\Resources\EmployeeType\EmployeeTypeResource;
+use Modules\Master\App\Http\Resources\EmployeeType\EmployeeTypeResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeType\EmployeeTypeRepository;
+use Modules\Master\App\Repositories\EmployeeType\EmployeeTypeRepository;
 
 class EmployeeTypeServiceImplement extends ServiceApi implements EmployeeTypeService
 {

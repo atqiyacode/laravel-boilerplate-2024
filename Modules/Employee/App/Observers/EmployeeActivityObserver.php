@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeeActivityEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeeActivity;
+use Modules\Employee\App\Events\EmployeeActivityEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeeActivity;
 
 class EmployeeActivityObserver
 {

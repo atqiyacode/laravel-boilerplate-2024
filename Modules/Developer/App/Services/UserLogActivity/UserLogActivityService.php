@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\UserLogActivity;
+namespace Modules\Developer\App\Services\UserLogActivity;
 
 use LaravelEasyRepository\BaseService;
 

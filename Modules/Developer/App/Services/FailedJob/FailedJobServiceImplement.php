@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\FailedJob;
+namespace Modules\Developer\App\Services\FailedJob;
 
-use App\Http\Resources\FailedJob\FailedJobResource;
+use Modules\Developer\App\Http\Resources\FailedJob\FailedJobResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\FailedJob\FailedJobRepository;
+use Modules\Developer\App\Repositories\FailedJob\FailedJobRepository;
 
 class FailedJobServiceImplement extends ServiceApi implements FailedJobService
 {

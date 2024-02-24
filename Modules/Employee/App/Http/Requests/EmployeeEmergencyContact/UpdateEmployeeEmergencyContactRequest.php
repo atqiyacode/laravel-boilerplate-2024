@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeEmergencyContact;
+namespace Modules\Employee\App\Http\Requests\EmployeeEmergencyContact;
 
 use Illuminate\Foundation\Http\FormRequest;
 

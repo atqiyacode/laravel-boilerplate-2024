@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\RecruitmentStep;
+namespace Modules\Master\App\Http\Requests\RecruitmentStep;
 
 use Illuminate\Foundation\Http\FormRequest;
 

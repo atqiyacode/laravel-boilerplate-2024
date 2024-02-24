@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\LevelOfEducationEvent;
-use App\Exports\LevelOfEducationExport;
+use Modules\Master\App\Events\LevelOfEducationEvent;
+use Modules\Master\App\Exports\LevelOfEducationExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\LevelOfEducation\CreateLevelOfEducationRequest;
-use App\Http\Requests\LevelOfEducation\UpdateLevelOfEducationRequest;
-use App\Services\LevelOfEducation\LevelOfEducationService;
+use Modules\Master\App\Http\Requests\LevelOfEducation\CreateLevelOfEducationRequest;
+use Modules\Master\App\Http\Requests\LevelOfEducation\UpdateLevelOfEducationRequest;
+use Modules\Master\App\Services\LevelOfEducation\LevelOfEducationService;
 use Illuminate\Http\Request;
 
 class LevelOfEducationController extends Controller

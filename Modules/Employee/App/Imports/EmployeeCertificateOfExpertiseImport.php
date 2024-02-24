@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeCertificateOfExpertise;
+use Modules\Employee\App\Models\EmployeeCertificateOfExpertise;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeCertificateOfExpertiseImport implements ToModel

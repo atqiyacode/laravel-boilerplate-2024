@@ -20,5 +20,8 @@
     "AuthBackOffice": true,
     "Public": true,
     "Employee": true,
-    "Project": true
+    "Project": true,
+    "JobApplication": true,
+    "JobVacancy": true,
+    "DynamicForm": true
 }

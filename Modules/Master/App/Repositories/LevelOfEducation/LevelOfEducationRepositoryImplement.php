@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\LevelOfEducation;
+namespace Modules\Master\App\Repositories\LevelOfEducation;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\LevelOfEducation;
+use Modules\Master\App\Models\LevelOfEducation;
 
 class LevelOfEducationRepositoryImplement extends Eloquent implements LevelOfEducationRepository
 {
@@ -13,7 +13,7 @@ class LevelOfEducationRepositoryImplement extends Eloquent implements LevelOfEdu
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

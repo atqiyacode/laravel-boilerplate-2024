@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\FailedJob;
+namespace Modules\Developer\App\Repositories\FailedJob;
 
 use LaravelEasyRepository\Repository;
 

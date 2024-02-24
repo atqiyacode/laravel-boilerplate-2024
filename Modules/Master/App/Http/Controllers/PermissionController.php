@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\PermissionEvent;
-use App\Exports\PermissionExport;
+use Modules\Master\App\Events\PermissionEvent;
+use Modules\Master\App\Exports\PermissionExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Permission\CreatePermissionRequest;
-use App\Http\Requests\Permission\UpdatePermissionRequest;
-use App\Services\Permission\PermissionService;
+use Modules\Master\App\Http\Requests\Permission\CreatePermissionRequest;
+use Modules\Master\App\Http\Requests\Permission\UpdatePermissionRequest;
+use Modules\Master\App\Services\Permission\PermissionService;
 use Illuminate\Http\Request;
 
 class PermissionController extends Controller

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\UniversityEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\University;
+use Modules\Master\App\Events\UniversityEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\University;
 
 class UniversityObserver
 {

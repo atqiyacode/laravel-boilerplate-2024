@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\ReligionEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\Religion;
+use Modules\Master\App\Events\ReligionEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\Religion;
 
 class ReligionObserver
 {

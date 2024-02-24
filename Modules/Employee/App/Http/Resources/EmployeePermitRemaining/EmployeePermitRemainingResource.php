@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeePermitRemaining;
+namespace Modules\Employee\App\Http\Resources\EmployeePermitRemaining;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeePermitRemainingResource extends JsonResource

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\PermitStatus;
+namespace Modules\Master\App\Services\PermitStatus;
 
 use LaravelEasyRepository\BaseService;
 

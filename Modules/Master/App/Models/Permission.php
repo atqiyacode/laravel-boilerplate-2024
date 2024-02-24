@@ -7,8 +7,8 @@ use Haruncpi\LaravelUserActivity\Traits\Loggable;
 use Modules\Master\Filters\PermissionFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Scopes\CanDeleteScope;
-use App\Scopes\DeveloperScope;
+use Modules\Master\App\Scopes\CanDeleteScope;
+use Modules\Master\App\Scopes\DeveloperScope;
 use Spatie\Permission\Models\Permission as SpatiePermission;
 
 class Permission extends SpatiePermission

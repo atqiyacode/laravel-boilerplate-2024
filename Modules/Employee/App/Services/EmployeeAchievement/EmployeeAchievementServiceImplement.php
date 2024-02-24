@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeAchievement;
+namespace Modules\Employee\App\Services\EmployeeAchievement;
 
-use App\Http\Resources\EmployeeAchievement\EmployeeAchievementResource;
+use Modules\Employee\App\Http\Resources\EmployeeAchievement\EmployeeAchievementResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeAchievement\EmployeeAchievementRepository;
+use Modules\Employee\App\Repositories\EmployeeAchievement\EmployeeAchievementRepository;
 
 class EmployeeAchievementServiceImplement extends ServiceApi implements EmployeeAchievementService
 {

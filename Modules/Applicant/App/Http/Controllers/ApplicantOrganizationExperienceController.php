@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantOrganizationExperience\CreateApplicantOrganizationExperienceRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantOrganizationExperience\UpdateApplicantOrganizationExperienceRequest;
 use Modules\Applicant\App\Services\ApplicantOrganizationExperience\ApplicantOrganizationExperienceService;

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeMediaSocial;
+namespace Modules\Employee\App\Services\EmployeeMediaSocial;
 
-use App\Http\Resources\EmployeeMediaSocial\EmployeeMediaSocialResource;
+use Modules\Employee\App\Http\Resources\EmployeeMediaSocial\EmployeeMediaSocialResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeMediaSocial\EmployeeMediaSocialRepository;
+use Modules\Employee\App\Repositories\EmployeeMediaSocial\EmployeeMediaSocialRepository;
 
 class EmployeeMediaSocialServiceImplement extends ServiceApi implements EmployeeMediaSocialService
 {

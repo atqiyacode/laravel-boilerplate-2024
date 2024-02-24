@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\EmployeeType;
-use App\Models\User;
+use Modules\Master\App\Models\EmployeeType;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class EmployeeTypePolicy

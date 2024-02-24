@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeePermitEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeePermit;
+use Modules\Employee\App\Events\EmployeePermitEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeePermit;
 
 class EmployeePermitObserver
 {

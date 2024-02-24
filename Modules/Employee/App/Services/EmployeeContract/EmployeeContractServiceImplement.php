@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeContract;
+namespace Modules\Employee\App\Services\EmployeeContract;
 
-use App\Http\Resources\EmployeeContract\EmployeeContractResource;
+use Modules\Employee\App\Http\Resources\EmployeeContract\EmployeeContractResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeContract\EmployeeContractRepository;
+use Modules\Employee\App\Repositories\EmployeeContract\EmployeeContractRepository;
 
 class EmployeeContractServiceImplement extends ServiceApi implements EmployeeContractService
 {

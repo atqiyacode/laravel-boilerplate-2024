@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\Permission;
+namespace Modules\Master\App\Repositories\Permission;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\Permission;
+use Modules\Master\App\Models\Permission;
 
 class PermissionRepositoryImplement extends Eloquent implements PermissionRepository
 {
@@ -13,7 +13,7 @@ class PermissionRepositoryImplement extends Eloquent implements PermissionReposi
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

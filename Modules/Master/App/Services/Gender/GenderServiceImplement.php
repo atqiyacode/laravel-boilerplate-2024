@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\Gender;
+namespace Modules\Master\App\Services\Gender;
 
-use App\Http\Resources\Gender\GenderResource;
-use App\Http\Resources\Gender\PublicGenderResource;
+use Modules\Master\App\Http\Resources\Gender\GenderResource;
+use Modules\Master\App\Http\Resources\Gender\PublicGenderResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\Gender\GenderRepository;
+use Modules\Master\App\Repositories\Gender\GenderRepository;
 
 class GenderServiceImplement extends ServiceApi implements GenderService
 {

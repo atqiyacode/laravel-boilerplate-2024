@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\Gender;
+namespace Modules\Master\App\Repositories\Gender;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\Gender;
+use Modules\Master\App\Models\Gender;
 
 class GenderRepositoryImplement extends Eloquent implements GenderRepository
 {
@@ -13,7 +13,7 @@ class GenderRepositoryImplement extends Eloquent implements GenderRepository
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

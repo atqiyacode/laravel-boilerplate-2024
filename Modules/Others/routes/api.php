@@ -1,19 +1,48 @@
 <?php
 
-use Illuminate\Http\Request;
+use Modules\Others\App\Http\Controllers\API\Others\FAQController;
+use Modules\Others\App\Http\Controllers\API\Others\PrivacyPolicyController;
+use Modules\Others\App\Http\Controllers\API\Others\TermAndConditionController;
 use Illuminate\Support\Facades\Route;
 
-/*
-    |--------------------------------------------------------------------------
-    | API Routes
-    |--------------------------------------------------------------------------
-    |
-    | Here is where you can register API routes for your application. These
-    | routes are loaded by the RouteServiceProvider within a group which
-    | is assigned the "api" middleware group. Enjoy building your API!
-    |
-*/
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
-    Route::get('others', fn (Request $request) => $request->user())->name('others');
+Route::middleware(['auth:sanctum'])->prefix('others')->group(function () {
+    /*===========================
+    =           fAQS           =
+    =============================*/
+
+    Route::apiResource('/faqs', FAQController::class)->parameters([
+        'faqs' => 'id'
+    ]);
+
+    Route::group([
+        'prefix' => 'faqs',
+    ], function () {
+        Route::get('{id}/restore', [FAQController::class, 'restore']);
+        Route::delete('{id}/force-delete', [FAQController::class, 'forceDelete']);
+        Route::post('destroy-multiple', [FAQController::class, 'destroyMultiple']);
+        Route::post('restore-multiple', [FAQController::class, 'restoreMultiple']);
+        Route::post('force-delete-multiple', [FAQController::class, 'forceDeleteMultiple']);
+        Route::get('export/{format}', [FAQController::class, 'export']);
+    });
+    /*=====  End of fAQS   ======*/
+
+    /*===========================
+    =           termAndConditions           =
+    =============================*/
+
+    Route::apiResource('/termAndConditions', TermAndConditionController::class)->parameters([
+        'termAndConditions' => 'id'
+    ])->only('index', 'update');
+
+    /*=====  End of termAndConditions   ======*/
+
+    /*===========================
+    =           privacyPolicies           =
+    =============================*/
+
+    Route::apiResource('/privacyPolicies', PrivacyPolicyController::class)->parameters([
+        'privacyPolicies' => 'id'
+    ])->only('index', 'update');
+    /*=====  End of privacyPolicies   ======*/
 });

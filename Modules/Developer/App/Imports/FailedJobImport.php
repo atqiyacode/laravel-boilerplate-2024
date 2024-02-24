@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Developer\App\Imports;
 
-use App\Models\FailedJob;
+use Modules\Developer\App\Models\FailedJob;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class FailedJobImport implements ToModel

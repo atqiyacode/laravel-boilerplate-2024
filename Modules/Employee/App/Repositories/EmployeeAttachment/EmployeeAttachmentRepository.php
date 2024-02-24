@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeAttachment;
+namespace Modules\Employee\App\Repositories\EmployeeAttachment;
 
 use LaravelEasyRepository\Repository;
 

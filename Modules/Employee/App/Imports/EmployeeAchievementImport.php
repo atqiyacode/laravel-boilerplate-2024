@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeAchievement;
+use Modules\Employee\App\Models\EmployeeAchievement;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeAchievementImport implements ToModel

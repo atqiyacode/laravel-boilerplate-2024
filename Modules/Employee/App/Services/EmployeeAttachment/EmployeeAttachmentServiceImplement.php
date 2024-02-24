@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeAttachment;
+namespace Modules\Employee\App\Services\EmployeeAttachment;
 
-use App\Http\Resources\EmployeeAttachment\EmployeeAttachmentResource;
+use Modules\Employee\App\Http\Resources\EmployeeAttachment\EmployeeAttachmentResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeAttachment\EmployeeAttachmentRepository;
+use Modules\Employee\App\Repositories\EmployeeAttachment\EmployeeAttachmentRepository;
 
 class EmployeeAttachmentServiceImplement extends ServiceApi implements EmployeeAttachmentService
 {

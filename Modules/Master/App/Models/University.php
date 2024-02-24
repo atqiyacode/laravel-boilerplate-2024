@@ -5,12 +5,12 @@ namespace Modules\Master\App\Models;
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
 use Modules\Master\Filters\UniversityFilters;
-use App\Scopes\CanDeleteScope;
+use Modules\Master\App\Scopes\CanDeleteScope;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Scopes\DeveloperScope;
+use Modules\Master\App\Scopes\DeveloperScope;
 
 class University extends Model
 {

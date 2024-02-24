@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeEmergencyContact;
+namespace Modules\Employee\App\Services\EmployeeEmergencyContact;
 
-use App\Http\Resources\EmployeeEmergencyContact\EmployeeEmergencyContactResource;
+use Modules\Employee\App\Http\Resources\EmployeeEmergencyContact\EmployeeEmergencyContactResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeEmergencyContact\EmployeeEmergencyContactRepository;
+use Modules\Employee\App\Repositories\EmployeeEmergencyContact\EmployeeEmergencyContactRepository;
 
 class EmployeeEmergencyContactServiceImplement extends ServiceApi implements EmployeeEmergencyContactService
 {

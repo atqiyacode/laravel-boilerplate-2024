@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeActivity;
+namespace Modules\Employee\App\Services\EmployeeActivity;
 
 use LaravelEasyRepository\BaseService;
 

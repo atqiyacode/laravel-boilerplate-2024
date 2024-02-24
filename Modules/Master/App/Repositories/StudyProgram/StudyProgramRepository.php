@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\StudyProgram;
+namespace Modules\Master\App\Repositories\StudyProgram;
 
 use LaravelEasyRepository\Repository;
 

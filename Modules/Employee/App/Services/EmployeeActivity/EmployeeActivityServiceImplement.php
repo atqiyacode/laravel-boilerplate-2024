@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeActivity;
+namespace Modules\Employee\App\Services\EmployeeActivity;
 
-use App\Http\Resources\EmployeeActivity\EmployeeActivityResource;
+use Modules\Employee\App\Http\Resources\EmployeeActivity\EmployeeActivityResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeActivity\EmployeeActivityRepository;
+use Modules\Employee\App\Repositories\EmployeeActivity\EmployeeActivityRepository;
 
 class EmployeeActivityServiceImplement extends ServiceApi implements EmployeeActivityService
 {

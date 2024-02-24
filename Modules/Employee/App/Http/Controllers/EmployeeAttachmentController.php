@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeAttachment\CreateEmployeeAttachmentRequest;
-use App\Http\Requests\EmployeeAttachment\UpdateEmployeeAttachmentRequest;
-use App\Services\EmployeeAttachment\EmployeeAttachmentService;
+use Modules\Employee\App\Http\Requests\EmployeeAttachment\CreateEmployeeAttachmentRequest;
+use Modules\Employee\App\Http\Requests\EmployeeAttachment\UpdateEmployeeAttachmentRequest;
+use Modules\Employee\App\Services\EmployeeAttachment\EmployeeAttachmentService;
 use Illuminate\Http\Request;
 
 class EmployeeAttachmentController extends Controller

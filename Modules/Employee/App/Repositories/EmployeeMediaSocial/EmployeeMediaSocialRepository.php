@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeMediaSocial;
+namespace Modules\Employee\App\Repositories\EmployeeMediaSocial;
 
 use LaravelEasyRepository\Repository;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeAchievement;
+namespace Modules\Employee\App\Repositories\EmployeeAchievement;
 
 use LaravelEasyRepository\Repository;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\Role;
+namespace Modules\Master\App\Services\Role;
 
-use App\Http\Resources\Role\RoleResource;
+use Modules\Master\App\Http\Resources\Role\RoleResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\Role\RoleRepository;
+use Modules\Master\App\Repositories\Role\RoleRepository;
 
 class RoleServiceImplement extends ServiceApi implements RoleService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\RecruitmentStep;
+use Modules\Master\App\Models\RecruitmentStep;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class RecruitmentStepImport implements ToModel

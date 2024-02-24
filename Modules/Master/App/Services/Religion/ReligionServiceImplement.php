@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\Religion;
+namespace Modules\Master\App\Services\Religion;
 
-use App\Http\Resources\Religion\PublicReligionResource;
-use App\Http\Resources\Religion\ReligionResource;
+use Modules\Master\App\Http\Resources\Religion\PublicReligionResource;
+use Modules\Master\App\Http\Resources\Religion\ReligionResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\Religion\ReligionRepository;
+use Modules\Master\App\Repositories\Religion\ReligionRepository;
 
 class ReligionServiceImplement extends ServiceApi implements ReligionService
 {

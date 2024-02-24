@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeRelationReference;
+namespace Modules\Employee\App\Services\EmployeeRelationReference;
 
-use App\Http\Resources\EmployeeRelationReference\EmployeeRelationReferenceResource;
+use Modules\Employee\App\Http\Resources\EmployeeRelationReference\EmployeeRelationReferenceResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeRelationReference\EmployeeRelationReferenceRepository;
+use Modules\Employee\App\Repositories\EmployeeRelationReference\EmployeeRelationReferenceRepository;
 
 class EmployeeRelationReferenceServiceImplement extends ServiceApi implements EmployeeRelationReferenceService
 {

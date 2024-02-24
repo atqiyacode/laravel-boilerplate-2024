@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeExperience;
+namespace Modules\Employee\App\Services\EmployeeExperience;
 
-use App\Http\Resources\EmployeeExperience\EmployeeExperienceResource;
+use Modules\Employee\App\Http\Resources\EmployeeExperience\EmployeeExperienceResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeExperience\EmployeeExperienceRepository;
+use Modules\Employee\App\Repositories\EmployeeExperience\EmployeeExperienceRepository;
 
 class EmployeeExperienceServiceImplement extends ServiceApi implements EmployeeExperienceService
 {

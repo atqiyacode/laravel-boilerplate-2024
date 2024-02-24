@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\UserLogActivity;
+namespace Modules\Developer\App\Services\UserLogActivity;
 
-use App\Http\Resources\UserLogActivity\MobileLoginHistoryResource;
-use App\Http\Resources\UserLogActivity\UserLogActivityResource;
+use Modules\Developer\App\Http\Resources\UserLogActivity\MobileLoginHistoryResource;
+use Modules\Developer\App\Http\Resources\UserLogActivity\UserLogActivityResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\UserLogActivity\UserLogActivityRepository;
+use Modules\Developer\App\Repositories\UserLogActivity\UserLogActivityRepository;
 
 class UserLogActivityServiceImplement extends ServiceApi implements UserLogActivityService
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\FailedJob;
+namespace Modules\Developer\App\Http\Resources\FailedJob;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

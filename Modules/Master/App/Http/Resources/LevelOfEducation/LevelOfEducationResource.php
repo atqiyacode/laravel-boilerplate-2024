@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\LevelOfEducation;
+namespace Modules\Master\App\Http\Resources\LevelOfEducation;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

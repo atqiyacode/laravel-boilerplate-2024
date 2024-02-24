@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Resources\EmployeePermit;
+namespace Modules\Employee\App\Http\Resources\EmployeePermit;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
-use App\Models\PermitStatus;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Models\PermitStatus;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Cache;
 

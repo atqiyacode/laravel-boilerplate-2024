@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeeAchievementEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeeAchievement;
+use Modules\Employee\App\Events\EmployeeAchievementEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeeAchievement;
 
 class EmployeeAchievementObserver
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\University;
+namespace Modules\Master\App\Services\University;
 
-use App\Http\Resources\University\UniversityResource;
+use Modules\Master\App\Http\Resources\University\UniversityResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\University\UniversityRepository;
+use Modules\Master\App\Repositories\University\UniversityRepository;
 
 class UniversityServiceImplement extends ServiceApi implements UniversityService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeDetail;
+namespace Modules\Employee\App\Http\Resources\EmployeeDetail;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 

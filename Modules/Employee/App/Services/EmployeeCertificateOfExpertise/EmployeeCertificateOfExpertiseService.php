@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeCertificateOfExpertise;
+namespace Modules\Employee\App\Services\EmployeeCertificateOfExpertise;
 
 use LaravelEasyRepository\BaseService;
 

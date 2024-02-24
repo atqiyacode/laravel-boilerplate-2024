@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\GenderEvent;
-use App\Exports\GenderExport;
+use Modules\Master\App\Events\GenderEvent;
+use Modules\Master\App\Exports\GenderExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Gender\CreateGenderRequest;
-use App\Http\Requests\Gender\UpdateGenderRequest;
-use App\Services\Gender\GenderService;
+use Modules\Master\App\Http\Requests\Gender\CreateGenderRequest;
+use Modules\Master\App\Http\Requests\Gender\UpdateGenderRequest;
+use Modules\Master\App\Services\Gender\GenderService;
 use Illuminate\Http\Request;
 
 class GenderController extends Controller

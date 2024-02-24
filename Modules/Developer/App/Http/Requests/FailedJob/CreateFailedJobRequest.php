@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\FailedJob;
+namespace Modules\Developer\App\Http\Requests\FailedJob;
 
 use Illuminate\Foundation\Http\FormRequest;
 

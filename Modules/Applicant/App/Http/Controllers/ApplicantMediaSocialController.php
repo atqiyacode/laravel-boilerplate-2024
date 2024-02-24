@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantMediaSocial\CreateApplicantMediaSocialRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantMediaSocial\UpdateApplicantMediaSocialRequest;
 use Modules\Applicant\App\Services\ApplicantMediaSocial\ApplicantMediaSocialService;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeePerformanceAssessment;
+use Modules\Employee\App\Models\EmployeePerformanceAssessment;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeePerformanceAssessmentImport implements ToModel

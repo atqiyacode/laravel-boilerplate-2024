@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\University\CreateUniversityRequest;
-use App\Http\Requests\University\UpdateUniversityRequest;
-use App\Services\University\UniversityService;
+use Modules\Master\App\Http\Requests\University\CreateUniversityRequest;
+use Modules\Master\App\Http\Requests\University\UpdateUniversityRequest;
+use Modules\Master\App\Services\University\UniversityService;
 use Illuminate\Http\Request;
 
 class UniversityController extends Controller

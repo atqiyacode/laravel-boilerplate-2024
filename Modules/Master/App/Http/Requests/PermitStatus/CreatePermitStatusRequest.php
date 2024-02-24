@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\PermitStatus;
+namespace Modules\Master\App\Http\Requests\PermitStatus;
 
 use Illuminate\Foundation\Http\FormRequest;
 

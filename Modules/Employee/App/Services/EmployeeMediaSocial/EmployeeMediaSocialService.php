@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeMediaSocial;
+namespace Modules\Employee\App\Services\EmployeeMediaSocial;
 
 use LaravelEasyRepository\BaseService;
 

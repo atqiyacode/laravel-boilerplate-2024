@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\PermitStatusEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\PermitStatus;
+use Modules\Master\App\Events\PermitStatusEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\PermitStatus;
 
 class PermitStatusObserver
 {

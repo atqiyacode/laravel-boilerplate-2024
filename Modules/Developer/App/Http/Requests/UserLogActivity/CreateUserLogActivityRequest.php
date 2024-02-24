@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\UserLogActivity;
+namespace Modules\Developer\App\Http\Requests\UserLogActivity;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -9,8 +9,8 @@ use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Scopes\CanDeleteScope;
-use App\Scopes\DeveloperScope;
+use Modules\HRMaster\App\Scopes\CanDeleteScope;
+use Modules\HRMaster\App\Scopes\DeveloperScope;
 
 class TypeOfPermit extends Model
 {

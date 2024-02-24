@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\GenderEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\Gender;
+use Modules\Master\App\Events\GenderEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\Gender;
 
 class GenderObserver
 {

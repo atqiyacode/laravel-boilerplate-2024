@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeContract;
+namespace Modules\Employee\App\Http\Requests\EmployeeContract;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

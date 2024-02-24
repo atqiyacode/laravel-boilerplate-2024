@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Developer\App\Observers;
 
-use App\Events\FailedJobEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\FailedJob;
+use Modules\Developer\App\Events\FailedJobEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Developer\App\Models\FailedJob;
 
 class FailedJobObserver
 {

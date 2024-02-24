@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
-use App\Events\EmployeeCertificateOfExpertiseEvent;
-use App\Exports\EmployeeCertificateOfExpertiseExport;
+use Modules\Employee\App\Events\EmployeeCertificateOfExpertiseEvent;
+use Modules\Employee\App\Exports\EmployeeCertificateOfExpertiseExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeCertificateOfExpertise\CreateEmployeeCertificateOfExpertiseRequest;
-use App\Http\Requests\EmployeeCertificateOfExpertise\UpdateEmployeeCertificateOfExpertiseRequest;
-use App\Services\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseService;
+use Modules\Employee\App\Http\Requests\EmployeeCertificateOfExpertise\CreateEmployeeCertificateOfExpertiseRequest;
+use Modules\Employee\App\Http\Requests\EmployeeCertificateOfExpertise\UpdateEmployeeCertificateOfExpertiseRequest;
+use Modules\Employee\App\Services\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseService;
 use Illuminate\Http\Request;
 
 class EmployeeCertificateOfExpertiseController extends Controller

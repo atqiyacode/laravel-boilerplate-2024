@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Employee\App\Exports;
 
-use App\Models\EmployeeOrganizationExperience;
+use Modules\Employee\App\Models\EmployeeOrganizationExperience;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

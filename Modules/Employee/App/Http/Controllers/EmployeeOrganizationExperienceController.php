@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeOrganizationExperience\CreateEmployeeOrganizationExperienceRequest;
-use App\Http\Requests\EmployeeOrganizationExperience\UpdateEmployeeOrganizationExperienceRequest;
-use App\Services\EmployeeOrganizationExperience\EmployeeOrganizationExperienceService;
+use Modules\Employee\App\Http\Requests\EmployeeOrganizationExperience\CreateEmployeeOrganizationExperienceRequest;
+use Modules\Employee\App\Http\Requests\EmployeeOrganizationExperience\UpdateEmployeeOrganizationExperienceRequest;
+use Modules\Employee\App\Services\EmployeeOrganizationExperience\EmployeeOrganizationExperienceService;
 use Illuminate\Http\Request;
 
 class EmployeeOrganizationExperienceController extends Controller

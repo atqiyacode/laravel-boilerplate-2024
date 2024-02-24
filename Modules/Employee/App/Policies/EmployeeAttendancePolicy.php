@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Employee\App\Policies;
 
-use App\Models\EmployeeAttendance;
-use App\Models\User;
+use Modules\Employee\App\Models\EmployeeAttendance;
+use Modules\Employee\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class EmployeeAttendancePolicy

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\EmployeePermitRemaining;
+namespace Modules\Employee\App\Repositories\EmployeePermitRemaining;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\EmployeePermitRemaining;
+use Modules\Employee\App\Models\EmployeePermitRemaining;
 
 class EmployeePermitRemainingRepositoryImplement extends Eloquent implements EmployeePermitRemainingRepository
 {
@@ -13,7 +13,7 @@ class EmployeePermitRemainingRepositoryImplement extends Eloquent implements Emp
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

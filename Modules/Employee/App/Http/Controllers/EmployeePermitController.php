@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeePermit\CreateEmployeePermitRequest;
-use App\Http\Requests\EmployeePermit\UpdateEmployeePermitRequest;
-use App\Services\EmployeePermit\EmployeePermitService;
+use Modules\Employee\App\Http\Requests\EmployeePermit\CreateEmployeePermitRequest;
+use Modules\Employee\App\Http\Requests\EmployeePermit\UpdateEmployeePermitRequest;
+use Modules\Employee\App\Services\EmployeePermit\EmployeePermitService;
 use Illuminate\Http\Request;
 
 class EmployeePermitController extends Controller

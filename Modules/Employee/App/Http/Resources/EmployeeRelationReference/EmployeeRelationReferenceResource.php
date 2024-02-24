@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeRelationReference;
+namespace Modules\Employee\App\Http\Resources\EmployeeRelationReference;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeRelationReferenceResource extends JsonResource

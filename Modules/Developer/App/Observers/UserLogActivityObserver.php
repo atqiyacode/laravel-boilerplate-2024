@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Developer\App\Observers;
 
-use App\Events\UserLogActivityEvent;
-use App\Models\UserLogActivity;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Developer\App\Models\UserLogActivity;
 
 class UserLogActivityObserver
 {

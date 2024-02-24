@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\LevelOfEducationEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\LevelOfEducation;
+use Modules\Master\App\Events\LevelOfEducationEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\LevelOfEducation;
 
 class LevelOfEducationObserver
 {

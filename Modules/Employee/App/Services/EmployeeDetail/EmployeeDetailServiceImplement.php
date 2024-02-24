@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeDetail;
+namespace Modules\Employee\App\Services\EmployeeDetail;
 
-use App\Http\Resources\EmployeeDetail\EmployeeDetailResource;
+use Modules\Employee\App\Http\Resources\EmployeeDetail\EmployeeDetailResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeDetail\EmployeeDetailRepository;
+use Modules\Employee\App\Repositories\EmployeeDetail\EmployeeDetailRepository;
 
 class EmployeeDetailServiceImplement extends ServiceApi implements EmployeeDetailService
 {

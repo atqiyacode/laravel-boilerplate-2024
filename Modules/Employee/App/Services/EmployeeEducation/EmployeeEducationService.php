@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeEducation;
+namespace Modules\Employee\App\Services\EmployeeEducation;
 
 use LaravelEasyRepository\BaseService;
 

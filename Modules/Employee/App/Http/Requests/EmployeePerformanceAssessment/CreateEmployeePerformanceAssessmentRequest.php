@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeePerformanceAssessment;
+namespace Modules\Employee\App\Http\Requests\EmployeePerformanceAssessment;
 
 use Illuminate\Foundation\Http\FormRequest;
 

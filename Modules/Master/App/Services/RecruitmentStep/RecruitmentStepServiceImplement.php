@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\RecruitmentStep;
+namespace Modules\Master\App\Services\RecruitmentStep;
 
-use App\Http\Resources\RecruitmentStep\RecruitmentStepResource;
+use Modules\Master\App\Http\Resources\RecruitmentStep\RecruitmentStepResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\RecruitmentStep\RecruitmentStepRepository;
+use Modules\Master\App\Repositories\RecruitmentStep\RecruitmentStepRepository;
 
 class RecruitmentStepServiceImplement extends ServiceApi implements RecruitmentStepService
 {

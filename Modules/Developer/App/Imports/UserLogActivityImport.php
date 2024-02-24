@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Developer\App\Imports;
 
-use App\Models\UserLogActivity;
+use Modules\Developer\App\Models\UserLogActivity;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class UserLogActivityImport implements ToModel

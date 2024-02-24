@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeRelationReference;
+namespace Modules\Employee\App\Repositories\EmployeeRelationReference;
 
 use LaravelEasyRepository\Repository;
 

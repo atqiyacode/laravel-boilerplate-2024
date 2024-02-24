@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeeLanguageSkill;
+namespace Modules\Employee\App\Repositories\EmployeeLanguageSkill;
 
 use LaravelEasyRepository\Repository;
 

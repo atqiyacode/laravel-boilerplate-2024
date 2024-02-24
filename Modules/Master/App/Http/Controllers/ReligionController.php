@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\ReligionEvent;
-use App\Exports\ReligionExport;
+use Modules\Master\App\Events\ReligionEvent;
+use Modules\Master\App\Exports\ReligionExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Religion\CreateReligionRequest;
-use App\Http\Requests\Religion\UpdateReligionRequest;
-use App\Services\Religion\ReligionService;
+use Modules\Master\App\Http\Requests\Religion\CreateReligionRequest;
+use Modules\Master\App\Http\Requests\Religion\UpdateReligionRequest;
+use Modules\Master\App\Services\Religion\ReligionService;
 use Illuminate\Http\Request;
 
 class ReligionController extends Controller

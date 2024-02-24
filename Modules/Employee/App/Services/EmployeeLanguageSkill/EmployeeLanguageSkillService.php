@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeLanguageSkill;
+namespace Modules\Employee\App\Services\EmployeeLanguageSkill;
 
 use LaravelEasyRepository\BaseService;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Master\App\Observers;
 
-use App\Events\VerificationCodeTypeEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\VerificationCodeType;
+use Modules\Master\App\Events\VerificationCodeTypeEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Master\App\Models\VerificationCodeType;
 
 class VerificationCodeTypeObserver
 {

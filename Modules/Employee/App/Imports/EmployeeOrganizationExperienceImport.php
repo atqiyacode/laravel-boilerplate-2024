@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeOrganizationExperience;
+use Modules\Employee\App\Models\EmployeeOrganizationExperience;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeOrganizationExperienceImport implements ToModel

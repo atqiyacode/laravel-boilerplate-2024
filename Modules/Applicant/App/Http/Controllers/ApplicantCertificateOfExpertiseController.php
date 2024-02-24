@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantCertificateOfExpertise\CreateApplicantCertificateOfExpertiseRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantCertificateOfExpertise\UpdateApplicantCertificateOfExpertiseRequest;
 use Modules\Applicant\App\Services\ApplicantCertificateOfExpertise\ApplicantCertificateOfExpertiseService;

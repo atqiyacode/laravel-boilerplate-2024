@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\RecruitmentStep;
+namespace Modules\Master\App\Http\Resources\RecruitmentStep;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

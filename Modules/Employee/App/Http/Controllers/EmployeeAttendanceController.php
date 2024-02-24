@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeAttendance\CreateEmployeeAttendanceRequest;
-use App\Http\Requests\EmployeeAttendance\UpdateEmployeeAttendanceRequest;
-use App\Services\EmployeeAttendance\EmployeeAttendanceService;
+use Modules\Employee\App\Http\Requests\EmployeeAttendance\CreateEmployeeAttendanceRequest;
+use Modules\Employee\App\Http\Requests\EmployeeAttendance\UpdateEmployeeAttendanceRequest;
+use Modules\Employee\App\Services\EmployeeAttendance\EmployeeAttendanceService;
 use Illuminate\Http\Request;
 
 class EmployeeAttendanceController extends Controller

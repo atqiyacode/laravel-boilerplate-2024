@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\VerificationCodeType;
+namespace Modules\Master\App\Services\VerificationCodeType;
 
-use App\Http\Resources\VerificationCodeType\VerificationCodeTypeResource;
+use Modules\Master\App\Http\Resources\VerificationCodeType\VerificationCodeTypeResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\VerificationCodeType\VerificationCodeTypeRepository;
+use Modules\Master\App\Repositories\VerificationCodeType\VerificationCodeTypeRepository;
 
 class VerificationCodeTypeServiceImplement extends ServiceApi implements VerificationCodeTypeService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\Gender;
+use Modules\Master\App\Models\Gender;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class GenderImport implements ToModel

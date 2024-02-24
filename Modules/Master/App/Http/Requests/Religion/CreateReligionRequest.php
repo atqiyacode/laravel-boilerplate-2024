@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Religion;
+namespace Modules\Master\App\Http\Requests\Religion;
 
 use Illuminate\Foundation\Http\FormRequest;
 

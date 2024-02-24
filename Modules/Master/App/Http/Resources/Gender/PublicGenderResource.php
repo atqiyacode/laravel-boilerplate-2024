@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\Gender;
+namespace Modules\Master\App\Http\Resources\Gender;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

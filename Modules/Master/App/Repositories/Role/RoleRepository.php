@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Role;
+namespace Modules\Master\App\Repositories\Role;
 
 use LaravelEasyRepository\Repository;
 

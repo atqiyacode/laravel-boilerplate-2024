@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeePermitStructure;
+use Modules\Employee\App\Models\EmployeePermitStructure;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeePermitStructureImport implements ToModel

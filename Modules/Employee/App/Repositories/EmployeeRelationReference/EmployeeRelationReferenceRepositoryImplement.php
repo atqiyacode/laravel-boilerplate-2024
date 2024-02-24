@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\EmployeeRelationReference;
+namespace Modules\Employee\App\Repositories\EmployeeRelationReference;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\EmployeeRelationReference;
+use Modules\Employee\App\Models\EmployeeRelationReference;
 
 class EmployeeRelationReferenceRepositoryImplement extends Eloquent implements EmployeeRelationReferenceRepository
 {
@@ -13,7 +13,7 @@ class EmployeeRelationReferenceRepositoryImplement extends Eloquent implements E
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

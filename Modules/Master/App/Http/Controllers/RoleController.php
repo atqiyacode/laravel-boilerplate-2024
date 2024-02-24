@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
-use App\Events\RoleEvent;
-use App\Exports\RoleExport;
+use Modules\Master\App\Events\RoleEvent;
+use Modules\Master\App\Exports\RoleExport;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Role\CreateRoleRequest;
-use App\Http\Requests\Role\UpdateRoleRequest;
-use App\Services\Role\RoleService;
+use Modules\Master\App\Http\Requests\Role\CreateRoleRequest;
+use Modules\Master\App\Http\Requests\Role\UpdateRoleRequest;
+use Modules\Master\App\Services\Role\RoleService;
 use Illuminate\Http\Request;
 
 class RoleController extends Controller

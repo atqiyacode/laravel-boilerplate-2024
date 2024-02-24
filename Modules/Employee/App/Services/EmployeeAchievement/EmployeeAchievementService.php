@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeAchievement;
+namespace Modules\Employee\App\Services\EmployeeAchievement;
 
 use LaravelEasyRepository\BaseService;
 

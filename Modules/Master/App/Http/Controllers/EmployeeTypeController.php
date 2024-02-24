@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeType\CreateEmployeeTypeRequest;
-use App\Http\Requests\EmployeeType\UpdateEmployeeTypeRequest;
-use App\Services\EmployeeType\EmployeeTypeService;
+use Modules\Master\App\Http\Requests\EmployeeType\CreateEmployeeTypeRequest;
+use Modules\Master\App\Http\Requests\EmployeeType\UpdateEmployeeTypeRequest;
+use Modules\Master\App\Services\EmployeeType\EmployeeTypeService;
 use Illuminate\Http\Request;
 
 class EmployeeTypeController extends Controller

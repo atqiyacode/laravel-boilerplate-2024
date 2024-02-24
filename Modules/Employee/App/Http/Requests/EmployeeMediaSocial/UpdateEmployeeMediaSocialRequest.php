@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeMediaSocial;
+namespace Modules\Employee\App\Http\Requests\EmployeeMediaSocial;
 
 use Illuminate\Foundation\Http\FormRequest;
 

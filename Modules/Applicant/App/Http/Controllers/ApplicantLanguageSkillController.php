@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantLanguageSkill\CreateApplicantLanguageSkillRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantLanguageSkill\UpdateApplicantLanguageSkillRequest;
 use Modules\Applicant\App\Services\ApplicantLanguageSkill\ApplicantLanguageSkillService;

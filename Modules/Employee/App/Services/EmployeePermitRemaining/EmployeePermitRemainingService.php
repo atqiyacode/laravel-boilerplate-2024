@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeePermitRemaining;
+namespace Modules\Employee\App\Services\EmployeePermitRemaining;
 
 use LaravelEasyRepository\BaseService;
 

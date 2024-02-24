@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeRelationReference;
+namespace Modules\Employee\App\Http\Requests\EmployeeRelationReference;
 
 use Illuminate\Foundation\Http\FormRequest;
 

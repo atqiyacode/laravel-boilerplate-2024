@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Gender;
+namespace Modules\Master\App\Services\Gender;
 
 use LaravelEasyRepository\BaseService;
 

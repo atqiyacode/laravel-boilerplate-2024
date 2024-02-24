@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources\EmployeePermitStructure;
+namespace Modules\Employee\App\Http\Resources\EmployeePermitStructure;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
-use App\Http\Resources\Position\PositionResource;
-use App\Http\Resources\WorkingArea\WorkingAreaResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Position\PositionResource;
+use Modules\Employee\App\Http\Resources\WorkingArea\WorkingAreaResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeePermitStructureResource extends JsonResource

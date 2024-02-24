@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\EmployeePerformanceAssessment;
+namespace Modules\Employee\App\Repositories\EmployeePerformanceAssessment;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\EmployeePerformanceAssessment;
+use Modules\Employee\App\Models\EmployeePerformanceAssessment;
 
 class EmployeePerformanceAssessmentRepositoryImplement extends Eloquent implements EmployeePerformanceAssessmentRepository
 {
@@ -13,7 +13,7 @@ class EmployeePerformanceAssessmentRepositoryImplement extends Eloquent implemen
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

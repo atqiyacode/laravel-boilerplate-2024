@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeePermitStructure;
+namespace Modules\Employee\App\Services\EmployeePermitStructure;
 
-use App\Http\Resources\EmployeePermitStructure\EmployeePermitStructureResource;
+use Modules\Employee\App\Http\Resources\EmployeePermitStructure\EmployeePermitStructureResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeePermitStructure\EmployeePermitStructureRepository;
+use Modules\Employee\App\Repositories\EmployeePermitStructure\EmployeePermitStructureRepository;
 
 class EmployeePermitStructureServiceImplement extends ServiceApi implements EmployeePermitStructureService
 {

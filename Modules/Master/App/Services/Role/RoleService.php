@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Role;
+namespace Modules\Master\App\Services\Role;
 
 use LaravelEasyRepository\BaseService;
 

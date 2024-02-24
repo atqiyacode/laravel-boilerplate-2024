@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeeLanguageSkillEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeeLanguageSkill;
+use Modules\Employee\App\Events\EmployeeLanguageSkillEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeeLanguageSkill;
 
 class EmployeeLanguageSkillObserver
 {

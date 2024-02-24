@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Gender;
+namespace Modules\Master\App\Repositories\Gender;
 
 use LaravelEasyRepository\Repository;
 

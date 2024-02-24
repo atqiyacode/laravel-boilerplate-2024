@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\UserLogActivity;
+namespace Modules\Developer\App\Http\Resources\UserLogActivity;
 
-use App\Http\Resources\User\SimpleUserResource;
+use Modules\Developer\App\Http\Resources\User\SimpleUserResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class HistoryUserLogActivityResource extends JsonResource

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Master\App\Exports;
 
-use App\Models\Gender;
+use Modules\Master\App\Models\Gender;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

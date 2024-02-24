@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\RecruitmentStep;
-use App\Models\User;
+use Modules\Master\App\Models\RecruitmentStep;
+use Modules\Master\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class RecruitmentStepPolicy

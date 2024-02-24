@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\LevelOfEducation;
+use Modules\Master\App\Models\LevelOfEducation;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class LevelOfEducationImport implements ToModel

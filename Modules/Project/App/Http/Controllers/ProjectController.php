@@ -1,60 +1,56 @@
 <?php
 
-namespace Modules\Project\App\Http\Controllers;
+namespace Modules\Project\App\Http\Controllers\API\HR;
 
+use Modules\Project\App\Events\ProjectEvent;
+use Modules\Project\App\Exports\ProjectExport;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\RedirectResponse;
+use Modules\Project\App\Http\Requests\Project\CreateProjectRequest;
+use Modules\Project\App\Http\Requests\Project\UpdateProjectRequest;
+use Modules\Project\App\Services\Project\ProjectService;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class ProjectController extends Controller
 {
+    protected $service;
+
+    public function __construct(ProjectService $service)
+    {
+        $this->service = $service;
+    }
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('project::index');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('project::create');
+        $response = $request->has('all') ? $this->service->getAll() : $this->service->getPaginate();
+        return $response->getResult();
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(CreateProjectRequest $request)
     {
-        //
+        $query = $this->service->create($request->all());
+        return $query->toJson();
     }
 
     /**
-     * Show the specified resource.
+     * Display the specified resource.
      */
     public function show($id)
     {
-        return view('project::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        return view('project::edit');
+        return $this->service->findById($id)->toJson();
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id): RedirectResponse
+    public function update(UpdateProjectRequest $request, $id)
     {
-        //
+        $query = $this->service->update($id, $request->all());
+        return $query->toJson();
     }
 
     /**
@@ -62,6 +58,42 @@ class ProjectController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $query = $this->service->delete($id);
+        return $query->toJson();
+    }
+
+    public function restore($id)
+    {
+        $query = $this->service->restore($id);
+        return $query->toJson();
+    }
+
+    public function forceDelete($id)
+    {
+        $query = $this->service->forceDelete($id);
+        return $query->toJson();
+    }
+
+    public function destroyMultiple(Request $request)
+    {
+        $query = $this->service->destroyMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    public function restoreMultiple(Request $request)
+    {
+        $query = $this->service->restoreMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    public function forceDeleteMultiple(Request $request)
+    {
+        $query = $this->service->forceDeleteMultiple($request->ids);
+        return $query->toJson();
+    }
+
+    public function export($format)
+    {
+        return $this->service->export($format);
     }
 }

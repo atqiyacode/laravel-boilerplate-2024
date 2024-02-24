@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\StudyProgram;
+namespace Modules\Master\App\Services\StudyProgram;
 
-use App\Http\Resources\StudyProgram\StudyProgramResource;
+use Modules\Master\App\Http\Resources\StudyProgram\StudyProgramResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\StudyProgram\StudyProgramRepository;
+use Modules\Master\App\Repositories\StudyProgram\StudyProgramRepository;
 
 class StudyProgramServiceImplement extends ServiceApi implements StudyProgramService
 {

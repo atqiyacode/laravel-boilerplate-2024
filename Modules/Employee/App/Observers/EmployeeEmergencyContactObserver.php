@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeeEmergencyContactEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeeEmergencyContact;
+use Modules\Employee\App\Events\EmployeeEmergencyContactEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeeEmergencyContact;
 
 class EmployeeEmergencyContactObserver
 {

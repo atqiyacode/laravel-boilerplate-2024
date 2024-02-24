@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\FailedJob;
+namespace Modules\Developer\App\Repositories\FailedJob;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\FailedJob;
+use Modules\Developer\App\Models\FailedJob;
 
 class FailedJobRepositoryImplement extends Eloquent implements FailedJobRepository
 {
@@ -13,7 +13,7 @@ class FailedJobRepositoryImplement extends Eloquent implements FailedJobReposito
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

@@ -2,7 +2,7 @@
 
 namespace Modules\Applicant\App\Http\Controllers;
 
-use Modules\Applicant\App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Modules\Applicant\App\Http\Requests\ApplicantEmergencyContact\CreateApplicantEmergencyContactRequest;
 use Modules\Applicant\App\Http\Requests\ApplicantEmergencyContact\UpdateApplicantEmergencyContactRequest;
 use Modules\Applicant\App\Services\ApplicantEmergencyContact\ApplicantEmergencyContactService;

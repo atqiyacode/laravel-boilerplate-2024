@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\Master;
+namespace Modules\Master\App\Http\Controllers\API\Master;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StudyProgram\CreateStudyProgramRequest;
-use App\Http\Requests\StudyProgram\UpdateStudyProgramRequest;
-use App\Services\StudyProgram\StudyProgramService;
+use Modules\Master\App\Http\Requests\StudyProgram\CreateStudyProgramRequest;
+use Modules\Master\App\Http\Requests\StudyProgram\UpdateStudyProgramRequest;
+use Modules\Master\App\Services\StudyProgram\StudyProgramService;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;

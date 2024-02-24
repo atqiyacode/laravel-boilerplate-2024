@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Resources\EmployeePerformanceAssessment;
+namespace Modules\Employee\App\Http\Resources\EmployeePerformanceAssessment;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

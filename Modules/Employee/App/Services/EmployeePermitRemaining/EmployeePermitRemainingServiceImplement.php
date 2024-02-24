@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeePermitRemaining;
+namespace Modules\Employee\App\Services\EmployeePermitRemaining;
 
-use App\Http\Resources\EmployeePermitRemaining\EmployeePermitRemainingResource;
+use Modules\Employee\App\Http\Resources\EmployeePermitRemaining\EmployeePermitRemainingResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeePermitRemaining\EmployeePermitRemainingRepository;
+use Modules\Employee\App\Repositories\EmployeePermitRemaining\EmployeePermitRemainingRepository;
 
 class EmployeePermitRemainingServiceImplement extends ServiceApi implements EmployeePermitRemainingService
 {

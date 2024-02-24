@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Master\App\Exports;
 
-use App\Models\CompanyInformation;
+use Modules\Master\App\Models\CompanyInformation;
 use Maatwebsite\Excel\Concerns\FromCollection;
 
 class CompanyInformationExport implements FromCollection

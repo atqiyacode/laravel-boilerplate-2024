@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Exports;
+namespace Modules\Master\App\Exports;
 
-use App\Models\LevelOfEducation;
+use Modules\Master\App\Models\LevelOfEducation;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

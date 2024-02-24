@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeePermit;
+namespace Modules\Employee\App\Repositories\EmployeePermit;
 
 use LaravelEasyRepository\Repository;
 

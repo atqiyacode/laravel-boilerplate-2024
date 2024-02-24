@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\VerificationCodeType;
+namespace Modules\Master\App\Services\VerificationCodeType;
 
 use LaravelEasyRepository\BaseService;
 

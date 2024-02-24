@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Resources\UserLogActivity;
+namespace Modules\Developer\App\Http\Resources\UserLogActivity;
 
-use App\Http\Resources\User\SimpleUserResource;
-use App\Models\UserLogActivity;
+use Modules\Developer\App\Http\Resources\User\SimpleUserResource;
+use Modules\Developer\App\Models\UserLogActivity;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserLogActivityResource extends JsonResource

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeLanguageSkill\CreateEmployeeLanguageSkillRequest;
-use App\Http\Requests\EmployeeLanguageSkill\UpdateEmployeeLanguageSkillRequest;
-use App\Services\EmployeeLanguageSkill\EmployeeLanguageSkillService;
+use Modules\Employee\App\Http\Requests\EmployeeLanguageSkill\CreateEmployeeLanguageSkillRequest;
+use Modules\Employee\App\Http\Requests\EmployeeLanguageSkill\UpdateEmployeeLanguageSkillRequest;
+use Modules\Employee\App\Services\EmployeeLanguageSkill\EmployeeLanguageSkillService;
 use Illuminate\Http\Request;
 
 class EmployeeLanguageSkillController extends Controller

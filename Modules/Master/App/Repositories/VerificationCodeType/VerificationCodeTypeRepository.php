@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\VerificationCodeType;
+namespace Modules\Master\App\Repositories\VerificationCodeType;
 
 use LaravelEasyRepository\Repository;
 

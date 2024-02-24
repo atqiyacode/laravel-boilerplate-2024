@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeCertificateOfExpertise;
+namespace Modules\Employee\App\Services\EmployeeCertificateOfExpertise;
 
-use App\Http\Resources\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseResource;
+use Modules\Employee\App\Http\Resources\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseRepository;
+use Modules\Employee\App\Repositories\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseRepository;
 
 class EmployeeCertificateOfExpertiseServiceImplement extends ServiceApi implements EmployeeCertificateOfExpertiseService
 {

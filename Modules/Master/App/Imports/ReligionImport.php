@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\Religion;
+use Modules\Master\App\Models\Religion;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class ReligionImport implements ToModel

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeDetail;
+namespace Modules\Employee\App\Http\Requests\EmployeeDetail;
 
 use Illuminate\Foundation\Http\FormRequest;
 

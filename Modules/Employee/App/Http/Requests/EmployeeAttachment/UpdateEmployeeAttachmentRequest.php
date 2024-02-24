@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\EmployeeAttachment;
+namespace Modules\Employee\App\Http\Requests\EmployeeAttachment;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\VerificationCodeType;
+use Modules\Master\App\Models\VerificationCodeType;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class VerificationCodeTypeImport implements ToModel

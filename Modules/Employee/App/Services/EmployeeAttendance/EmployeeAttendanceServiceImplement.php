@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeAttendance;
+namespace Modules\Employee\App\Services\EmployeeAttendance;
 
-use App\Http\Resources\EmployeeAttendance\EmployeeAttendanceResource;
+use Modules\Employee\App\Http\Resources\EmployeeAttendance\EmployeeAttendanceResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeAttendance\EmployeeAttendanceRepository;
+use Modules\Employee\App\Repositories\EmployeeAttendance\EmployeeAttendanceRepository;
 
 class EmployeeAttendanceServiceImplement extends ServiceApi implements EmployeeAttendanceService
 {

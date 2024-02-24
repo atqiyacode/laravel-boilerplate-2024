@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeEmergencyContact;
+namespace Modules\Employee\App\Http\Resources\EmployeeEmergencyContact;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeEmergencyContactResource extends JsonResource

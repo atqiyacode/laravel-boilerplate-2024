@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\Developer;
+namespace Modules\Developer\App\Http\Controllers\API\Developer;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UserLogActivity\CreateUserLogActivityRequest;
-use App\Http\Requests\UserLogActivity\UpdateUserLogActivityRequest;
-use App\Services\UserLogActivity\UserLogActivityService;
+use Modules\Developer\App\Http\Requests\UserLogActivity\CreateUserLogActivityRequest;
+use Modules\Developer\App\Http\Requests\UserLogActivity\UpdateUserLogActivityRequest;
+use Modules\Developer\App\Services\UserLogActivity\UserLogActivityService;
 use Illuminate\Http\Request;
 
 class UserLogActivityController extends Controller

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\LevelOfEducation;
+namespace Modules\Master\App\Services\LevelOfEducation;
 
-use App\Http\Resources\LevelOfEducation\LevelOfEducationResource;
+use Modules\Master\App\Http\Resources\LevelOfEducation\LevelOfEducationResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\LevelOfEducation\LevelOfEducationRepository;
+use Modules\Master\App\Repositories\LevelOfEducation\LevelOfEducationRepository;
 
 class LevelOfEducationServiceImplement extends ServiceApi implements LevelOfEducationService
 {

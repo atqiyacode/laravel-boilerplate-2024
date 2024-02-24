@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeeEmergencyContact\CreateEmployeeEmergencyContactRequest;
-use App\Http\Requests\EmployeeEmergencyContact\UpdateEmployeeEmergencyContactRequest;
-use App\Services\EmployeeEmergencyContact\EmployeeEmergencyContactService;
+use Modules\Employee\App\Http\Requests\EmployeeEmergencyContact\CreateEmployeeEmergencyContactRequest;
+use Modules\Employee\App\Http\Requests\EmployeeEmergencyContact\UpdateEmployeeEmergencyContactRequest;
+use Modules\Employee\App\Services\EmployeeEmergencyContact\EmployeeEmergencyContactService;
 use Illuminate\Http\Request;
 
 class EmployeeEmergencyContactController extends Controller

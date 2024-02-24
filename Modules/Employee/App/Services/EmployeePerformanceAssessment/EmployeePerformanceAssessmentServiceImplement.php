@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeePerformanceAssessment;
+namespace Modules\Employee\App\Services\EmployeePerformanceAssessment;
 
-use App\Http\Resources\EmployeePerformanceAssessment\EmployeePerformanceAssessmentResource;
+use Modules\Employee\App\Http\Resources\EmployeePerformanceAssessment\EmployeePerformanceAssessmentResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeePerformanceAssessment\EmployeePerformanceAssessmentRepository;
+use Modules\Employee\App\Repositories\EmployeePerformanceAssessment\EmployeePerformanceAssessmentRepository;
 
 class EmployeePerformanceAssessmentServiceImplement extends ServiceApi implements EmployeePerformanceAssessmentService
 {

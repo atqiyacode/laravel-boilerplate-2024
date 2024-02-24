@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Resources\EmployeeMediaSocial;
+namespace Modules\Employee\App\Http\Resources\EmployeeMediaSocial;
 
-use App\Http\Resources\Employee\SimpleEmployeeResource;
+use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeMediaSocialResource extends JsonResource

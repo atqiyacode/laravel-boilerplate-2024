@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Gender;
+namespace Modules\Master\App\Http\Requests\Gender;
 
 use Illuminate\Foundation\Http\FormRequest;
 

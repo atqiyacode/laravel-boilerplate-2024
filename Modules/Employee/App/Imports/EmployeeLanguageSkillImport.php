@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeLanguageSkill;
+use Modules\Employee\App\Models\EmployeeLanguageSkill;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeLanguageSkillImport implements ToModel

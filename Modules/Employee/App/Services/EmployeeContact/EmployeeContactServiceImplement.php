@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\EmployeeContact;
+namespace Modules\Employee\App\Services\EmployeeContact;
 
-use App\Http\Resources\EmployeeContact\EmployeeContactResource;
+use Modules\Employee\App\Http\Resources\EmployeeContact\EmployeeContactResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\EmployeeContact\EmployeeContactRepository;
+use Modules\Employee\App\Repositories\EmployeeContact\EmployeeContactRepository;
 
 class EmployeeContactServiceImplement extends ServiceApi implements EmployeeContactService
 {

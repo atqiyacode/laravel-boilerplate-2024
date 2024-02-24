@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Master\App\Policies;
 
-use App\Models\User;
-use App\Models\VerificationCodeType;
+use Modules\Master\App\Models\User;
+use Modules\Master\App\Models\VerificationCodeType;
 use Illuminate\Auth\Access\Response;
 
 class VerificationCodeTypePolicy

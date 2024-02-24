@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\StudyProgram;
+use Modules\Master\App\Models\StudyProgram;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class StudyProgramImport implements ToModel

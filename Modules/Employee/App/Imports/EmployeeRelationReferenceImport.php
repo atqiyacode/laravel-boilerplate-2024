@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Employee\App\Imports;
 
-use App\Models\EmployeeRelationReference;
+use Modules\Employee\App\Models\EmployeeRelationReference;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class EmployeeRelationReferenceImport implements ToModel

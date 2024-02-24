@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace Modules\Employee\App\Policies;
 
-use App\Models\EmployeeDetail;
-use App\Models\User;
+use Modules\Employee\App\Models\EmployeeDetail;
+use Modules\Employee\App\Models\User;
 use Illuminate\Auth\Access\Response;
 
 class EmployeeDetailPolicy

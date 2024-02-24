@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\UserLogActivity;
+namespace Modules\Developer\App\Repositories\UserLogActivity;
 
 use LaravelEasyRepository\Repository;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\CompanyInformation;
+namespace Modules\Master\App\Repositories\CompanyInformation;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use App\Models\CompanyInformation;
+use Modules\Master\App\Models\CompanyInformation;
 
 class CompanyInformationRepositoryImplement extends Eloquent implements CompanyInformationRepository
 {
@@ -13,7 +13,7 @@ class CompanyInformationRepositoryImplement extends Eloquent implements CompanyI
     /**
      * Model class to be used in this repository for the common methods inside Eloquent
      * Don't remove or change $this->model variable name
-     * @property Model|mixed $model;
+     * @property \Illuminate\Database\Eloquent\Model|mixed $model;
      */
     protected $model;
 

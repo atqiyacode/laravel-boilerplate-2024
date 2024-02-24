@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Observers;
+namespace Modules\Employee\App\Observers;
 
-use App\Events\EmployeeContractEvent;
-use App\Events\UserLogActivityEvent;
-use App\Models\EmployeeContract;
+use Modules\Employee\App\Events\EmployeeContractEvent;
+use Modules\Developer\App\Events\UserLogActivityEvent;
+use Modules\Employee\App\Models\EmployeeContract;
 
 class EmployeeContractObserver
 {

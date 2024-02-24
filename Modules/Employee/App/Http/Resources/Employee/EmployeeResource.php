@@ -1,29 +1,29 @@
 <?php
 
-namespace App\Http\Resources\Employee;
+namespace Modules\Employee\App\Http\Resources\Employee;
 
-use App\Http\Resources\EmployeeAchievement\EmployeeAchievementResource;
-use App\Http\Resources\EmployeeAttachment\EmployeeAttachmentResource;
-use App\Http\Resources\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseResource;
-use App\Http\Resources\EmployeeContact\EmployeeContactResource;
-use App\Http\Resources\EmployeeContract\EmployeeContractResource;
-use App\Http\Resources\EmployeeDetail\EmployeeDetailResource;
-use App\Http\Resources\EmployeeEducation\EmployeeEducationResource;
-use App\Http\Resources\EmployeeEmergencyContact\EmployeeEmergencyContactResource;
-use App\Http\Resources\EmployeeExperience\EmployeeExperienceResource;
-use App\Http\Resources\EmployeeLanguageSkill\EmployeeLanguageSkillResource;
-use App\Http\Resources\EmployeeMediaSocial\EmployeeMediaSocialResource;
-use App\Http\Resources\EmployeeOrganizationExperience\EmployeeOrganizationExperienceResource;
-use App\Http\Resources\EmployeePermitRemaining\EmployeePermitRemainingResource;
-use App\Http\Resources\EmployeeRelationReference\EmployeeRelationReferenceResource;
-use App\Http\Resources\EmployeeType\EmployeeTypeResource;
-use App\Http\Resources\FieldOfWork\FieldOfWorkResource;
-use App\Http\Resources\Gender\GenderResource;
-use App\Http\Resources\MainClass\MainClassResource;
-use App\Http\Resources\Position\PositionResource;
-use App\Http\Resources\Religion\ReligionResource;
-use App\Http\Resources\Unit\UnitResource;
-use App\Http\Resources\WorkingArea\WorkingAreaResource;
+use Modules\Employee\App\Http\Resources\EmployeeAchievement\EmployeeAchievementResource;
+use Modules\Employee\App\Http\Resources\EmployeeAttachment\EmployeeAttachmentResource;
+use Modules\Employee\App\Http\Resources\EmployeeCertificateOfExpertise\EmployeeCertificateOfExpertiseResource;
+use Modules\Employee\App\Http\Resources\EmployeeContact\EmployeeContactResource;
+use Modules\Employee\App\Http\Resources\EmployeeContract\EmployeeContractResource;
+use Modules\Employee\App\Http\Resources\EmployeeDetail\EmployeeDetailResource;
+use Modules\Employee\App\Http\Resources\EmployeeEducation\EmployeeEducationResource;
+use Modules\Employee\App\Http\Resources\EmployeeEmergencyContact\EmployeeEmergencyContactResource;
+use Modules\Employee\App\Http\Resources\EmployeeExperience\EmployeeExperienceResource;
+use Modules\Employee\App\Http\Resources\EmployeeLanguageSkill\EmployeeLanguageSkillResource;
+use Modules\Employee\App\Http\Resources\EmployeeMediaSocial\EmployeeMediaSocialResource;
+use Modules\Employee\App\Http\Resources\EmployeeOrganizationExperience\EmployeeOrganizationExperienceResource;
+use Modules\Employee\App\Http\Resources\EmployeePermitRemaining\EmployeePermitRemainingResource;
+use Modules\Employee\App\Http\Resources\EmployeeRelationReference\EmployeeRelationReferenceResource;
+use Modules\Employee\App\Http\Resources\EmployeeType\EmployeeTypeResource;
+use Modules\Employee\App\Http\Resources\FieldOfWork\FieldOfWorkResource;
+use Modules\Employee\App\Http\Resources\Gender\GenderResource;
+use Modules\Employee\App\Http\Resources\MainClass\MainClassResource;
+use Modules\Employee\App\Http\Resources\Position\PositionResource;
+use Modules\Employee\App\Http\Resources\Religion\ReligionResource;
+use Modules\Employee\App\Http\Resources\Unit\UnitResource;
+use Modules\Employee\App\Http\Resources\WorkingArea\WorkingAreaResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeResource extends JsonResource

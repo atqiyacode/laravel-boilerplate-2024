@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\CompanyInformation;
+namespace Modules\Master\App\Services\CompanyInformation;
 
 use LaravelEasyRepository\BaseService;
 

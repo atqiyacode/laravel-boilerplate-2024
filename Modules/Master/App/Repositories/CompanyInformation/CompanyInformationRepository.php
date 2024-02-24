@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\CompanyInformation;
+namespace Modules\Master\App\Repositories\CompanyInformation;
 
 use LaravelEasyRepository\Repository;
 

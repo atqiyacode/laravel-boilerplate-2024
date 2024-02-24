@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API\HR;
+namespace Modules\Employee\App\Http\Controllers\API\HR;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\EmployeePermitRemaining\CreateEmployeePermitRemainingRequest;
-use App\Http\Requests\EmployeePermitRemaining\UpdateEmployeePermitRemainingRequest;
-use App\Services\EmployeePermitRemaining\EmployeePermitRemainingService;
+use Modules\Employee\App\Http\Requests\EmployeePermitRemaining\CreateEmployeePermitRemainingRequest;
+use Modules\Employee\App\Http\Requests\EmployeePermitRemaining\UpdateEmployeePermitRemainingRequest;
+use Modules\Employee\App\Services\EmployeePermitRemaining\EmployeePermitRemainingService;
 use Illuminate\Http\Request;
 
 class EmployeePermitRemainingController extends Controller

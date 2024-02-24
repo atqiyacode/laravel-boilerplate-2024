@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Imports;
+namespace Modules\Master\App\Imports;
 
-use App\Models\Permission;
+use Modules\Master\App\Models\Permission;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class PermissionImport implements ToModel

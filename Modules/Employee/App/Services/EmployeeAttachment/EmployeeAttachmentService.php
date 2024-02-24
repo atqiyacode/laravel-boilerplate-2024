@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\EmployeeAttachment;
+namespace Modules\Employee\App\Services\EmployeeAttachment;
 
 use LaravelEasyRepository\BaseService;
 

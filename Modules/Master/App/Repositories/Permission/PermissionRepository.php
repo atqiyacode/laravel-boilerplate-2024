@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Permission;
+namespace Modules\Master\App\Repositories\Permission;
 
 use LaravelEasyRepository\Repository;
 

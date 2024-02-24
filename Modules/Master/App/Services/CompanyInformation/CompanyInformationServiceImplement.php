@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services\CompanyInformation;
+namespace Modules\Master\App\Services\CompanyInformation;
 
-use App\Http\Resources\CompanyInformation\CompanyInformationResource;
+use Modules\Master\App\Http\Resources\CompanyInformation\CompanyInformationResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use App\Repositories\CompanyInformation\CompanyInformationRepository;
+use Modules\Master\App\Repositories\CompanyInformation\CompanyInformationRepository;
 
 class CompanyInformationServiceImplement extends ServiceApi implements CompanyInformationService
 {

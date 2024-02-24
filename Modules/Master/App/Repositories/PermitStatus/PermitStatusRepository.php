@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\PermitStatus;
+namespace Modules\Master\App\Repositories\PermitStatus;
 
 use LaravelEasyRepository\Repository;
 

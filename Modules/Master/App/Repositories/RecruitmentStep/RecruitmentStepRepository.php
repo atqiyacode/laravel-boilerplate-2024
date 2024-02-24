@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\RecruitmentStep;
+namespace Modules\Master\App\Repositories\RecruitmentStep;
 
 use LaravelEasyRepository\Repository;
 

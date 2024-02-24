@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Resources\Employee;
+namespace Modules\Employee\App\Http\Resources\Employee;
 
-use App\Http\Resources\EmployeeType\EmployeeTypeResource;
-use App\Http\Resources\FieldOfWork\FieldOfWorkResource;
-use App\Http\Resources\Gender\GenderResource;
-use App\Http\Resources\Position\PositionResource;
-use App\Http\Resources\Religion\ReligionResource;
-use App\Http\Resources\Unit\UnitResource;
-use App\Http\Resources\WorkingArea\WorkingAreaResource;
+use Modules\Employee\App\Http\Resources\EmployeeType\EmployeeTypeResource;
+use Modules\Employee\App\Http\Resources\FieldOfWork\FieldOfWorkResource;
+use Modules\Employee\App\Http\Resources\Gender\GenderResource;
+use Modules\Employee\App\Http\Resources\Position\PositionResource;
+use Modules\Employee\App\Http\Resources\Religion\ReligionResource;
+use Modules\Employee\App\Http\Resources\Unit\UnitResource;
+use Modules\Employee\App\Http\Resources\WorkingArea\WorkingAreaResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class SimpleEmployeeResource extends JsonResource

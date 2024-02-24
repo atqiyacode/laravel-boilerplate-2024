@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\LevelOfEducation;
+namespace Modules\Master\App\Repositories\LevelOfEducation;
 
 use LaravelEasyRepository\Repository;
 

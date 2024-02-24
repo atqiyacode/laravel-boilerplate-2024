@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\EmployeePerformanceAssessment;
+namespace Modules\Employee\App\Repositories\EmployeePerformanceAssessment;
 
 use LaravelEasyRepository\Repository;
 
