@@ -19,5 +19,6 @@
     "AuthMobileApp": true,
     "AuthBackOffice": true,
     "Public": true,
-    "Employee": true
+    "Employee": true,
+    "Project": true
 }

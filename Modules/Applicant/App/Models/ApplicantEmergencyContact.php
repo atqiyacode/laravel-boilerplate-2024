@@ -3,8 +3,8 @@
 namespace Modules\Applicant\App\Models;
 
 use Modules\Applicant\App\Filters\ApplicantEmergencyContactFilters;
-use App\Scopes\CanDeleteScope;
-use App\Scopes\DeveloperScope;
+use Modules\Applicant\App\Scopes\CanDeleteScope;
+use Modules\Applicant\App\Scopes\DeveloperScope;
 use Essa\APIToolKit\Filters\Filterable;
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

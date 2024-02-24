@@ -1,0 +1,66 @@
+<?php
+
+namespace Modules\Applicant\App\Policies;
+
+use Modules\Applicant\App\Models\ApplicantResume;
+use Modules\Applicant\App\Models\User;
+use Illuminate\Auth\Access\Response;
+
+class ApplicantResumePolicy
+{
+    /**
+     * Determine whether the user can view any models.
+     */
+    public function viewAny(User $user): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can view the model.
+     */
+    public function view(User $user, ApplicantResume $applicantResume): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can create models.
+     */
+    public function create(User $user): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can update the model.
+     */
+    public function update(User $user, ApplicantResume $applicantResume): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can delete the model.
+     */
+    public function delete(User $user, ApplicantResume $applicantResume): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can restore the model.
+     */
+    public function restore(User $user, ApplicantResume $applicantResume): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can permanently delete the model.
+     */
+    public function forceDelete(User $user, ApplicantResume $applicantResume): bool
+    {
+        //
+    }
+}
