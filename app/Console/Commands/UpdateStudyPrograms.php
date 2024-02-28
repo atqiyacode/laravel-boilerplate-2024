@@ -2,11 +2,10 @@
 
 namespace App\Console\Commands;
 
-use App\Models\StudyProgram;
 use Illuminate\Console\Command;
 use GuzzleHttp\Client;
-use App\Models\University;
 use GuzzleHttp\Exception\RequestException;
+use Modules\Master\App\Models\University;
 
 class UpdateStudyPrograms extends Command
 {

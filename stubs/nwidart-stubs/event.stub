@@ -2,18 +2,27 @@
 
 namespace $NAMESPACE$;
 
+use Illuminate\Broadcasting\Channel;
+use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Broadcasting\PresenceChannel;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class $CLASS$
+class $CLASS$ implements ShouldBroadcast
 {
-    use SerializesModels;
+    use Dispatchable, InteractsWithSockets, SerializesModels;
+
+    public $data;
 
     /**
      * Create a new event instance.
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->dontBroadcastToCurrentUser();
+        $this->data = $data;
     }
 
     /**
@@ -21,6 +30,13 @@ class $CLASS$
      */
     public function broadcastOn(): array
     {
-        return [];
+        return [
+            new Channel('$CLASS$Channel'),
+        ];
+    }
+
+    public function broadcastAs()
+    {
+        return '$CLASS$';
     }
 }

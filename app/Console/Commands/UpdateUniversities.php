@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use GuzzleHttp\Client;
-use App\Models\University;
+use Modules\Master\App\Models\University;
 
 class UpdateUniversities extends Command
 {
