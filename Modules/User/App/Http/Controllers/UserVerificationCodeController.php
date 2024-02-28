@@ -1,9 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\API\User;
+namespace Modules\User\App\Http\Controllers;
 
-use Modules\User\App\Events\UserVerificationCodeEvent;
-use Modules\User\App\Exports\UserVerificationCodeExport;
 use App\Http\Controllers\Controller;
 use Modules\User\App\Http\Requests\UserVerificationCode\CreateUserVerificationCodeRequest;
 use Modules\User\App\Http\Requests\UserVerificationCode\UpdateUserVerificationCodeRequest;
@@ -62,36 +60,54 @@ class UserVerificationCodeController extends Controller
         return $query->toJson();
     }
 
+    /**
+     * Restore the specified resource from storage.
+     */
     public function restore($id)
     {
         $query = $this->service->restore($id);
         return $query->toJson();
     }
 
+    /**
+     * Remove Permanent the specified resource from storage.
+     */
     public function forceDelete($id)
     {
         $query = $this->service->forceDelete($id);
         return $query->toJson();
     }
 
+    /**
+     * Remove Multiple data resource from storage.
+     */
     public function destroyMultiple(Request $request)
     {
         $query = $this->service->destroyMultiple($request->ids);
         return $query->toJson();
     }
 
+    /**
+     * Restore Multiple data resource from storage.
+     */
     public function restoreMultiple(Request $request)
     {
         $query = $this->service->restoreMultiple($request->ids);
         return $query->toJson();
     }
 
+    /**
+     * Remove Permanent Multiple data resource from storage.
+     */
     public function forceDeleteMultiple(Request $request)
     {
         $query = $this->service->forceDeleteMultiple($request->ids);
         return $query->toJson();
     }
 
+    /**
+     * Export data resource from storage.
+     */
     public function export($format)
     {
         return $this->service->export($format);

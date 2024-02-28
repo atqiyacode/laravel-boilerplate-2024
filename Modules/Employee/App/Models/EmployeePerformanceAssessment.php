@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 

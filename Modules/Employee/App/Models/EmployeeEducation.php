@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
-use Modules\Master\App\Models\LevelOfEducation;
 
 class EmployeeEducation extends Model
 {
@@ -57,7 +56,7 @@ class EmployeeEducation extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',
@@ -70,6 +69,6 @@ class EmployeeEducation extends Model
 
     public function levelOfEducation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(LevelOfEducation::class);
+        return $this->belongsTo(\Modules\Master\App\Models\LevelOfEducation::class);
     }
 }

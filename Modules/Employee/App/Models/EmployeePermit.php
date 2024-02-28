@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -11,8 +11,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
-use Modules\HRMaster\App\Models\TypeOfPermit;
-use Modules\Master\App\Models\PermitStatus;
 
 class EmployeePermit extends Model
 {
@@ -52,17 +50,17 @@ class EmployeePermit extends Model
 
     public function typeOfPermit(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(TypeOfPermit::class)->select(['id', 'name']);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\TypeOfPermit::class)->select(['id', 'name']);
     }
 
     public function permitStatus(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(PermitStatus::class)->select(['id', 'name']);
+        return $this->belongsTo(\Modules\Master\App\Models\PermitStatus::class)->select(['id', 'name']);
     }
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',

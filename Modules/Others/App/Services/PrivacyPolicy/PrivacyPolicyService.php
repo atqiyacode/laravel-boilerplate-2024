@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\PrivacyPolicy;
+namespace Modules\Others\App\Services\PrivacyPolicy;
 
 use LaravelEasyRepository\BaseService;
 

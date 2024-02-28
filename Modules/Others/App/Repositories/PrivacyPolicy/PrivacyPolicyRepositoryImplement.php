@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\PrivacyPolicy;
+namespace Modules\Others\App\Repositories\PrivacyPolicy;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;

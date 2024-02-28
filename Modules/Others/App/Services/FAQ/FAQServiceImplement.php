@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\FAQ;
+namespace Modules\Others\App\Services\FAQ;
 
 use Modules\Others\App\Http\Resources\FAQ\FAQResource;
 use LaravelEasyRepository\ServiceApi;

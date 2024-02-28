@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -58,7 +58,7 @@ class EmployeeExperience extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',
@@ -72,7 +72,7 @@ class EmployeeExperience extends Model
 
     public function levelOfEducation(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(LevelOfEducation::class)->select([
+        return $this->belongsTo(\Modules\Master\App\Models\LevelOfEducation::class)->select([
             'id', 'name'
         ]);
     }

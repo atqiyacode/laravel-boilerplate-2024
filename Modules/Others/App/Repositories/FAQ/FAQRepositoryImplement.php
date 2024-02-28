@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\FAQ;
+namespace Modules\Others\App\Repositories\FAQ;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\TermAndCondition;
+namespace Modules\Others\App\Repositories\TermAndCondition;
 
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;

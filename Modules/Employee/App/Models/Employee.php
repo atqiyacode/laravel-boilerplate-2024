@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -72,107 +72,107 @@ class Employee extends Model
     // relationship - belongs to
     public function mainClass(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\MainClass::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\MainClass::class);
     }
 
     public function unit(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Unit::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Unit::class);
     }
 
     public function position(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Position::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class);
     }
 
     public function employeeType(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\EmployeeType::class);
+        return $this->belongsTo(\Modules\Master\App\Models\EmployeeType::class);
     }
 
     public function gender(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Gender::class);
+        return $this->belongsTo(\Modules\Master\App\Models\Gender::class);
     }
 
     public function religion(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Religion::class);
+        return $this->belongsTo(\Modules\Master\App\Models\Religion::class);
     }
 
     public function fieldOfWork(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\FieldOfWork::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\FieldOfWork::class);
     }
 
     public function workingArea(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\WorkingArea::class);
+        return $this->belongsTo(\Modules\HRMaster\App\Models\WorkingArea::class);
     }
 
     // relationship - has one
     public function employeeDetail(): \Illuminate\Database\Eloquent\Relations\HasOne
     {
-        return $this->hasOne(\App\Models\EmployeeDetail::class);
+        return $this->hasOne(\Modules\Employee\App\Models\EmployeeDetail::class);
     }
 
     public function employeeContact(): \Illuminate\Database\Eloquent\Relations\HasOne
     {
-        return $this->hasOne(\App\Models\EmployeeContact::class);
+        return $this->hasOne(\Modules\Employee\App\Models\EmployeeContact::class);
     }
 
     public function employeePermitRemaining(): \Illuminate\Database\Eloquent\Relations\HasOne
     {
-        return $this->hasOne(\App\Models\EmployeePermitRemaining::class);
+        return $this->hasOne(\Modules\Employee\App\Models\EmployeePermitRemaining::class);
     }
 
     // relationship - has many
     public function employeeContracts(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeContract::class, 'employee_id', 'id')->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeContract::class, 'employee_id', 'id')->canDelete();
     }
 
     public function employeeEmergencyContacts(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeEmergencyContact::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeEmergencyContact::class)->canDelete();
     }
 
     public function employeeExperiences(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeExperience::class)->canDelete()->with(['levelOfEducation']);
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeExperience::class)->canDelete()->with(['levelOfEducation']);
     }
 
     public function employeeAttachments(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeAttachment::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeAttachment::class)->canDelete();
     }
 
     public function employeeLanguageSkills(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeLanguageSkill::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeLanguageSkill::class)->canDelete();
     }
     public function employeeEducation(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeEducation::class)->canDelete()->with(['levelOfEducation']);
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeEducation::class)->canDelete()->with(['levelOfEducation']);
     }
     public function employeeAchievements(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeAchievement::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeAchievement::class)->canDelete();
     }
     public function employeeCertificateOfExpertises(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeCertificateOfExpertise::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeCertificateOfExpertise::class)->canDelete();
     }
     public function employeeMediaSocial(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeMediaSocial::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeMediaSocial::class)->canDelete();
     }
     public function employeeOrganizationExperiences(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeOrganizationExperience::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeOrganizationExperience::class)->canDelete();
     }
     public function employeeRelationReferences(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\EmployeeRelationReference::class)->canDelete();
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeRelationReference::class)->canDelete();
     }
 }

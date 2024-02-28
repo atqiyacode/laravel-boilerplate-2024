@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -45,21 +45,21 @@ class EmployeePermitStructure extends Model
     // from dev-api
     public function position(): BelongsTo
     {
-        return $this->belongsTo(Position::class, 'position_id', 'id');
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class, 'position_id', 'id');
     }
 
     public function workingArea(): BelongsTo
     {
-        return $this->belongsTo(WorkingArea::class, 'working_area_id', 'id');
+        return $this->belongsTo(\Modules\HRMaster\App\Models\WorkingArea::class, 'working_area_id', 'id');
     }
 
     public function approval1()
     {
-        return $this->belongsTo(Position::class, 'approval_1');
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class, 'approval_1');
     }
 
     public function approval2()
     {
-        return $this->belongsTo(Position::class, 'approval_2');
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class, 'approval_2');
     }
 }

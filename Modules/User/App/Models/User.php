@@ -159,7 +159,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function employee(): BelongsTo
     {
-        return $this->belongsTo(Employee::class, 'username', 'nik')->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class, 'username', 'nik')->with([
             'employeeContracts'
         ]);
     }

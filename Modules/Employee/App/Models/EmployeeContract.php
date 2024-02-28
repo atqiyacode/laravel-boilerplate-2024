@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -71,12 +71,12 @@ class EmployeeContract extends Model
 
     public function project(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Project::class);
+        return $this->belongsTo(\Modules\Project\App\Models\Project::class);
     }
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',

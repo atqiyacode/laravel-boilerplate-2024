@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Employee\Models;
+namespace Modules\Employee\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
@@ -43,7 +43,7 @@ class EmployeeEmergencyContact extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
             // 'employeeType',
             // 'gender',
             // 'religion',
