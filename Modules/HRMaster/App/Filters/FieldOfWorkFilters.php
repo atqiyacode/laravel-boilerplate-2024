@@ -55,5 +55,6 @@ class FieldOfWorkFilters extends QueryFilters
         'description',
         'created_at',
         'updated_at',
+        'employees_count',
     ];
 }

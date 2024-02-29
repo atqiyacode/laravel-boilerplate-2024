@@ -16,14 +16,14 @@ use Modules\Employee\App\Http\Resources\EmployeeMediaSocial\EmployeeMediaSocialR
 use Modules\Employee\App\Http\Resources\EmployeeOrganizationExperience\EmployeeOrganizationExperienceResource;
 use Modules\Employee\App\Http\Resources\EmployeePermitRemaining\EmployeePermitRemainingResource;
 use Modules\Employee\App\Http\Resources\EmployeeRelationReference\EmployeeRelationReferenceResource;
-use Modules\Employee\App\Http\Resources\EmployeeType\EmployeeTypeResource;
-use Modules\Employee\App\Http\Resources\FieldOfWork\FieldOfWorkResource;
-use Modules\Employee\App\Http\Resources\Gender\GenderResource;
-use Modules\Employee\App\Http\Resources\MainClass\MainClassResource;
-use Modules\Employee\App\Http\Resources\Position\PositionResource;
-use Modules\Employee\App\Http\Resources\Religion\ReligionResource;
-use Modules\Employee\App\Http\Resources\Unit\UnitResource;
-use Modules\Employee\App\Http\Resources\WorkingArea\WorkingAreaResource;
+use Modules\Master\App\Http\Resources\EmployeeType\EmployeeTypeResource;
+use Modules\HRMaster\App\Http\Resources\FieldOfWork\FieldOfWorkResource;
+use Modules\Master\App\Http\Resources\Gender\GenderResource;
+use Modules\HRMaster\App\Http\Resources\MainClass\MainClassResource;
+use Modules\HRMaster\App\Http\Resources\Position\PositionResource;
+use Modules\Master\App\Http\Resources\Religion\ReligionResource;
+use Modules\HRMaster\App\Http\Resources\Unit\UnitResource;
+use Modules\HRMaster\App\Http\Resources\WorkingArea\WorkingAreaResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class EmployeeResource extends JsonResource

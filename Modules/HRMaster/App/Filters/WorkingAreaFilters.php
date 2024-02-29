@@ -44,5 +44,6 @@ class WorkingAreaFilters extends QueryFilters
         'created_at',
         'updated_at',
         'deleted_at',
+        'employees_count',
     ];
 }
