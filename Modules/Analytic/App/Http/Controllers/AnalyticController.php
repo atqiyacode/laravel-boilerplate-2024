@@ -3,65 +3,49 @@
 namespace Modules\Analytic\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class AnalyticController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    protected $service;
+
+    public function __construct(\Modules\Analytic\App\Services\Analytic\AnalyticService $service)
     {
-        return view('analytic::index');
+        $this->service = $service;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function dashboard()
     {
-        return view('analytic::create');
+        return [
+            'religions' => $this->service->getDataReligion()->getResult(),
+            'employeeTypes' => $this->service->getDataEmployeeType()->getResult(),
+        ];
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request): RedirectResponse
+    public function getDataReligion()
     {
-        //
+        return $this->service->getDataReligion()->getResult();
     }
 
-    /**
-     * Show the specified resource.
-     */
-    public function show($id)
+    public function getDataEmployeeType()
     {
-        return view('analytic::show');
+        return $this->service->getDataEmployeeType()->getResult();
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
+    public function getDataGender()
     {
-        return view('analytic::edit');
+        return $this->service->getDataGender()->getResult();
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, $id): RedirectResponse
+    public function getDataFieldOfWork()
     {
-        //
+        return $this->service->getDataFieldOfWork()->getResult();
     }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($id)
+    public function getDataPosition()
     {
-        //
+        return $this->service->getDataPosition()->getResult();
+    }
+    public function getDataWorkingArea()
+    {
+        return $this->service->getDataWorkingArea()->getResult();
     }
 }

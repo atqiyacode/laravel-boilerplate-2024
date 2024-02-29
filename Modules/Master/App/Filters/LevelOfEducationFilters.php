@@ -44,5 +44,7 @@ class LevelOfEducationFilters extends QueryFilters
         'created_at',
         'updated_at',
         'deleted_at',
+        'employees_count',
+        'applicants_count',
     ];
 }

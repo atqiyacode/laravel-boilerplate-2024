@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Modules\Analytic\App\Http\Controllers\AnalyticController;
 
 /*
     |--------------------------------------------------------------------------
@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
     |
 */
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
-    Route::get('analytic', fn (Request $request) => $request->user())->name('analytic');
+Route::middleware(['auth:sanctum'])->prefix('analytic')->group(function () {
+    Route::get('/religions', [AnalyticController::class, 'getDataReligion']);
+    Route::get('/employeeTypes', [AnalyticController::class, 'getDataEmployeeType']);
+    Route::get('/fieldOfWorks', [AnalyticController::class, 'getDataFieldOfWork']);
+    Route::get('/positions', [AnalyticController::class, 'getDataPosition']);
+    Route::get('/workingAreas', [AnalyticController::class, 'getDataWorkingArea']);
+    Route::get('/genders', [AnalyticController::class, 'getDataGender']);
 });

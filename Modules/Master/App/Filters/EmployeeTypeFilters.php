@@ -41,5 +41,6 @@ class EmployeeTypeFilters extends QueryFilters
         'id',
         'created_at',
         'updated_at',
+        'employees_count',
     ];
 }
