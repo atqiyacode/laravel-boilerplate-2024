@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Public\App\Providers;
+namespace Modules\Auth\App\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -10,7 +10,7 @@ class RouteServiceProvider extends ServiceProvider
     /**
      * The module namespace to assume when generating URLs to actions.
      */
-    protected string $moduleNamespace = 'Modules\Public\App\Http\Controllers';
+    protected string $moduleNamespace = 'Modules\Auth\App\Http\Controllers';
 
     /**
      * Called before routes are registered.
@@ -37,9 +37,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes(): void
     {
-        Route::prefix('api')
+        Route::prefix('api/' . config('atqiyacode.api_version'))
             ->middleware('api')
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Public', '/routes/api.php'));
+            ->group(module_path('Auth', '/routes/api.php'));
     }
 }

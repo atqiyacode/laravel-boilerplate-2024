@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Master\Filters;
+namespace Modules\Master\App\Filters;
 
 use Essa\APIToolKit\Filters\QueryFilters;
 

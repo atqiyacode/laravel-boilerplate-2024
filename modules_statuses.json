@@ -14,13 +14,10 @@
     "Notification": true,
     "Others": true,
     "User": true,
-    "AuthApplicant": true,
-    "AuthMobileApp": true,
-    "AuthBackOffice": true,
-    "Public": true,
     "Employee": true,
     "Project": true,
     "JobApplication": true,
     "JobVacancy": true,
-    "DynamicForm": true
+    "DynamicForm": true,
+    "Auth": true
 }

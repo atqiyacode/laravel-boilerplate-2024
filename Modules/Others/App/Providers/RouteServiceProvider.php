@@ -37,7 +37,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes(): void
     {
-        Route::prefix('api')
+        Route::prefix('api/' . config('atqiyacode.api_version'))
             ->middleware('api')
             ->namespace($this->moduleNamespace)
             ->group(module_path('Others', '/routes/api.php'));

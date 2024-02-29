@@ -16,8 +16,8 @@ class AddAuthHeader
     public function handle(Request $request, Closure $next)
     {
         if (!$request->bearerToken()) {
-            if ($request->hasCookie(config('app.token_cookie'))) {
-                $token = $request->cookie(config('app.token_cookie'));
+            if ($request->hasCookie(config('atqiyacode.token_cookie'))) {
+                $token = $request->cookie(config('atqiyacode.token_cookie'));
                 $request->headers->add(['Authorization' => 'Bearer ' . $token]);
             }
         }

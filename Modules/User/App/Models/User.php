@@ -27,7 +27,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasApiTokens, HasFactory, Notifiable, SoftDeletes, HasPermissions, HasRoles, MustVerifyNewEmail, Loggable, Filterable, CanDeleteScope;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes, HasPermissions, HasRoles, MustVerifyNewEmail, Loggable, Filterable, CanDeleteScope, DeveloperScope;
 
     protected string $default_filters = UserFilters::class;
 
@@ -149,7 +149,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function jobApplications(): HasMany
     {
-        return $this->hasMany(JobApplication::class);
+        return $this->hasMany(\Modules\JobApplication\App\Models\JobApplication::class);
     }
 
     /**
@@ -171,7 +171,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function applicantResume(): HasOne
     {
-        return $this->hasOne(ApplicantResume::class, 'nik', 'username');
+        return $this->hasOne(\Modules\Applicant\App\Models\ApplicantResume::class, 'nik', 'username');
     }
 
     /**
@@ -181,7 +181,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function firebaseToken(): HasOne
     {
-        return $this->hasOne(UserFirebaseToken::class, 'user_id', 'id');
+        return $this->hasOne(\Modules\User\App\Models\UserFirebaseToken::class, 'user_id', 'id');
     }
 
     /**
@@ -191,7 +191,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function logs(): HasMany
     {
-        return $this->hasMany(UserLogActivity::class, 'user_id', 'id');
+        return $this->hasMany(\Modules\Developer\App\Models\UserLogActivity::class, 'user_id', 'id');
     }
 
     /**
@@ -201,6 +201,6 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     public function notifications(): HasMany
     {
-        return $this->hasMany(UserNotification::class, 'user_id', 'id');
+        return $this->hasMany(\Modules\User\App\Models\UserNotification::class, 'user_id', 'id');
     }
 }

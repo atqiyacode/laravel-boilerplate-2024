@@ -4,7 +4,7 @@ namespace Modules\Master\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
-use Modules\Master\Filters\EmployeeTypeFilters;
+use Modules\Master\App\Filters\EmployeeTypeFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

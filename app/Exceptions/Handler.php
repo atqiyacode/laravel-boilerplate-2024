@@ -10,9 +10,11 @@ use Spatie\Permission\Exceptions\UnauthorizedException as SpatieUnauthorizedExce
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException;
 use Throwable;
+use F9Web\ApiResponseHelpers;
 
 class Handler extends ExceptionHandler
 {
+    use ApiResponseHelpers;
     /**
      * The list of the inputs that are never flashed to the session on validation exceptions.
      *

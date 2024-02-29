@@ -4,7 +4,7 @@ namespace Modules\Master\App\Models;
 
 use Haruncpi\LaravelUserActivity\Traits\Loggable;
 
-use Modules\Master\Filters\PermissionFilters;
+use Modules\Master\App\Filters\PermissionFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;

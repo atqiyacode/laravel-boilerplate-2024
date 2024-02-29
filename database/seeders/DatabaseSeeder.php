@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
         Artisan::call('passport:install');
         // \App\Models\User::factory(10)->create();
 
-        \App\Models\User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'atqiya@atqiyacode.com',
-        ]);
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'username' => 'atqiyacode',
+        //     'email' => 'atqiya@atqiyacode.com',
+        // ]);
     }
 }
