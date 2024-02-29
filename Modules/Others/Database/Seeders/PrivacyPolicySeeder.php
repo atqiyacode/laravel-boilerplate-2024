@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Others\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,7 +17,7 @@ class PrivacyPolicySeeder extends Seeder
      */
     public function run(): void
     {
-        PrivacyPolicy::create([
+        PrivacyPolicy::updateOrCreate([
             'content' => '
             Kebijakan Privasi Aplikasi HRIS
 

@@ -49,7 +49,7 @@ class EmployeeActivity extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',
@@ -62,6 +62,6 @@ class EmployeeActivity extends Model
 
     public function typeOfActivity(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\TypeOfActivity::class);
+        return $this->belongsTo(\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity::class);
     }
 }

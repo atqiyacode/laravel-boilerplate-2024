@@ -44,7 +44,7 @@ class EmployeeRelationReference extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',

@@ -2,7 +2,7 @@
 
 namespace Modules\KeyPerformanceIndicator\App\Policies;
 
-use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Modules\KeyPerformanceIndicator\App\Models\User;
 use Illuminate\Auth\Access\Response;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Employee\Database\Seeders;
 
 use Modules\Employee\App\Models\Employee;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -19,7 +19,7 @@ class EmployeeMediaSocialSeeder extends Seeder
     public function run(): void
     {
         for ($i = 0; $i < Employee::count(); $i++) {
-            EmployeeMediaSocial::factory(fake()->numberBetween(1, 3))->create();
+            \Modules\Employee\Database\Factories\EmployeeMediaSocialFactory::new()->count(fake()->numberBetween(1, 3))->create();
         }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Employee\Database\Seeders;
 
 use Modules\Employee\App\Models\Employee;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -20,7 +20,7 @@ class EmployeeEducationSeeder extends Seeder
     {
         $employees = Employee::all();
         foreach ($employees as $key) {
-            EmployeeEducation::factory()->create([
+            \Modules\Employee\Database\Factories\EmployeeEducationFactory::new()->count(1)->create([
                 'employee_id' => $key->id
             ]);
         }

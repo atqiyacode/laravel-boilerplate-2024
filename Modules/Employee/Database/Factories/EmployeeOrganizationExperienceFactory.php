@@ -1,15 +1,17 @@
 <?php
 
-namespace Database\Factories;
+namespace Modules\Employee\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EmployeeOrganizationExperienceFactory extends Factory
 {
+    protected $model = \Modules\Employee\App\Models\EmployeeOrganizationExperience::class;
+
     public function definition(): array
     {
         return [
-            'employee_id' => createOrRandomFactory(\App\Models\Employee::class),
+            'employee_id' => createOrRandomFactory(\Modules\Employee\App\Models\Employee::class),
             'nama_organisasi' => $this->faker->realText(50),
             'posisi' => $this->faker->jobTitle(),
             'jenis_organisasi' => $this->faker->creditCardType(),

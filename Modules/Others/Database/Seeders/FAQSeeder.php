@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Others\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -18,7 +18,7 @@ class FAQSeeder extends Seeder
     public function run(): void
     {
         for ($i = 1; $i < 15; $i++) {
-            FAQ::create([
+            FAQ::updateOrCreate([
                 'question' => fake()->text(20),
                 'answer' => fake()->realText(),
                 'status' => fake()->boolean()

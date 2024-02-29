@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Employee\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,6 +17,6 @@ class EmployeePermitSeeder extends Seeder
      */
     public function run(): void
     {
-        EmployeePermit::factory(100)->create();
+        \Modules\Employee\Database\Factories\EmployeePermitFactory::new()->count(100)->create();
     }
 }

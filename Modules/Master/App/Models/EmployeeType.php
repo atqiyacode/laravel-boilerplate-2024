@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Modules\Employee\Models\Employee;
+use Modules\Employee\App\Models\Employee;
 
 class EmployeeType extends Model
 {

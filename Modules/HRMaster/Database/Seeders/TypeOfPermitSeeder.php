@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\HRMaster\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 

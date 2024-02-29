@@ -13,7 +13,7 @@ use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Applicant\App\Models\ApplicantResume;
-use Modules\Employee\Models\Employee;
+use Modules\Employee\App\Models\Employee;
 
 class Religion extends Model
 {

@@ -18,5 +18,9 @@ class DatabaseSeeder extends Seeder
         Artisan::call('module:seed Master');
         Artisan::call('module:seed Notification');
         Artisan::call('module:seed MobileApp');
+
+        Artisan::call('module:seed HRMaster');
+
+        Artisan::call('module:seed Others');
     }
 }

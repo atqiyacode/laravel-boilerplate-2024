@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\HRMaster\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -88,7 +88,7 @@ class UnitSeeder extends Seeder
                 ];
             }
 
-            Unit::insert($positionsData);
+            Unit::upsert($positionsData, ['name'], null);
         });
     }
 }

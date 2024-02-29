@@ -2,7 +2,7 @@
 
 namespace Modules\KeyPerformanceIndicator\App\Imports;
 
-use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class TypeOfActivityImport implements ToModel

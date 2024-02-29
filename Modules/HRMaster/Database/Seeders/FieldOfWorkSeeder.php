@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\HRMaster\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -42,7 +42,7 @@ class FieldOfWorkSeeder extends Seeder
                     'updated_at' => now(),
                 ];
             }
-            FieldOfWork::insert($data);
+            FieldOfWork::upsert($data, ['name'], null);
         });
     }
 }

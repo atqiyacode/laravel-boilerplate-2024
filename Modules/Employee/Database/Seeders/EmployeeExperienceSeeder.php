@@ -1,12 +1,12 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Employee\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\Employee\App\Models\Employee;
 use Modules\Employee\App\Models\EmployeeExperience;
-use Modules\Employee\App\Models\LevelOfEducation;
+use Modules\Master\App\Models\LevelOfEducation;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 

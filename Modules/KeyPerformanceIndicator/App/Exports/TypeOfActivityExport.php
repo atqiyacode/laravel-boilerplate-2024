@@ -2,7 +2,7 @@
 
 namespace Modules\KeyPerformanceIndicator\App\Exports;
 
-use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;

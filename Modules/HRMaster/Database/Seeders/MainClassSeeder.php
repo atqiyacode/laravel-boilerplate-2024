@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\HRMaster\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,6 +17,12 @@ class MainClassSeeder extends Seeder
      */
     public function run(): void
     {
-        MainClass::factory(10)->create();
+        for ($i = 1; $i < 11; $i++) {
+            MainClass::updateOrCreate([
+                'name' => 'GOLONGAN ' . $i,
+                'description' => 'Description ' . $i,
+                'status' => (bool) true
+            ]);
+        }
     }
 }

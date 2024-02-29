@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
-use Modules\Employee\Models\Employee;
+use Modules\Employee\App\Models\Employee;
 
 class EmployeeAchievement extends Model
 {
@@ -45,7 +45,7 @@ class EmployeeAchievement extends Model
 
     public function employee(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\Modules\Employee\App\Models\Employee::class)->with([
+        return $this->belongsTo(\Modules\Employee\Modules\Employee\App\Models\Employee::class)->with([
             'employeeType',
             'gender',
             'religion',

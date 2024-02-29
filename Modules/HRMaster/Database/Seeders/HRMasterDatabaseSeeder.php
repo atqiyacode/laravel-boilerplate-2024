@@ -11,6 +11,13 @@ class HRMasterDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            UnitSeeder::class,
+            PositionSeeder::class,
+            FieldOfWorkSeeder::class,
+            MainClassSeeder::class,
+            WorkingAreaSeeder::class,
+            TypeOfPermitSeeder::class,
+        ]);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\HRMaster\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -84,7 +84,7 @@ class WorkingAreaSeeder extends Seeder
                     'updated_at' => now(),
                 ];
             }
-            WorkingArea::insert($data);
+            WorkingArea::upsert($data, ['name'], null);
         });
     }
 }

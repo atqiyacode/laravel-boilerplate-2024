@@ -4,7 +4,7 @@ namespace Modules\KeyPerformanceIndicator\App\Observers;
 
 use Modules\KeyPerformanceIndicator\App\Events\TypeOfActivityEvent;
 use Modules\Developer\App\Events\UserLogActivityEvent;
-use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 
 class TypeOfActivityObserver
 {

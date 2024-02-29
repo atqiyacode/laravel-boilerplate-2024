@@ -101,12 +101,12 @@ class ApplicantResume extends Model
 
     public function jobApplication(): HasMany
     {
-        return $this->hasMany(JobApplication::class);
+        return $this->hasMany(\Modules\JobApplication\App\Models\JobApplication::class);
     }
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class)->select([
+        return $this->belongsTo(\Modules\User\App\Models\User::class)->select([
             'id',
             'name',
             'username',
@@ -117,7 +117,7 @@ class ApplicantResume extends Model
 
     public function religion(): BelongsTo
     {
-        return $this->belongsTo(Religion::class)->select([
+        return $this->belongsTo(\Modules\Master\App\Models\Religion::class)->select([
             'id',
             'name',
         ]);
@@ -125,7 +125,7 @@ class ApplicantResume extends Model
 
     public function gender(): BelongsTo
     {
-        return $this->belongsTo(Gender::class)->select([
+        return $this->belongsTo(\Modules\Master\App\Models\Gender::class)->select([
             'id',
             'name',
         ]);
@@ -133,11 +133,11 @@ class ApplicantResume extends Model
 
     public function formPraRegistration(): BelongsTo
     {
-        return $this->belongsTo(FormPraRegistration::class);
+        return $this->belongsTo(\Modules\DynamicForm\App\Models\FormPraRegistration::class);
     }
 
     public function response(): HasMany
     {
-        return $this->hasMany(Response::class);
+        return $this->hasMany(\Modules\DynamicForm\App\Models\Response::class);
     }
 }

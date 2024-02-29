@@ -11,6 +11,10 @@ class OthersDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            FAQSeeder::class,
+            PrivacyPolicySeeder::class,
+            TermAndConditionSeeder::class,
+        ]);
     }
 }
