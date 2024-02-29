@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\User\Database\Seeders;
 
+use Modules\User\Database\Factories\UserNotificationFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\User\App\Models\UserNotification;
 use Illuminate\Database\Seeder;
 
 class UserNotificationSeeder extends Seeder
@@ -17,6 +17,6 @@ class UserNotificationSeeder extends Seeder
      */
     public function run(): void
     {
-        UserNotification::factory(500)->create();
+        UserNotificationFactory::new()->count(500)->create();
     }
 }

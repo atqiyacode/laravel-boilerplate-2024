@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\User\Database\Seeders;
 
+use Modules\User\Database\Factories\UserVerificationCodeFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\User\App\Models\UserVerificationCode;
 use Illuminate\Database\Seeder;
 
 class UserVerificationCodeSeeder extends Seeder
@@ -17,6 +17,6 @@ class UserVerificationCodeSeeder extends Seeder
      */
     public function run(): void
     {
-        UserVerificationCode::factory(200)->create();
+        UserVerificationCodeFactory::new()->count(200)->create();
     }
 }

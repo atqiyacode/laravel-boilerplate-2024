@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\User\App\Models\User;
 use Modules\User\App\Models\UserFirebaseToken;
+
 use Illuminate\Database\Seeder;
 
 class UserFirebaseTokenSeeder extends Seeder

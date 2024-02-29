@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFirebaseTokenFactory extends Factory
 {
+    protected $model = \Modules\User\App\Models\UserFirebaseToken::class;
+
     public function definition(): array
     {
         return [
