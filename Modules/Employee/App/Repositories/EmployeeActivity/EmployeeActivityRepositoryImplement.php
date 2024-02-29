@@ -111,13 +111,10 @@ class EmployeeActivityRepositoryImplement extends Eloquent implements EmployeeAc
     {
         if ($format === 'json') {
             $jsonData = $this->model->canDelete()->useFilters()->get();
-            return response()->jsonDownload(EmployeeActivityResource::collection($jsonData), 'data.json');
-        } elseif ($format === 'csv') {
-            return $this->downloadExcel('CSV');
-        } elseif ($format === 'xlsx') {
-            return $this->downloadExcel('XLSX');
-        } elseif ($format === 'xls') {
-            return $this->downloadExcel('XLS');
+            return response()->jsonDownload($jsonData, 'data.json');
+        } elseif (in_array($format, ['csv', 'xlsx', 'xls'])) {
+            $queryData = $this->model->canDelete()->useFilters()->get();
+            return $this->downloadExcel($format, $queryData);
         } else {
             return response()->json(['errors' => __('validation.regex', ['attribute' => 'File'])], 400);
         }
@@ -126,7 +123,7 @@ class EmployeeActivityRepositoryImplement extends Eloquent implements EmployeeAc
     private function downloadExcel($format, $queryData)
     {
         $modelName = class_basename($this->model);
-        $exportClassName = "App\\Exports\\{$modelName}Export";
+        $exportClassName = "Modules\\Employee\\App\\Exports\\{$modelName}Export";
         $export = App::make($exportClassName, ['data' => $queryData]);
 
         switch (strtolower($format)) {

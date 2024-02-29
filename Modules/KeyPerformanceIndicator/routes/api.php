@@ -1,7 +1,7 @@
 <?php
 
-use Modules\KeyPerformanceIndicator\Http\Controllers\PerformanceAssessmentController;
-use Modules\KeyPerformanceIndicator\Http\Controllers\TypeOfActivityController;
+use Modules\KeyPerformanceIndicator\App\Http\Controllers\PerformanceAssessmentController;
+use Modules\KeyPerformanceIndicator\App\Http\Controllers\TypeOfActivityController;
 use Illuminate\Support\Facades\Route;
 
 

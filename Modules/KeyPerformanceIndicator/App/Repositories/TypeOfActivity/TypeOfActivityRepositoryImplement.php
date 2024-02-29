@@ -5,7 +5,7 @@ namespace Modules\KeyPerformanceIndicator\App\Repositories\TypeOfActivity;
 use LaravelEasyRepository\Implementations\Eloquent;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\App;
-use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
+use Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 
 class TypeOfActivityRepositoryImplement extends Eloquent implements TypeOfActivityRepository
 {

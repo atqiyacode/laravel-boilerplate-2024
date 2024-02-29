@@ -2,9 +2,7 @@
 
 namespace Modules\Employee\App\Exports;
 
-use Modules\Employee\App\Models\EmployeeAchievement;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;
 
 class EmployeeAchievementExport implements FromView

@@ -2,10 +2,10 @@
 
 namespace Modules\KeyPerformanceIndicator\App\Services\TypeOfActivity;
 
-use Modules\KeyPerformanceIndicator\Http\Resources\TypeOfActivity\TypeOfActivityResource;
+use Modules\KeyPerformanceIndicator\App\Http\Resources\TypeOfActivity\TypeOfActivityResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use Modules\KeyPerformanceIndicator\Repositories\TypeOfActivity\TypeOfActivityRepository;
+use Modules\KeyPerformanceIndicator\App\Repositories\TypeOfActivity\TypeOfActivityRepository;
 
 class TypeOfActivityServiceImplement extends ServiceApi implements TypeOfActivityService
 {

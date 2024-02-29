@@ -19,5 +19,8 @@
     "JobApplication": true,
     "JobVacancy": true,
     "DynamicForm": true,
-    "Auth": true
+    "Auth": true,
+    "Career": true,
+    "Mobile": true,
+    "Media": true
 }

@@ -2,10 +2,10 @@
 
 namespace Modules\KeyPerformanceIndicator\App\Services\PerformanceAssessment;
 
-use Modules\KeyPerformanceIndicator\Http\Resources\PerformanceAssessment\PerformanceAssessmentResource;
+use Modules\KeyPerformanceIndicator\App\Http\Resources\PerformanceAssessment\PerformanceAssessmentResource;
 use LaravelEasyRepository\ServiceApi;
 use Illuminate\Support\Facades\DB;
-use Modules\KeyPerformanceIndicator\Repositories\PerformanceAssessment\PerformanceAssessmentRepository;
+use Modules\KeyPerformanceIndicator\App\Repositories\PerformanceAssessment\PerformanceAssessmentRepository;
 
 class PerformanceAssessmentServiceImplement extends ServiceApi implements PerformanceAssessmentService
 {
