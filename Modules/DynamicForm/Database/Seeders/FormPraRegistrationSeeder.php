@@ -1,10 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\DynamicForm\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\DynamicForm\App\Models\FormPraRegistration;
 use Illuminate\Database\Seeder;
 
 class FormPraRegistrationSeeder extends Seeder
@@ -17,6 +15,6 @@ class FormPraRegistrationSeeder extends Seeder
      */
     public function run(): void
     {
-        FormPraRegistration::factory(10)->create();
+        \Modules\DynamicForm\Database\Factories\FormPraRegistrationFactory::new()->count(10)->create();
     }
 }

@@ -43,7 +43,7 @@ class FormField extends Model
 
     public function form(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Form::class)->select([
+        return $this->belongsTo(\Modules\DynamicForm\App\Models\Form::class)->select([
             'id',
             'project_id',
             'title',
@@ -55,11 +55,11 @@ class FormField extends Model
 
     public function responseDatas(): HasMany
     {
-        return $this->hasMany(ResponseData::class);
+        return $this->hasMany(\Modules\DynamicForm\App\Models\ResponseData::class);
     }
 
     public function options(): HasMany
     {
-        return $this->hasMany(Option::class);
+        return $this->hasMany(\Modules\DynamicForm\App\Models\Option::class);
     }
 }

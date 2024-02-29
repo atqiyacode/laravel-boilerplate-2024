@@ -1,11 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\DynamicForm\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\DynamicForm\App\Models\FormQuestionPraRegistration;
-use Modules\DynamicForm\App\Models\Project;
 use Illuminate\Database\Seeder;
 
 class FormQuestionPraRegistrationSeeder extends Seeder
@@ -18,11 +15,11 @@ class FormQuestionPraRegistrationSeeder extends Seeder
      */
     public function run(): void
     {
-        $projects = Project::get()->pluck("id")->toArray();
+        $projects = \Modules\Project\App\Models\Project::get()->pluck("id")->toArray();
         // $projects = Project::with("jobVacancies.position")->get();
         foreach ($projects as $key => $project) {
             // $positions = $project->jobVacancies->pluck("position")->flatten()->pluck("id")->toArray();
-            FormQuestionPraRegistration::create([
+            \Modules\DynamicForm\App\Models\FormQuestionPraRegistration::updateOrCreate([
                 "project_id" => $project,
                 // "project_id" => $project->id,
                 "batch" => "Saudara/i bertugas di batch berapa?",

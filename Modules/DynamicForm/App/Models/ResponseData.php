@@ -43,14 +43,14 @@ class ResponseData extends Model
 
     public function response(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Response::class)->with([
+        return $this->belongsTo(\Modules\DynamicForm\App\Models\Response::class)->with([
             'applicantResume',
         ]);
     }
 
     public function formField(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\FormField::class)->with([
+        return $this->belongsTo(\Modules\DynamicForm\App\Models\FormField::class)->with([
             'form'
         ]);
     }

@@ -43,7 +43,7 @@ class Form extends Model
 
     public function project(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Project::class)->select([
+        return $this->belongsTo(\Modules\Project\App\Models\Project::class)->select([
             'id', 'name'
         ]);
     }

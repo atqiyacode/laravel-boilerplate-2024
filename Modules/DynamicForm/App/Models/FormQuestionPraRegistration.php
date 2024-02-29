@@ -51,11 +51,11 @@ class FormQuestionPraRegistration extends Model
 
     public function project(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\Project::class);
+        return $this->belongsTo(\Modules\Project\App\Models\Project::class);
     }
 
     public function formPraRegistrations(): HasMany
     {
-        return $this->hasMany(FormPraRegistration::class);
+        return $this->hasMany(\Modules\DynamicForm\App\Models\FormPraRegistration::class);
     }
 }

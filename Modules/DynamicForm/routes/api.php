@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
     |
 */
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
+Route::middleware(['auth:sanctum'])->prefix('dynamicForm')->group(function () {
     /*===========================
 =           formQuestionPraRegistrations           =
 =============================*/

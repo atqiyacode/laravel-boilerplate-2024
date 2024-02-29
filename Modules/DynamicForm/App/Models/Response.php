@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Response extends Model
@@ -43,7 +42,7 @@ class Response extends Model
 
     public function applicantResume(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(ApplicantResume::class)->select([
+        return $this->belongsTo(\Modules\Applicant\App\Models\ApplicantResume::class)->select([
             'id',
             'nik',
             'nama_lengkap'

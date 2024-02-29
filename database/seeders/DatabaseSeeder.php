@@ -29,5 +29,7 @@ class DatabaseSeeder extends Seeder
         Artisan::call('module:seed Applicant');
 
         Artisan::call('module:seed JobApplication');
+
+        Artisan::call('module:seed DynamicForm');
     }
 }

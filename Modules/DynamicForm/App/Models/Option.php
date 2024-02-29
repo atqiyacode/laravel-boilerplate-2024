@@ -41,7 +41,7 @@ class Option extends Model
 
     public function formField(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\FormField::class)->select([
+        return $this->belongsTo(\Modules\DynamicForm\App\Models\FormField::class)->select([
             'id',
             'type',
             'label',

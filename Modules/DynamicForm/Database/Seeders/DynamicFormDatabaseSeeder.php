@@ -11,6 +11,14 @@ class DynamicFormDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            FormQuestionPraRegistrationSeeder::class,
+            FormPraRegistrationSeeder::class,
+            FormSeeder::class,
+            FormFieldSeeder::class,
+            ResponseSeeder::class,
+            OptionSeeder::class,
+            ResponseDataSeeder::class,
+        ]);
     }
 }

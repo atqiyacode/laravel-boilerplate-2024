@@ -1,10 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\DynamicForm\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\DynamicForm\App\Models\FormField;
 use Illuminate\Database\Seeder;
 
 class FormFieldSeeder extends Seeder
@@ -17,6 +15,6 @@ class FormFieldSeeder extends Seeder
      */
     public function run(): void
     {
-        FormField::factory(10)->create();
+        \Modules\DynamicForm\Database\Factories\FormFieldFactory::new()->count(10)->create();
     }
 }

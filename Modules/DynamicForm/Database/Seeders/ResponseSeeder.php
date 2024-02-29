@@ -1,10 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\DynamicForm\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\DynamicForm\App\Models\Response;
 use Illuminate\Database\Seeder;
 
 class ResponseSeeder extends Seeder
@@ -17,6 +15,6 @@ class ResponseSeeder extends Seeder
      */
     public function run(): void
     {
-        Response::factory(10)->create();
+        \Modules\DynamicForm\Database\Factories\ResponseFactory::new()->count(10)->create();
     }
 }
