@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Factories;
+namespace Modules\Applicant\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ApplicantResumeFactory extends Factory
 {
+    protected $model = \Modules\Applicant\App\Models\ApplicantResume::class;
     public function definition(): array
     {
         return [

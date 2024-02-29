@@ -10,7 +10,7 @@ class ResponseFactory extends Factory
     {
         return [
             'form_id' => createOrRandomFactory(\App\Models\Form::class),
-			'applicant_resume_id' => createOrRandomFactory(\App\Models\ApplicantResume::class),
+            'applicant_resume_id' => createOrRandomFactory(\Modules\Applicant\App\Models\ApplicantResume::class),
         ];
     }
 }

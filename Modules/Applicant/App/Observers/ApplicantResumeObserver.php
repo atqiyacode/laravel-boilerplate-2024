@@ -11,7 +11,7 @@ class ApplicantResumeObserver
     /**
      * Dispatch events and log activities when the ApplicantResume is created, updated, deleted, restored, or force deleted.
      *
-     * @param \App\Models\ApplicantResume $data
+     * @param \Modules\Applicant\App\Models\ApplicantResume $data
      */
     protected function handleEventAndLogActivity(ApplicantResume $data): void
     {

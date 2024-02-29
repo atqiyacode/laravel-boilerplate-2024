@@ -1,12 +1,12 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\Applicant\App\Models\ApplicantExperience;
 use Modules\Applicant\App\Models\ApplicantResume;
-use Modules\Applicant\App\Models\LevelOfEducation;
+use Modules\Master\App\Models\LevelOfEducation;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 

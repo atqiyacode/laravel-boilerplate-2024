@@ -1,10 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\Applicant\App\Models\ApplicantRelationReference;
 use Illuminate\Database\Seeder;
 
 class ApplicantRelationReferenceSeeder extends Seeder
@@ -17,9 +16,9 @@ class ApplicantRelationReferenceSeeder extends Seeder
      */
     public function run(): void
     {
-        $applicantResumes = \App\Models\ApplicantResume::all();
+        $applicantResumes = \Modules\Applicant\App\Models\ApplicantResume::all();
         foreach ($applicantResumes as $key) {
-            ApplicantRelationReference::factory(fake()->numberBetween(1, 4))->create([
+            \Modules\Applicant\Database\Factories\ApplicantRelationReferenceFactory::new()->count(fake()->numberBetween(1, 4))->create([
                 'applicant_resume_id' => $key->id
             ]);
         }

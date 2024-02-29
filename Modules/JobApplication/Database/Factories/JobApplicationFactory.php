@@ -10,14 +10,12 @@ class JobApplicationFactory extends Factory
     {
         return [
             'user_id' => createOrRandomFactory(\App\Models\User::class),
-			'user_id' => createOrRandomFactory(\App\Models\User::class),
-			'job_vacancy_id' => createOrRandomFactory(\App\Models\JobVacancy::class),
-			'job_vacancy_id' => createOrRandomFactory(\App\Models\JobVacancy::class),
-			'applicant_resume_id' => createOrRandomFactory(\App\Models\ApplicantResume::class),
-			'applicant_resume_id' => createOrRandomFactory(\App\Models\ApplicantResume::class),
-			'status' => $this->faker->randomNumber(),
-			'keterangan' => $this->faker->text(),
-			'referal' => $this->faker->firstName(),
+            'user_id' => createOrRandomFactory(\App\Models\User::class),
+            'job_vacancy_id' => createOrRandomFactory(\App\Models\JobVacancy::class),
+            'applicant_resume_id' => createOrRandomFactory(\Modules\Applicant\App\Models\ApplicantResume::class),
+            'status' => $this->faker->randomNumber(),
+            'keterangan' => $this->faker->text(),
+            'referal' => $this->faker->firstName(),
         ];
     }
 }

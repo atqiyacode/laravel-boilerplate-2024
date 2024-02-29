@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Factories;
+namespace Modules\Applicant\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ApplicantCertificateOfExpertiseFactory extends Factory
 {
+    protected $model = \Modules\Applicant\App\Models\ApplicantCertificateOfExpertise::class;
     public function definition(): array
     {
         return [

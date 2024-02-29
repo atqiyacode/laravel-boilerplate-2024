@@ -51,7 +51,7 @@ class FormPraRegistration extends Model
 
     public function applicantResume(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\ApplicantResume::class)->select([
+        return $this->belongsTo(\Modules\Applicant\App\Models\ApplicantResume::class)->select([
             'id',
             'nik',
             'nama_lengkap',

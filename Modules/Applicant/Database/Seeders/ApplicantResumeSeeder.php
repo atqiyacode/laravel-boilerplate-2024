@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\Applicant\App\Models\ApplicantResume;
-use Modules\Applicant\App\Models\Gender;
-use Modules\Applicant\App\Models\Religion;
-use Modules\Applicant\App\Models\User;
+use Modules\Master\App\Models\Gender;
+use Modules\Master\App\Models\Religion;
+use Modules\User\App\Models\User;
 use Illuminate\Database\Seeder;
 
 class ApplicantResumeSeeder extends Seeder

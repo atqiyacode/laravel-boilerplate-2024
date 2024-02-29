@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\Applicant\App\Models\ApplicantEducation;
 use Modules\Applicant\App\Models\ApplicantResume;
-use Modules\Applicant\App\Models\LevelOfEducation;
-use Modules\Applicant\App\Models\University;
+use Modules\Master\App\Models\LevelOfEducation;
+use Modules\Master\App\Models\University;
 use Illuminate\Database\Seeder;
 
 class ApplicantEducationSeeder extends Seeder

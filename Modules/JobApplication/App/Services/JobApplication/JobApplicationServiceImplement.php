@@ -3,7 +3,7 @@
 namespace Modules\JobApplication\App\Services\JobApplication;
 
 use Modules\JobApplication\App\Http\Resources\JobApplication\JobApplicationResource;
-use Modules\JobApplication\App\Models\ApplicantResume;
+use Modules\JobApplication\Modules\Applicant\App\Models\ApplicantResume;
 use Modules\JobApplication\App\Models\Employee;
 use Modules\JobApplication\App\Models\EmployeeAchievement;
 use Modules\JobApplication\App\Models\EmployeeAttachment;

@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Factories;
+namespace Modules\Applicant\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ApplicantRelationReferenceFactory extends Factory
 {
+    protected $model = \Modules\Applicant\App\Models\ApplicantRelationReference::class;
     public function definition(): array
     {
         return [

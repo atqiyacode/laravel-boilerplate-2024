@@ -1,10 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\Applicant\App\Models\ApplicantMediaSocial;
 use Illuminate\Database\Seeder;
 
 class ApplicantMediaSocialSeeder extends Seeder
@@ -17,9 +16,9 @@ class ApplicantMediaSocialSeeder extends Seeder
      */
     public function run(): void
     {
-        $applicantResumes = \App\Models\ApplicantResume::all();
+        $applicantResumes = \Modules\Applicant\App\Models\ApplicantResume::all();
         foreach ($applicantResumes as $key) {
-            ApplicantMediaSocial::factory(fake()->numberBetween(1, 4))->create([
+            \Modules\Applicant\Database\Factories\ApplicantMediaSocialFactory::new()->count(fake()->numberBetween(1, 4))->create([
                 'applicant_resume_id' => $key->id
             ]);
         }

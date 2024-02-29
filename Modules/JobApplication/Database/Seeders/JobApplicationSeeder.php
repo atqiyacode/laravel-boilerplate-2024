@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\JobApplication\App\Models\ApplicantResume;
+use Modules\JobApplication\Modules\Applicant\App\Models\ApplicantResume;
 use Modules\JobApplication\App\Models\JobApplication;
 use Modules\JobApplication\App\Models\JobApplicationStatus;
 use Modules\JobApplication\App\Models\JobVacancy;

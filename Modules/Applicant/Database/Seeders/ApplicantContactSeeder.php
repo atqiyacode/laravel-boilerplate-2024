@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,9 +17,9 @@ class ApplicantContactSeeder extends Seeder
      */
     public function run(): void
     {
-        $applicantResumes = \App\Models\ApplicantResume::all();
+        $applicantResumes = \Modules\Applicant\App\Models\ApplicantResume::all();
         foreach ($applicantResumes as $key) {
-            ApplicantContact::factory()->create([
+            \Modules\Applicant\Database\Factories\ApplicantContactFactory::new()->count(1)->create([
                 'applicant_resume_id' => $key->id
             ]);
         }

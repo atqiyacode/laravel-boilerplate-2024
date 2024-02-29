@@ -1,11 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\Applicant\App\Models\ApplicantLanguageSkill;
-use Modules\Applicant\App\Models\ApplicantResume;
 use Illuminate\Database\Seeder;
 
 class ApplicantLanguageSkillSeeder extends Seeder
@@ -18,9 +16,9 @@ class ApplicantLanguageSkillSeeder extends Seeder
      */
     public function run(): void
     {
-        $applicantResumes = \App\Models\ApplicantResume::all();
+        $applicantResumes = \Modules\Applicant\App\Models\ApplicantResume::all();
         foreach ($applicantResumes as $key) {
-            ApplicantLanguageSkill::factory(fake()->numberBetween(1, 4))->create([
+            \Modules\Applicant\Database\Factories\ApplicantLanguageSkillFactory::new()->count(fake()->numberBetween(1, 4))->create([
                 'applicant_resume_id' => $key->id
             ]);
         }

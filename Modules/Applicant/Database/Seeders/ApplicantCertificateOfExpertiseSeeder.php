@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Applicant\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,9 +17,9 @@ class ApplicantCertificateOfExpertiseSeeder extends Seeder
      */
     public function run(): void
     {
-        $applicantResumes = \App\Models\ApplicantResume::all();
+        $applicantResumes = \Modules\Applicant\App\Models\ApplicantResume::all();
         foreach ($applicantResumes as $key) {
-            ApplicantCertificateOfExpertise::factory(fake()->numberBetween(1, 4))->create([
+            \Modules\Applicant\Database\Factories\ApplicantCertificateOfExpertiseFactory::new()->count(fake()->numberBetween(1, 4))->create([
                 'applicant_resume_id' => $key->id
             ]);
         }
