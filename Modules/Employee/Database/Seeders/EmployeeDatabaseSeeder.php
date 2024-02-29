@@ -39,5 +39,9 @@ class EmployeeDatabaseSeeder extends Seeder
             EmployeePermitStructureSeeder::class,
             EmployeePermitSeeder::class,
         ]);
+
+        $this->call([
+            EmployeeActivitySeeder::class,
+        ]);
     }
 }

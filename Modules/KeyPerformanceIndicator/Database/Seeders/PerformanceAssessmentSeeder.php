@@ -1,10 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\KeyPerformanceIndicator\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\KeyPerformanceIndicator\App\Models\PerformanceAssessment;
 use Illuminate\Database\Seeder;
 
 class PerformanceAssessmentSeeder extends Seeder
@@ -17,6 +15,6 @@ class PerformanceAssessmentSeeder extends Seeder
      */
     public function run(): void
     {
-        PerformanceAssessment::factory(10)->create();
+        \Modules\KeyPerformanceIndicator\Database\Factories\PerformanceAssessmentFactory::new()->count(10)->create();
     }
 }

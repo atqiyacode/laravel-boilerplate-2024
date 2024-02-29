@@ -1,10 +1,8 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\KeyPerformanceIndicator\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use Modules\KeyPerformanceIndicator\Modules\KeyPerformanceIndicator\App\Models\TypeOfActivity;
 use Illuminate\Database\Seeder;
 
 class TypeOfActivitySeeder extends Seeder
@@ -41,7 +39,7 @@ class TypeOfActivitySeeder extends Seeder
             "MELAKSANAKAN KEGIATAN LAINNYA		",
         ];
         foreach ($data as $key) {
-            TypeOfActivity::factory()->create([
+            \Modules\KeyPerformanceIndicator\Database\Factories\TypeOfActivityFactory::new()->count(1)->create([
                 'name' => $key
             ]);
         }

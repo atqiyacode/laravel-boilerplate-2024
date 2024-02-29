@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         Artisan::call('module:seed Others');
 
         Artisan::call('module:seed HRMaster');
+        Artisan::call('module:seed KeyPerformanceIndicator');
 
         Artisan::call('module:seed Project');
         Artisan::call('module:seed JobVacancy');

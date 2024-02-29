@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\KeyPerformanceIndicator\App\Database\Seeders;
+namespace Modules\KeyPerformanceIndicator\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
@@ -11,6 +11,9 @@ class KeyPerformanceIndicatorDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            TypeOfActivitySeeder::class,
+            PerformanceAssessmentSeeder::class,
+        ]);
     }
 }
