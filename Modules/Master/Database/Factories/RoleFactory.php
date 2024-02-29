@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RoleFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\Role::class;
     public function definition(): array
     {
         return [

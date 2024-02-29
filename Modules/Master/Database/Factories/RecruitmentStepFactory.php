@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RecruitmentStepFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\RecruitmentStep::class;
     public function definition(): array
     {
         return [

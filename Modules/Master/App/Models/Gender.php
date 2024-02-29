@@ -12,8 +12,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Modules\Applicant\App\Models\ApplicantResume;
-use Modules\Employee\Models\Employee;
 
 class Gender extends Model
 {
@@ -48,7 +46,7 @@ class Gender extends Model
      */
     public function employees(): HasMany
     {
-        return $this->hasMany(Employee::class);
+        return $this->hasMany(\Modules\Employee\App\Models\Employee::class);
     }
 
     /**
@@ -58,6 +56,6 @@ class Gender extends Model
      */
     public function applicants(): HasMany
     {
-        return $this->hasMany(ApplicantResume::class);
+        return $this->hasMany(\Modules\Applicant\App\Models\ApplicantResume::class);
     }
 }

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ReligionFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\Religion::class;
     public function definition(): array
     {
         return [

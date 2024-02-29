@@ -49,6 +49,6 @@ class EmployeeType extends Model
      */
     public function employees(): HasMany
     {
-        return $this->hasMany(Employee::class);
+        return $this->hasMany(\Modules\Employee\App\Models\Employee::class);
     }
 }

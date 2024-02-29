@@ -48,7 +48,7 @@ class Religion extends Model
      */
     public function employees(): HasMany
     {
-        return $this->hasMany(Employee::class);
+        return $this->hasMany(\Modules\Employee\App\Models\Employee::class);
     }
 
     /**
@@ -58,6 +58,6 @@ class Religion extends Model
      */
     public function applicants(): HasMany
     {
-        return $this->hasMany(ApplicantResume::class);
+        return $this->hasMany(\Modules\Applicant\App\Models\ApplicantResume::class);
     }
 }

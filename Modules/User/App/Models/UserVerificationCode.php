@@ -52,6 +52,6 @@ class UserVerificationCode extends Model
 
     public function verificationCodeType(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\VerificationCodeType::class);
+        return $this->belongsTo(\Modules\Master\App\Models\VerificationCodeType::class);
     }
 }

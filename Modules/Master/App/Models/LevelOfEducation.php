@@ -69,7 +69,7 @@ class LevelOfEducation extends Model
      */
     public function employees(): HasMany
     {
-        return $this->hasMany(EmployeeEducation::class);
+        return $this->hasMany(\Modules\Employee\App\Models\EmployeeEducation::class);
     }
     /**
      * Get all of the applicants for the LevelOfEducation
@@ -78,6 +78,6 @@ class LevelOfEducation extends Model
      */
     public function applicants(): HasMany
     {
-        return $this->hasMany(ApplicantEducation::class);
+        return $this->hasMany(\Modules\Applicant\App\Models\ApplicantEducation::class);
     }
 }

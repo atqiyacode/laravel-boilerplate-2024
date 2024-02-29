@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EmployeeTypeFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\EmployeeType::class;
     public function definition(): array
     {
         return [

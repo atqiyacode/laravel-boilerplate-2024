@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PermissionFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\Permission::class;
+
     public function definition(): array
     {
         return [

@@ -39,6 +39,6 @@ class UserFirebaseToken extends Model
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\User::class);
+        return $this->belongsTo(\Modules\User\App\Models\User::class);
     }
 }

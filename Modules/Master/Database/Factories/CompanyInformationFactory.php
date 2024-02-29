@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CompanyInformationFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\CompanyInformation::class;
     public function definition(): array
     {
         return [

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UniversityFactory extends Factory
 {
+    protected $model = \Modules\Master\App\Models\University::class;
     public function definition(): array
     {
         return [
