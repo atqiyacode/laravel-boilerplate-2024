@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\MobileApp\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,7 +17,7 @@ class MobileServerSeeder extends Seeder
      */
     public function run(): void
     {
-        MobileServer::factory()->create([
+        MobileServer::updateOrCreate([
             'status' => 'online'
         ]);
     }

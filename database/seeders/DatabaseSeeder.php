@@ -14,12 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Artisan::call('passport:install');
-        // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'username' => 'atqiyacode',
-        //     'email' => 'atqiya@atqiyacode.com',
-        // ]);
+        Artisan::call('module:seed Master');
+        Artisan::call('module:seed Notification');
+        Artisan::call('module:seed MobileApp');
     }
 }

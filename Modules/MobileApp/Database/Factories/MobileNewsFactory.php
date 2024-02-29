@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Factories;
+namespace Modules\MobileApp\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class MobileNewsFactory extends Factory
 {
+    protected $model = \Modules\MobileApp\App\Models\MobileNews::class;
     public function definition(): array
     {
         return [

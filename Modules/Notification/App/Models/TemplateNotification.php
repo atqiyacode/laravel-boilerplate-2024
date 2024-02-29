@@ -45,7 +45,7 @@ class TemplateNotification extends Model
 
     public function notificationType(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\NotificationType::class);
+        return $this->belongsTo(\Modules\Notification\App\Models\NotificationType::class);
     }
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo

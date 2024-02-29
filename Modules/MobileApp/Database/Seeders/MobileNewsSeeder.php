@@ -1,10 +1,10 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\MobileApp\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\MobileApp\App\Models\MobileNews;
+use Modules\MobileApp\Database\Factories\MobileNewsFactory;
 use Illuminate\Database\Seeder;
 
 class MobileNewsSeeder extends Seeder
@@ -17,6 +17,6 @@ class MobileNewsSeeder extends Seeder
      */
     public function run(): void
     {
-        MobileNews::factory(10)->create();
+        MobileNewsFactory::new()->count(10)->create();
     }
 }

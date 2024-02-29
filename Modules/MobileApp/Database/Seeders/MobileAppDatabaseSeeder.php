@@ -11,6 +11,11 @@ class MobileAppDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            MobileServerSeeder::class,
+            MobileAppMenuSeeder::class,
+            MobileNewsSeeder::class,
+            MobileVersionSeeder::class,
+        ]);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Notification\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,17 +17,17 @@ class NotificationTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        NotificationType::create([
+        NotificationType::updateOrCreate([
             'name' => 'whatsapp notification',
             'description' => 'whatsapp notification',
             'status' => (bool) false,
         ]);
-        NotificationType::create([
+        NotificationType::updateOrCreate([
             'name' => 'email notification',
             'description' => 'email notification',
             'status' => (bool) true,
         ]);
-        NotificationType::create([
+        NotificationType::updateOrCreate([
             'name' => 'default notification',
             'description' => 'default notification',
             'status' => (bool) true,

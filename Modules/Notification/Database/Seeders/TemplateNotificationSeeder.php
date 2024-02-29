@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Notification\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\Notification\App\Models\TemplateNotification;
 use Illuminate\Database\Seeder;
+use Modules\Notification\Database\Factories\TemplateNotificationFactory;
 
 class TemplateNotificationSeeder extends Seeder
 {
@@ -17,6 +17,6 @@ class TemplateNotificationSeeder extends Seeder
      */
     public function run(): void
     {
-        TemplateNotification::factory(100)->create();
+        TemplateNotificationFactory::new()->count(100)->create();
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\MobileApp\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\MobileApp\App\Models\MobileVersion;
 use Illuminate\Database\Seeder;
+use Modules\MobileApp\Database\Factories\MobileVersionFactory;
 
 class MobileVersionSeeder extends Seeder
 {
@@ -17,6 +17,6 @@ class MobileVersionSeeder extends Seeder
      */
     public function run(): void
     {
-        MobileVersion::factory(2)->create();
+        MobileVersionFactory::new()->count(2)->create();
     }
 }
