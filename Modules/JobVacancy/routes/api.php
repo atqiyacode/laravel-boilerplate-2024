@@ -15,7 +15,7 @@ use Modules\JobVacancy\App\Http\Controllers\JobVacancyController;
     |
 */
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
+Route::middleware(['auth:sanctum'])->prefix('jobVacancy')->group(function () {
     /*===========================
     =           jobVacancies           =
     =============================*/

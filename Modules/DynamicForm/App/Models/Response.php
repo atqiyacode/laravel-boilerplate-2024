@@ -41,7 +41,7 @@ class Response extends Model
         'deleted_at',
     ];
 
-    public function applicantResume(): BelongsTo
+    public function applicantResume(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(ApplicantResume::class)->select([
             'id',
@@ -50,7 +50,7 @@ class Response extends Model
         ]);
     }
 
-    public function form(): BelongsTo
+    public function form(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Form::class)->select([
             'id',

@@ -9,7 +9,6 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
@@ -62,16 +61,16 @@ class JobVacancy extends Model
 
     public function jobApplications(): HasMany
     {
-        return $this->hasMany(JobApplication::class);
+        return $this->hasMany(\Modules\JobApplication\App\Models\JobApplication::class);
     }
 
-    public function position(): BelongsTo
+    public function position(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Position::class, 'position_id', 'id');
+        return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class, 'position_id', 'id');
     }
 
-    public function project(): BelongsTo
+    public function project(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Project::class, 'project_id', 'id');
+        return $this->belongsTo(\Modules\Project\App\Models\Project::class, 'project_id', 'id');
     }
 }

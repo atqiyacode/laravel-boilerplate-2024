@@ -12,7 +12,7 @@ class EmployeeDatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            // EmployeeSeeder::class,
+            EmployeeSeeder::class,
             EmployeeAchievementSeeder::class,
             EmployeeAttachmentSeeder::class,
             EmployeeDetailSeeder::class,
@@ -26,6 +26,18 @@ class EmployeeDatabaseSeeder extends Seeder
             EmployeeMediaSocialSeeder::class,
             EmployeeOrganizationExperienceSeeder::class,
             EmployeeRelationReferenceSeeder::class,
+        ]);
+
+        // hr - employee attendance
+        $this->call([
+            EmployeeAttendanceSeeder::class,
+        ]);
+
+        // hr - employee permit
+        $this->call([
+            EmployeePermitRemainingSeeder::class,
+            EmployeePermitStructureSeeder::class,
+            EmployeePermitSeeder::class,
         ]);
     }
 }

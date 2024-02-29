@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Modules\Project\App\Http\Controllers\API\HR\ProjectController;
 
 /*
     |--------------------------------------------------------------------------
@@ -15,24 +14,24 @@ use Modules\Project\App\Http\Controllers\API\HR\ProjectController;
     |
 */
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
+Route::middleware(['auth:sanctum'])->prefix('project')->group(function () {
     /*===========================
     =           projects           =
     =============================*/
 
-    Route::apiResource('/projects', ProjectController::class)->parameters([
+    Route::apiResource('/projects', \Modules\Project\App\Http\Controllers\ProjectController::class)->parameters([
         'projects' => 'id'
     ]);
 
     Route::group([
         'prefix' => 'projects',
     ], function () {
-        Route::get('{id}/restore', [ProjectController::class, 'restore']);
-        Route::delete('{id}/force-delete', [ProjectController::class, 'forceDelete']);
-        Route::post('destroy-multiple', [ProjectController::class, 'destroyMultiple']);
-        Route::post('restore-multiple', [ProjectController::class, 'restoreMultiple']);
-        Route::post('force-delete-multiple', [ProjectController::class, 'forceDeleteMultiple']);
-        Route::get('export/{format}', [ProjectController::class, 'export']);
+        Route::get('{id}/restore', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'restore']);
+        Route::delete('{id}/force-delete', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'forceDelete']);
+        Route::post('destroy-multiple', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'destroyMultiple']);
+        Route::post('restore-multiple', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'restoreMultiple']);
+        Route::post('force-delete-multiple', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'forceDeleteMultiple']);
+        Route::get('export/{format}', [\Modules\Project\App\Http\Controllers\ProjectController::class, 'export']);
     });
     /*=====  End of projects   ======*/
 });

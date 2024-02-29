@@ -43,12 +43,12 @@ class EmployeePermitStructure extends Model
     ];
 
     // from dev-api
-    public function position(): BelongsTo
+    public function position(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\HRMaster\App\Models\Position::class, 'position_id', 'id');
     }
 
-    public function workingArea(): BelongsTo
+    public function workingArea(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\HRMaster\App\Models\WorkingArea::class, 'working_area_id', 'id');
     }

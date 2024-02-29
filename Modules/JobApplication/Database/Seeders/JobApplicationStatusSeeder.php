@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\JobApplication\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -17,37 +17,37 @@ class JobApplicationStatusSeeder extends Seeder
      */
     public function run(): void
     {
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 1,
             'name' => 'Seleksi Berkas',
             'description' => 'lamaran aktif dan sedang diseleksi berkas',
         ]);
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 2,
             'name' => 'Tes Tertulis',
             'description' => 'lamaran lulus seleksi berkas, lanjut ketahap tes tertulis psikotest dan bidang keilmuan terkait',
         ]);
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 3,
             'name' => 'Wawancara SDM',
             'description' => 'lamaran lulus tes tertulis, lanjut ketahap wawancara hrd',
         ]);
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 4,
             'name' => 'Wawancara User',
             'description' => 'lamaran lulus wawancara hrd, lanjut ketahap wawancara user',
         ]);
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 5,
             'name' => 'Diterima',
             'description' => 'lamaran diterima',
         ]);
-        JobApplicationStatus::create([
+        JobApplicationStatus::updateOrCreate([
             'code' => 6,
             'name' => 'Ditolak',
             'description' => 'lamaran ditolak',
         ]);
-        // JobApplicationStatus::create([
+        // JobApplicationStatus::updateOrCreate([
         //     'name' => 'onhold',
         //     'description' => 'lamaran dihold, kandidat masuk ke dalam kandidat terpilih dan mungkin bisa ditolak atau dilanjut',
         // ]);

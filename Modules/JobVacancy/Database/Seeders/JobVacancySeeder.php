@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\JobVacancy\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Modules\JobVacancy\App\Models\JobVacancy;
-use Modules\JobVacancy\App\Models\Position;
+use Modules\HRMaster\App\Models\Position;
 use Exception;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

@@ -11,7 +11,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Scopes\CanDeleteScope;
 use App\Scopes\DeveloperScope;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class JobApplication extends Model
 {
@@ -44,9 +43,9 @@ class JobApplication extends Model
         'deleted_at',
     ];
 
-    public function user(): BelongsTo
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(User::class)->select([
+        return $this->belongsTo(\Modules\User\App\Models\User::class)->select([
             'id',
             'name',
             'username',
@@ -56,14 +55,14 @@ class JobApplication extends Model
 
     public function jobVacancy(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(JobVacancy::class)->where('status', 1)
+        return $this->belongsTo(\Modules\JobVacancy\App\Models\JobVacancy::class)->where('status', 1)
             ->select('id', 'title', 'position_id', 'open_date', 'close_date', 'status')
             ->with(['position:id,name']);
     }
 
     public function applicantResume(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(ApplicantResume::class)->with([
+        return $this->belongsTo(\Modules\Applicant\App\Models\ApplicantResume::class)->with([
             'applicantEducation' => function ($query3) {
                 $query3->with(['levelOfEducation:id,name']);
             }, 'applicantExperiences' => function ($query4) {

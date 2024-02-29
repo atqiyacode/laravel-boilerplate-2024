@@ -3,7 +3,7 @@
 namespace Modules\Employee\App\Http\Resources\EmployeePermit;
 
 use Modules\Employee\App\Http\Resources\Employee\SimpleEmployeeResource;
-use Modules\Employee\App\Models\PermitStatus;
+use Modules\Master\App\Models\PermitStatus;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Cache;
 

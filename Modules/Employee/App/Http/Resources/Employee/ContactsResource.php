@@ -8,7 +8,7 @@ use Modules\Employee\App\Http\Resources\EmployeeDetail\EmployeeDetailResource;
 use Modules\Employee\App\Http\Resources\EmployeeEmergencyContact\EmployeeEmergencyContactResource;
 use Modules\Employee\App\Http\Resources\EmployeeType\EmployeeTypeResource;
 use Modules\Employee\App\Http\Resources\Gender\GenderResource;
-use Modules\Employee\App\Http\Resources\Position\PositionResource;
+use Modules\HRMaster\App\Http\Resources\Position\PositionResource;
 use Modules\Employee\App\Http\Resources\Religion\ReligionResource;
 use Modules\Employee\App\Http\Resources\Unit\UnitResource;
 use Modules\Employee\App\Http\Resources\WorkingArea\WorkingAreaResource;

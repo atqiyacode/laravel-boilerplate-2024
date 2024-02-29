@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\Project\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -19,7 +19,7 @@ class ProjectSeeder extends Seeder
     {
         // Project::factory(10)->create();
         for ($i = 1; $i < 5; $i++) {
-            Project::create([
+            Project::updateOrCreate([
                 'name' => 'Project ' . $i,
                 'description' => fake()->realText(),
                 'status' => 1,

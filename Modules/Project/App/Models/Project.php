@@ -51,7 +51,7 @@ class Project extends Model
      */
     public function jobVacancies(): HasMany
     {
-        return $this->hasMany(JobVacancy::class)->with([
+        return $this->hasMany(\Modules\JobVacancy\App\Models\JobVacancy::class)->with([
             'jobApplications',
             'position',
         ]);
@@ -59,7 +59,7 @@ class Project extends Model
 
     public function totalAppliedJob()
     {
-        $totalAppliedJob = JobApplication::whereIn('job_vacancy_id', function ($query) {
+        $totalAppliedJob = \Modules\JobApplication\App\Models\JobApplication::whereIn('job_vacancy_id', function ($query) {
             $query->select('id')
                 ->from('job_vacancies')
                 ->where('project_id', $this->id);
@@ -70,16 +70,16 @@ class Project extends Model
 
     public function formQuestionPraRegistrations()
     {
-        return $this->hasOne(FormQuestionPraRegistration::class);
+        return $this->hasOne(\Modules\DynamicForm\App\Models\FormQuestionPraRegistration::class);
     }
 
     public function formPraRegistrations()
     {
-        return $this->hasMany(FormPraRegistration::class);
+        return $this->hasMany(\Modules\DynamicForm\App\Models\FormPraRegistration::class);
     }
 
     public function form()
     {
-        return $this->hasOne(Form::class);
+        return $this->hasOne(\Modules\DynamicForm\App\Models\Form::class);
     }
 }

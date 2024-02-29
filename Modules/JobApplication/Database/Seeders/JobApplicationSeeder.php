@@ -1,13 +1,13 @@
 <?php
 
-namespace Database\Seeders;
+namespace Modules\JobApplication\Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Modules\JobApplication\Modules\Applicant\App\Models\ApplicantResume;
+use Modules\Applicant\App\Models\ApplicantResume;
 use Modules\JobApplication\App\Models\JobApplication;
 use Modules\JobApplication\App\Models\JobApplicationStatus;
-use Modules\JobApplication\App\Models\JobVacancy;
+use Modules\JobVacancy\App\Models\JobVacancy;
 use Illuminate\Database\Seeder;
 
 class JobApplicationSeeder extends Seeder

@@ -16,7 +16,7 @@ use Modules\JobApplication\App\Http\Controllers\JobApplicationStatusController;
     |
 */
 
-Route::middleware(['force:json', 'multilang', 'auth:sanctum'])->prefix('v1')->name('api.')->group(function () {
+Route::middleware(['auth:sanctum'])->prefix('jobApplication')->group(function () {
     /*===========================
 =           jobApplicationStatuses           =
 =============================*/

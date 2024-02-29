@@ -104,7 +104,7 @@ class ApplicantResume extends Model
         return $this->hasMany(\Modules\JobApplication\App\Models\JobApplication::class);
     }
 
-    public function user(): BelongsTo
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\User\App\Models\User::class)->select([
             'id',
@@ -115,7 +115,7 @@ class ApplicantResume extends Model
         ]);
     }
 
-    public function religion(): BelongsTo
+    public function religion(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\Master\App\Models\Religion::class)->select([
             'id',
@@ -123,7 +123,7 @@ class ApplicantResume extends Model
         ]);
     }
 
-    public function gender(): BelongsTo
+    public function gender(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\Master\App\Models\Gender::class)->select([
             'id',
@@ -131,7 +131,7 @@ class ApplicantResume extends Model
         ]);
     }
 
-    public function formPraRegistration(): BelongsTo
+    public function formPraRegistration(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\Modules\DynamicForm\App\Models\FormPraRegistration::class);
     }

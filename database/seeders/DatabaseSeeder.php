@@ -18,10 +18,16 @@ class DatabaseSeeder extends Seeder
         Artisan::call('module:seed Master');
         Artisan::call('module:seed Notification');
         Artisan::call('module:seed MobileApp');
+        Artisan::call('module:seed Others');
 
-        Artisan::call('module:seed Applicant');
         Artisan::call('module:seed HRMaster');
 
-        Artisan::call('module:seed Others');
+        Artisan::call('module:seed Project');
+        Artisan::call('module:seed JobVacancy');
+
+        Artisan::call('module:seed Employee');
+        Artisan::call('module:seed Applicant');
+
+        Artisan::call('module:seed JobApplication');
     }
 }

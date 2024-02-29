@@ -11,6 +11,9 @@ class JobApplicationDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+        $this->call([
+            JobApplicationStatusSeeder::class,
+            JobApplicationSeeder::class,
+        ]);
     }
 }
